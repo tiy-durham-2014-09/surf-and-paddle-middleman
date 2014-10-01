@@ -9,7 +9,7 @@ body {
 
 .bigpic{
   width: 965px;
-  height: 450px;
+  height: 392px;
   margin-right: auto;
   margin-left: auto;
   background-size: 100%;
@@ -21,21 +21,32 @@ body {
     url("http://truescifi.files.wordpress.com/2008/12/big-wave-surfer.jpg");
   }
 
+  .wavelogo{
+    float: left;
+    margin-left: 110px;
+    margin-top: 10px;
+    position: absolute;
+  }
+
 .center{
   text-align: center;
   color: white;
-  font-size: 50px;
+  font-size: 67px;
   font-weight: 600;
-  padding: 250px;
+  padding: 150px;
 }
 
 
   .topright{
     float: right;
+    margin-right: 170px;
+    margin-top: 15px;
   }
 
   .topleft{
     float: left;
+    margin-left: 170px;
+    margin-top: 15px;
   }
 
   .right {
@@ -44,41 +55,56 @@ body {
 
   .left {
     float: left;
-    width: 650px
+    width: 450px;
+    padding-left: 105px;
+    margin-left: 15px;
   }
 
   .headline{
-    font-weight:900;
+    font-weight:600;
     color:#083452;
     font-family: 'Oswald', sans-serif;
-    font-size:25px;
-    padding-top:50px;
+    font-size:18px;
+    padding-top:23px;
   }
 
   .dolphin {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     border-radius: 75px;
-    margin-top: 30px;
-    margin-right: 130px;
+    margin-top: 0px;
+    margin-right: 190px;
+    text-align: center;
+    position: relative; top: -124px;
   }
 
   .kayak{
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   float: right;
-  margin-top: 60px;
-  margin-right: 110px;
+  margin-top: 15px;
+  margin-right: 135px;
+  position: relative; top: -80px;
   }
 
   .sidebar {
     float: right;
+    font-size: 12px;
     margin-top: 60px;
-    margin-right: 100px;
-    width: 300px;
+    padding-right: 110px;
+    width: 200px;
+    position: relative; top: -80px;
+  }
+
+  .blueheading{
+    color: blue;
   }
 
   blockquote {
     color: rgb(170,202,226);
-    font-size: 25px
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-left: 2px solid #d3d3d3;
+    margin-left: 0px;
+    padding-left: 8px;
   }
