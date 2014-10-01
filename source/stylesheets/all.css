@@ -1,3 +1,24 @@
 @charset "utf-8";
 
 /* Put content here. */
+#header {
+  background-color: yellow;
+  height: 320px;
+}
+#column1 {
+  background-color: blue;
+  float: left;
+  width: 50%;
+}
+#column2 {
+  background-color: red;
+  float: left;
+  width: 50%;
+}
+#footer {
+  background-color: purple;
+  height: 320px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+ }
