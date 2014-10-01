@@ -1,3 +1,84 @@
 @charset "utf-8";
 
-/* Put content here. */
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 965px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bigpic{
+  width: 965px;
+  height: 450px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: 100%;
+  background:
+  linear-gradient(
+    rgba(5, 44, 73, .45),
+    rgba(5, 44, 73, .45)
+    ),
+    url("http://truescifi.files.wordpress.com/2008/12/big-wave-surfer.jpg");
+  }
+
+.center{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 250px;
+}
+
+
+  .topright{
+    float: right;
+  }
+
+  .topleft{
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .left {
+    float: left;
+    width: 650px
+  }
+
+  .headline{
+    font-weight:900;
+    color:#083452;
+    font-family: 'Oswald', sans-serif;
+    font-size:25px;
+    padding-top:50px;
+  }
+
+  .dolphin {
+    width: 100px;
+    height: 100px;
+    border-radius: 75px;
+    margin-top: 30px;
+    margin-right: 130px;
+  }
+
+  .kayak{
+  width: 150px;
+  height: 150px;
+  float: right;
+  margin-top: 60px;
+  margin-right: 110px;
+  }
+
+  .sidebar {
+    float: right;
+    margin-top: 60px;
+    margin-right: 100px;
+    width: 300px;
+  }
+
+  blockquote {
+    color: rgb(170,202,226);
+    font-size: 25px
+  }
