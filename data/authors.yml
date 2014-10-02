@@ -11,6 +11,10 @@ turing:
     - Facebook: https://www.facebook.com/AlanTuringCodebreaker
 lovelace:
   name: Ada Lovelace
+<<<<<<< HEAD
     links:
+=======
+  links:
+>>>>>>> f96b1154826889a7259e4c8cc99338f8f7415743
     - Wikipedia: https://en.wikipedia.org/wiki/Ada_Lovelace
     - Twitter: https://twitter.com/EnchantressAda
