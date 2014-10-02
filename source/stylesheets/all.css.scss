@@ -1,10 +1,11 @@
+@charset "utf-8";
+
 @import "bourbon";
 @import "neat";
 
 $darkblue: #04283e;
 $lightblue: #005eac;
 
-@charset "utf-8";
 .surf {
   position: absolute;
   z-index: 100;
