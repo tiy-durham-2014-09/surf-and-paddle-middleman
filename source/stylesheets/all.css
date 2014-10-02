@@ -28,13 +28,19 @@ body {
     position: absolute;
   }
 
-.center{
-  text-align: center;
-  color: white;
-  font-size: 67px;
-  font-weight: 600;
-  padding: 150px;
-}
+  .center{
+    text-align: center;
+    color: white;
+    font-size: 67px;
+    font-weight: 600;
+    padding: 150px;
+  }
+
+  .subheader{
+    font-size: 10px;
+    position:relative; top:-60px;
+    color: grey;
+  }
 
 
   .topright{
@@ -68,6 +74,18 @@ body {
     padding-top:23px;
   }
 
+  .Annie {
+    width: 30px;
+    height: 30px;
+    border-radius: 75px;
+
+  }
+
+  .author{
+    font-size: 12px;
+    position: relative; top: -25px; left: 40px;
+  }
+
   .dolphin {
     width: 65px;
     height: 65px;
@@ -78,13 +96,27 @@ body {
     position: relative; top: -124px;
   }
 
+  .subtext h5{
+    position: relative; top: -130px; right: 10px;
+  }
+
+  .subtext li {
+    font-family: open sans;
+    font-size: 10px;
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 3px;
+    position: relative; top: -150px; right: 70px;
+  }
+
   .kayak{
-  width: 180px;
-  height: 180px;
-  float: right;
-  margin-top: 15px;
-  margin-right: 135px;
-  position: relative; top: -80px;
+    width: 180px;
+    height: 180px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 135px;
+    position: relative; top: -150px;
   }
 
   .sidebar {
@@ -93,7 +125,7 @@ body {
     margin-top: 60px;
     padding-right: 110px;
     width: 200px;
-    position: relative; top: -80px;
+    position: relative; top: -150px;
   }
 
   .blueheading{
@@ -102,9 +134,20 @@ body {
 
   blockquote {
     color: rgb(170,202,226);
-    font-size: 18px;
+    font-size: 21px;
     letter-spacing: 1px;
     border-left: 2px solid #d3d3d3;
     margin-left: 0px;
     padding-left: 8px;
   }
+
+  .comments{
+    border: 1px solid black;
+    color: blue;
+
+  }
+
+  /*.popular{
+    width: 100%;
+    color: blue;
+  }*/
