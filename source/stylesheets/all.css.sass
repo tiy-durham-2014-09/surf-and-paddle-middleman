@@ -3,7 +3,12 @@
 /* Put content here. */
 /*font-family: 'Oswald', sans-serif;      HEADER*/
 /*font-family: 'Open Sans', sans-serif;   BODY*/
-
+$std-tint = rgba(50,100,205,0.80)
+@mixin tinted_image_bg($color, $image) {
+  background: linear-gradient($color,$color), url($image);
+}
+@include tinted-image-bg(rgba(50,100,205,0.80), "images/....jpg");
+@include tinted-image-bg($std-tint, "../images/....jpg");
 .header {
       width: 965px;
       height: 400px;
@@ -57,6 +62,7 @@
   font-size: 8px;
   margin-top:0px;
 }
+@import "body"
 .wbody {
   margin-top: 30px;
   width: 965px;
