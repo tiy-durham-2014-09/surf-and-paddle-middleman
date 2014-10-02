@@ -19,14 +19,17 @@ Once you have the site replicated, you should:
 * Convert your CSS to Sass. (You should only have to rename your `.css` file
   to `.css.sass`.)
 * Rebuild the page using Sass, Bourbon, and Neat. Specifically:
-  * Replace your grids with Neat grids.
+  * Replace your grids with Neat grids. Your column widths may vary from the
+    ones in the original PNG. That is fine. Eyeball the ratio and decide for
+    yourself.
 * Turn your main page layout into a layout suitable for showing
   more posts like the one on the front page.
 * Create 3 new pages _in Markdown_ (that is, with `.html.md` extensions) that
   use front-matter to populate the title, date, and author. These should
   use the new layout. Each page should have a different author.
 * Set the author to a unique key (like `turing`) and pull their name,
-  social links, and image from `data/authors.yml`.
+  social links, and image from `data/authors.yml`. (You will need to download an
+  image for each author and add that to their data in `authors.yml`.)
 * Change your `index.html.erb` page to show all three of your other posts
   in descending order by date. Show:
     * The title
@@ -39,3 +42,12 @@ Once you have the site replicated, you should:
   instead of the way we showed and aggregated posts in this homework.
 
 Remember to use helpers to make your life easier and your templates nicer!
+
+## Updating
+
+In order to get the latest files (authors.yml), run the following on your command-line.
+
+```sh
+git origin add upstream https://github.com/tiy-durham-2014-09/surf-and-paddle-middleman.git
+git pull upstream master
+```
