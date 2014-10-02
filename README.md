@@ -48,6 +48,6 @@ Remember to use helpers to make your life easier and your templates nicer!
 In order to get the latest files (authors.yml), run the following on your command-line.
 
 ```sh
-git origin add upstream https://github.com/tiy-durham-2014-09/surf-and-paddle-middleman.git
+git remote add upstream https://github.com/tiy-durham-2014-09/surf-and-paddle-middleman.git
 git pull upstream master
 ```
