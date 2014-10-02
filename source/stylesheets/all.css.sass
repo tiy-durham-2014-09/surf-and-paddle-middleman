@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* Put content here. */
+/*font-family: 'Oswald', sans-serif;      HEADER*/
+/*font-family: 'Open Sans', sans-serif;   BODY*/
+$std-tint = rgba(50,100,205,0.80)
+@mixin tinted_image_bg($color, $image) {
+  background: linear-gradient($color,$color), url($image);
+}
+@include tinted-image-bg(rgba(50,100,205,0.80), "images/....jpg");
+@include tinted-image-bg($std-tint, "../images/....jpg");
+.header {
+      width: 965px;
+      height: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      background-size: 100%;
+      background:
+      linear-gradient(
+      rgba(5, 44, 73, .45),
+      rgba(5, 44, 73, .45)
+    ),
+      url("http://i.dailymail.co.uk/i/pix/2014/01/30/article-2548954-1B12F34000000578-734_964x620.jpg");
+}
+.toppic {
+  width: 16px;
+  height: 16px;
+}
+.topright{
+  font-family: 'Oswald', sans-serif;
+  color: #053350;
+  margin-left: 60px;
+  margin-top: 5px;
+  font-size: 14px
+
+}
+.topleft {
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  color: #053350;
+  margin-right: 90px;
+  margin-top: -20px;
+  font-size: 14px;
+}
+
+.topmain {
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Open Sans', sans-serif;
+  font-size: 65px;
+  margin-bottom:0px
+}
+.submain {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Open Sans', sans-serif;
+  font-size: 8px;
+  margin-top:0px;
+}
+@import "body"
+.wbody {
+  margin-top: 30px;
+  width: 965px;
+  height: 2000px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  font-weight: 400;
+  font-family:'Oswald', sans-serif;
+}
+
+.bodytop {
+  margin-left: 60px;
+  text-align: left;
+  float: left;
+  width: 500px;
+  font-family:'Oswald', sans-serif;
+  color: #053350;
+  font-size: 45px;
+  margin-bottom: 0.1px;
+}
+.dolph {
+  float: right;
+  width: 75px;
+  height: 75px;
+  margin-top: 20px;
+  margin-right: 230px;
+  margin-bottom: 1px;
+
+
+}
+.dword {
+  float: right;
+  margin-top: 1px;
+  margin-right: 145px;
+  color: grey;
+}
+h3{
+  color: #053350;
+  text-align: center;
+}
+.bluename1{
+  color: dodgerblue;
+  text-align: center;
+  padding: 1px;
+  margin-right: 35px;
+  margin-bottom: 1px
+}
+.sword {
+  margin-top: 1px;
+  padding: 1px;
+  margin-right: 35px;
+  word-spacing: 6px;
+  font-size: 13px;
+
+}
+.smalld1 {
+  width: 28px;
+  height: 28px;
+
+}
+.smalld2 {
+  font-size: 8px;
+}
+.smalld {
+  margin-top: 10px;
+  margin-left: 60px;
+  width: 500px;
+  height: 15px;
+  float: left;
+  color: grey;
+  font-size: 13px;
+}
+.bluename2{
+  color: dodgerblue;
+  font-size: 13px;
+}
+.t1 {
+  margin-left: 60px;
+  text-align: left;
+  float: left;
+  width: 500px;
+  font-family:'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.t2 {
+  float: right;
+  width: 200px;
+  height: 180px;
+  margin-top: 20px;
+  margin-right: 160px;
+  margin-bottom: 1px;
+}
+
+.t3 {
+  font-family:'Open Sans', sans-serif;
+  border-left: 3px solid gray;
+  margin-top: -41px;
+  margin-left: 60px;
+  width: 500px;
+  height: 65px;
+  float: left;
+  color: dodgerblue;
+  clear:right;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.t4 {
+  margin-left: 60px;
+  text-align: left;
+  float: left;
+  width: 500px;
+  font-family:'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px;
+  margin-top:25px;
+}
+h5 {
+  font-family:'Open Sans', sans-serif;
+  width: 300px;
+  color: dodgerblue;
+  margin-bottom: 1px;
+
+}
+.t5 {
+  font-family:'Open Sans', sans-serif;
+  float: right;
+  width: 240px;
+  height: 150px;
+  margin-top: -45px;
+  margin-right: 120px;
+  margin-bottom: 1px;
+  font-size: 13px;
+}
+.roll:hover {
+  text-decoration: underline;
+}
+.roll {
+  color: dodgerblue;
+}
+.bot{
+  float: left;
+  width: 500px;
+  margin-left: 60px;
+}
+.buttons {
+  width: 400px;
+  height: 25px;
+}
