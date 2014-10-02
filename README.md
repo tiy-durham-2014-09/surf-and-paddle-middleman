@@ -32,7 +32,7 @@ Once you have the site replicated, you should:
   image for each author and add that to their data in `authors.yml`.)
 * Change your `index.html.erb` page to show all three of your other posts
   in descending order by date. Show:
-    * The title
+    * The title -- which should be a link to the post
     * The author and date information
     * Either the first paragraph of the text or a truncated number of words
     * The buttons at the bottom of each post
