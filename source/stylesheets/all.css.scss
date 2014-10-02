@@ -1,0 +1,146 @@
+@import "bourbon";
+@import "neat";
+
+$footer_size: 500px;
+$standard_font: 16px;
+$dark_blue: #3366CC;
+$light_blue: #5c7cab;
+$light_grey: #d7dbde;
+
+.name {
+  color: $light_blue;
+  font-weight: bold;
+}
+
+@mixin nav_bar {
+  ul {
+    float: right;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      padding-right: 10px;
+    }
+  }
+
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'Oswald', sans-serif;
+          font-size: $standard_font;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+div.header {
+  @include span-columns(12);
+  background: url('/images/beach.jpg') no-repeat center center fixed;
+  background-color: $dark_blue;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: $footer_size;
+
+  .company-info {
+  @include shift(1);
+  @include span-columns(3);
+  padding: 0px;
+  }
+
+  .top-navbar {
+    @include nav_bar;
+    @include shift(5);
+    @include span-columns(2);
+
+  }
+
+  .hero {
+    @include span-columns(12);
+    text-align: center;
+    color: white;
+    padding-top: $footer_size / 7;
+    font-size: $standard_font * 3;
+
+      p {
+        font-size: $standard_font;
+        color: black;
+        margin-top: -75px;
+      }
+  }
+
+}
+
+div.outer-container {
+  @include outer-container;
+  border: 1px solid green;
+}
+
+div.posts {
+  @include span-columns(10);
+  @include shift(1);
+  border: 1px solid red;
+}
+
+div.posts .body {
+  @include span-columns(5 of 10);
+  border: 1px solid yellow;
+}
+
+div.posts .body h1 {
+  font-size: $standard_font * 3;
+}
+
+.blog_heading p {
+  color: $light_grey;
+}
+
+div.posts h4 {
+  color: $light_blue;
+  border-left:  medium solid $light_grey;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: $standard_font * 2;
+}
+
+.body .nav_bar {
+  @include nav_bar;
+  ul {
+    float: left;
+  }
+}
+
+div.posts .sidebar {
+  @include span-columns(5 of 10);
+  border: 1px solid blue;
+
+  .profile {
+    text-align: center;
+    border: 1px solid yellow;
+  }
+
+}
+
+div.footer {
+  @include span-columns(12);
+  background-color: gray;
+}
