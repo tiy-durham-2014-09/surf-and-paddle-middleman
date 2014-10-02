@@ -1,3 +1,247 @@
 @charset "utf-8";
 
-/* Put content here. */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 965px;
+  margin: 0 auto;
+}
+
+.title {
+  height: 524px;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: RGB(20, 42, 60);
+}
+
+.wave{
+  float: left;
+}
+
+.title_tools{
+  float: right;
+  margin-right: 10px;
+  font-family: "Oswald";
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.title_text{
+  font-family: "Open Sans";
+  font-size: 110px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0;
+  text-shadow: 0 2px 5px #455555;
+  margin-top: 235px;
+  letter-spacing: -10px;
+}
+
+.subtitle{
+  position: relative;
+  height: 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 0;
+  font-weight: 400;
+}
+
+.main_body {
+  /*width: 965px;*/
+  margin: 0 auto;
+  float: left;
+  font-family: "Open Sans";
+  color: #707070;
+  line-height: 1.65;
+  letter-spacing: -0.5px;
+}
+
+.left_column{
+  float: left;
+  width: 600px;
+  margin-right: 85px;
+}
+
+.left_column_headline{
+  font-family: "Oswald";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #032640;
+  margin-bottom: 10px;
+}
+
+.post_info{
+  height: 35px;
+  font-size: 14px;
+  color: #C0C0C0;
+  line-height: 2.5;
+}
+
+.poster_pic {
+  float: left;
+  border-radius: 50%;
+  height: 100%;
+  width: 35px;
+  background:
+    linear-gradient(
+      rgba(25, 85, 145, 0.70),
+      rgba(25, 85, 145, 0.70)
+    ),
+    url(/images/profile.jpg);
+}
+
+.poster_name {
+  color: RGB(49, 106, 162);
+  margin: 0 6px;
+}
+
+.quote{
+  font-size: 28px;
+  color: RGB(36, 99, 157);
+  border-left: 3px solid #ccc;
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.link {
+  text-decoration: underline;
+  color: RGB(49, 106, 162);
+}
+
+.post_footer{
+  height: 140px;
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.post_option_icon{
+  float: left;
+  text-align: center;
+  height: 28px;
+  width: 30px;
+  background: RGB(89, 98, 101);
+}
+
+.post_option{
+  float: left;
+  height: 28px;
+  background: RGB(157, 173, 179);
+  padding: 0 10px;
+  margin-right: 15px;
+}
+
+.post_option_icon:hover{
+  background: RGB(20, 43, 62);
+}
+
+.post_option:hover{
+  background: RGB(36, 99, 158);
+}
+
+.right_column{
+  float: right;
+  width: 280px;
+  font-size: 16px;
+  color: RGB(156, 173, 179);
+  line-height: 30px;
+  font-weight: 100;
+}
+
+.right_column_header{
+  font-family: "Oswald";
+  font-size: 18px;
+  font-weight: 400;
+  color: RGB(36, 99, 157);
+  line-height: 0;
+}
+
+.profile{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 17px;
+  color: RGB(49, 106, 162);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.profile_site {
+  text-decoration: none;
+  text-align: center;
+  color: RGB(170, 180, 185);
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 200;
+  line-height: .1;
+  margin: 5px;
+}
+
+.ad_info{
+  text-align: right;
+  line-height: 0.2;
+}
+
+.subtle{
+  text-decoration: underline;
+  font-size: 14px;
+  color: #B0B0B0;
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+
+.tinted_background {
+  height:524px;
+  background:
+    linear-gradient(
+      rgba(25, 85, 145, 0.85),
+      rgba(25, 85, 145, 0.85)
+    ),
+    url(/images/hokusai.jpg);
+}
+
+.profile_pic {
+  border-radius: 50%;
+  margin: 0 auto;
+  height: 75px;
+  width: 75px;
+  background:
+    linear-gradient(
+      rgba(25, 85, 145, 0.70),
+      rgba(25, 85, 145, 0.70)
+    ),
+    url(/images/profile.jpg);
+
+  margin-top: 75px;
+}
+
+.tinted_ad {
+  width:278px;
+  height:300px;
+  background:
+    linear-gradient(
+      rgba(25, 85, 145, 0.75),
+      rgba(25, 85, 145, 0.75)
+    ),
+    url(/images/tsunamihotel.jpg);
+
+}
+
+.popular{
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #032640;
+  margin-bottom: 30px;
+}
