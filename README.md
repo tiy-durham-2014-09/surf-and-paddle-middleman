@@ -17,7 +17,7 @@ Remember, run `bundle exec middleman` to preview your changes.
 Once you have the site replicated, you should:
 
 * Convert your CSS to Sass. (You should only have to rename your `.css` file
-  to `.css.sass`.)
+  to `.css.scss`.)
 * Rebuild the page using Sass, Bourbon, and Neat. Specifically:
   * Replace your grids with Neat grids. Your column widths may vary from the
     ones in the original PNG. That is fine. Eyeball the ratio and decide for
