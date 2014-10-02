@@ -1,3 +1,170 @@
 @charset "utf-8";
 
-/* Put content here. */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 965px;
+}
+header {
+  width: 965px;
+  height: 389px;
+  background:
+    linear-gradient(
+      rgba(56, 115, 192, .7),
+      rgba(56, 115, 192, .7)
+    ),
+    url("../images/surf-kayak-fins.jpg");
+}
+.top-nav-bar {
+  padding-top: 7px;
+}
+.logo-blog {
+  float: left;
+  width: 300px;
+  margin-left: 105px;
+}
+.logo-blog li{
+  list-style-type: none;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: Regal Blue;
+  padding-left: 7px;
+}
+.logo-blog img {
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+}
+.nav-buttons {
+  float:right;
+  width: 300px;
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+  color: Regal Blue;
+  font-size: 14px;
+  margin-right: 142px;
+  }
+.nav-buttons li {
+  list-style-type: none;
+  display: inline-block;
+}
+.nav-buttons i {
+  margin: 0;
+  padding-left: 9px;
+  font-size: 12px;
+  transform: rotate(90deg);
+  position: relative; top: -7px;
+}
+
+h1 {
+  line-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 75px;
+  text-align: center;
+  padding-top: 156px;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: center;
+  color: Regal Blue;
+}
+.container {
+  width: 724px;
+  margin-left: 123px;
+  margin-top: 40px;
+}
+.left {
+  float: left;
+  width: 470px;
+  display: block;
+  padding-top: 5px;
+}
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -1.7;
+}
+.avatar1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background:
+    linear-gradient(
+      rgba(56, 115, 192, .7),
+      rgba(56, 115, 192, .7)
+    ),
+    url("../images/kayaker.jpg");
+  background-size: 106px, 106px;
+  background-position: 30% -10%;
+}
+.credits li{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+.right {
+  float: right;
+  width: 207px;
+  display: block;
+}
+.avatar2 {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(
+      rgba(56, 115, 192, .7),
+      rgba(56, 115, 192, .7)
+    ),
+    url("../images/kayaker.jpg");
+  background-size: 106px, 106px;
+  background-position: 30% -10%;
+}
+.name {
+  font-family: san serif;
+  text-align: center;
+}
+.social-links ul {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+.social-links li {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+}
+.ad-image1 {
+  margin-top: 10px;
+  width: 207px;
+  height: 167px;
+  background:
+    linear-gradient(
+      rgba(56, 115, 192, .7),
+      rgba(56, 115, 192, .7)
+    ),
+    url("../images/surfkayaking.jpg");
+  }
+h4 {
+  font-family: 'Oswald', sans-serif;
+  line-height: 70px;
+}
