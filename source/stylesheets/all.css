@@ -103,16 +103,20 @@ h3{
   text-align: center;
   padding: 1px;
   margin-right: 35px;
+  margin-bottom: 1px
 }
 .sword {
   margin-top: 1px;
   padding: 1px;
   margin-right: 35px;
+  word-spacing: 6px;
+  font-size: 13px;
 
 }
 .smalld1 {
   width: 28px;
   height: 28px;
+
 }
 .smalld2 {
   font-size: 8px;
@@ -124,9 +128,11 @@ h3{
   height: 15px;
   float: left;
   color: grey;
+  font-size: 13px;
 }
 .bluename2{
   color: dodgerblue;
+  font-size: 13px;
 }
 .t1 {
   margin-left: 60px;
@@ -188,6 +194,7 @@ h5 {
   margin-top: -45px;
   margin-right: 120px;
   margin-bottom: 1px;
+  font-size: 13px;
 }
 .roll:hover {
   text-decoration: underline;
