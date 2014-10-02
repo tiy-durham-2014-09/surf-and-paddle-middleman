@@ -1,3 +1,417 @@
 @charset "utf-8";
 
 /* Put content here. */
+.header {
+  width: 965px;
+  height: 390px;
+  display: inline-block;
+  color: rgb(0,51,82);
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("http://www.picpicx.com/wp-content/uploads/2014/09/0467b2596d6b248a49cf08fe54ca100d.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.85);
+}
+
+.header a {
+  text-decoration: none;
+  color: rgb(0,51,82);
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: rgb(79,167,233);
+}
+
+.header a:visited {
+  text-decoration: none;
+  color: rgb(0,51,82);
+}
+
+.wave {
+  float: left;
+  margin-left: 105px;
+  margin-top: 8px;
+  width: 33px;
+  height: 33px;
+}
+
+.blog {
+  font-size: 9pt;
+  font-weight: 500;
+  letter-spacing: -.25px;
+  float: left;
+  margin-left: 12px;
+  margin-top: 16.5px;
+}
+
+.icon-magnifying-glass {
+  float: right;
+  margin-left: 3px;
+}
+
+.top_nav {
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10pt;
+  margin-right: 122px;
+  margin-top: 11px;
+  padding: 2px;
+}
+
+.top_nav .about {
+  margin-right: 10px;
+}
+
+.title {
+  line-height: 47px;
+  margin-top: 170px;
+  text-align: center;
+}
+
+.title h1 {
+  font-weight: 400;
+  font-size: 59pt;
+  margin-bottom: 0;
+  letter-spacing: -3.7px;
+  color: white;
+  padding-bottom: 0;
+}
+
+.title h5 {
+  letter-spacing: -.1px;
+  font-size: 8pt;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.body {
+  margin: auto;
+  width: 965px;
+  height: 1565px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: rgb(160,179,192);
+}
+
+.content {
+  display: inline-block;
+}
+
+.post-column {
+  float: left;
+  width: 460px;
+  height: 750px;
+  margin-left: 120px;
+
+  background-color: white;
+}
+
+.post-title {
+  width: 460px;
+  height: 105px;
+  margin-top: 45px;
+  letter-spacing: .5px;
+  line-height: 52px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(0,51,82);
+  font-size: 35pt;
+}
+
+.post-info {
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+  width: 460px;
+  height: 40px;
+}
+
+.picture {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url("http://www.istreetresearch.com/wp-content/uploads/2014/09/dolphin1.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.6);
+  float: left;
+}
+
+.poster-name {
+  font-size: 7pt;
+  padding: 10px 0 0 10px;
+  color: rgb(0,95,161);
+  float: left;
+
+}
+
+.timestamp {
+  padding: 10px 5px;
+  font-size: 6pt;
+  color: rgb(160,179,172);
+  float: left;
+}
+
+.post p {
+  font-size: 9pt;
+  color: rgb(87, 98, 102);
+  line-height: 20px;
+  margin-top: 0;
+}
+
+.quote {
+  color: rgb(0,104, 182);
+  font-weight: 300;
+  margin: 42px 0 25px 5px;
+  padding-left: 16px;
+  font-size: 16pt;
+  border-left: 2px solid rgb(202,214,222);
+  letter-spacing: -.55px;
+}
+
+.buttons {
+  margin: 0;
+  padding-left: 2px;
+}
+
+.buttons li {
+  font-size: 8pt;
+  font-weight: 400;
+  color: white;
+  list-style: none;
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  padding-top:3px;
+  background-color: rgb(152,173,182);
+}
+
+.buttons .short-button {
+  width: 95px;
+}
+
+.icon-talk-chat {
+  background-color: rgb(87,98,102);
+  height: 18px;
+  width: 16px;
+  font-size: 10pt;
+  margin-right: 8px;
+  padding-left: 4px;
+  color: white;
+
+  float:left
+}
+
+.icon-readernaut {
+  background-color: rgb(87,98,102);
+  font-size: 10pt;
+  margin-right: 8px;
+  padding-left: 4px;
+  color: white;
+  height: 18px;
+  width: 16px;
+  float:left
+}
+
+.icon-share-square {
+  background-color: rgb(14,42,63);
+  font-size: 10pt;
+  margin-right: 8px;
+  padding-left: 4px;
+  color: white;
+  height: 18px;
+  width: 16px;
+  float:left
+}
+
+.buttons .share {
+  background-color: rgb(0,95,161);
+}
+
+.sidebar {
+  float: right;
+  width: 240px;
+  height: 750px;
+  margin-left: 43px;
+  margin-right: 12px;
+
+  background-color: white;
+}
+
+.contact {
+  width: 180px;
+  height: 120px;
+  margin: auto;
+  margin-top: 45px;
+}
+
+.contact .picture {
+  width: 60px;
+  height: 60px;
+  margin: 17px 60px 6px 60px;
+
+}
+
+.contact h4 {
+
+  color: rgb(0,95,161);
+  font-size: 9pt;
+  margin: 0 43px;
+}
+
+.contact ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.contact li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 7pt;
+  margin: auto;
+  line-height: -5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.ad-box {
+  width: 208px;
+  height: 195px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.ad {
+  width: 208px;
+  height: 168px;
+  margin: auto;
+  margin-top: 30px;
+  background-image: url("http://wordsandwilds.files.wordpress.com/2013/05/p1570477.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.35);
+}
+
+.ad-box a {
+  font-size: 7pt;
+  color: rgb(160,179,192);
+  float: right;
+  padding-top: 5px;
+}
+
+.sidebar-section {
+  width: 208px;
+  height: 250px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.sidebar-section h4 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10pt;
+  color: rgb(0,95,161);
+  font-weight: 400;
+}
+
+.sidebar-section p {
+  color: rgb(140,159,172);
+  font-size: 9pt;
+  margin-top: 5px;
+  line-height: 19px;
+}
+
+.footer {
+  width: 965px;
+  height: 420px;
+}
+
+.footer .post-title {
+  width: 965px;
+  height: 84px;
+  text-align: center;
+  padding-top: 18px;
+  margin: 0;
+}
+
+.pop-links {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 965px;
+  height: 245px;
+
+  background-color: yellow;
+}
+
+.pop-links li {
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.75);
+}
+
+.pop-links a {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(0,51,82);
+}
+
+.oar {
+  background-image: url("http://1.bp.blogspot.com/-IqY-GliCgto/TVitKGPW15I/AAAAAAAAXGE/uMWsTf8i0SI/art-oars.jpg");
+  background-size: cover;
+}
+
+.dolphin {
+  background-image: url("http://ladaray.files.wordpress.com/2014/01/bottlenose-dolphins.jpg");
+  background-size: cover;
+}
+
+.kayak {
+  background-image: url("http://bestfishingkayakfocus.com/wp-content/uploads/2013/12/ocea-kayak-summer-colors-wallpapers-1024x768.jpg");
+  background-size: cover;
+}
+
+.dog {
+  background-image: url("http://25.media.tumblr.com/tumblr_m7h237XBRM1r5czhfo1_500.jpg");
+  background-size: cover;
+}
+
+.pop-links li:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.0);
+}
+
+.bottom-nav {
+  font-size: 8pt;
+  width: 965px;
+  height: 70px;
+  background-color: rgb(14, 42, 65);
+  clear: both;
+}
+
+.tiy-logo {
+  float:left;
+  width: 40px;
+  height: 35px;
+  margin-top: 15px;
+  margin-left: 120px;
+  background-image: url("http://theironyard.com/images/footer-logo.png");
+  background-size: 100%;
+}
+
+.copyright {
+  padding-top: 28px;
+}
+
+.nav-items {
+  margin-right: 120px;
+  clear: both;
+}
+
+.nav-items li {
+  list-style: none;
+  display: inline;
+  float: right;
+}
