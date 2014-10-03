@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+$visual-grid: true !default;
+$visual-grid-color: red !default;
+$visual-gride-index: back !default;
+
 @import "bourbon";
 @import "neat";
 
@@ -63,6 +67,14 @@ body {
   padding-right: 120px;
   font-size: 13px;
   padding-top: 1px;
+}
+
+.about {
+  margin-right: 13px;
+}
+
+.search {
+  margin-right: 3px;
 }
 
 .title_text {
