@@ -1,26 +1,25 @@
 @charset "utf-8";
+@import "bourbon";
+@import "neat";
 
 /* Put content here. */
 /*font-family: 'Oswald', sans-serif;      HEADER*/
 /*font-family: 'Open Sans', sans-serif;   BODY*/
-$std-tint = rgba(50,100,205,0.80)
+ $std-tint:rgba( 50, 100, 205 ,0.80);
 @mixin tinted_image_bg($color, $image) {
   background: linear-gradient($color,$color), url($image);
+   }
+/*@include tinted-image-bg(rgba(50,100,205,0.80), "images/....jpg");*/
+body {
+  @include outer-container;
 }
-@include tinted-image-bg(rgba(50,100,205,0.80), "images/....jpg");
-@include tinted-image-bg($std-tint, "../images/....jpg");
 .header {
       width: 965px;
       height: 400px;
       margin-right: auto;
       margin-left: auto;
       background-size: 100%;
-      background:
-      linear-gradient(
-      rgba(5, 44, 73, .45),
-      rgba(5, 44, 73, .45)
-    ),
-      url("http://i.dailymail.co.uk/i/pix/2014/01/30/article-2548954-1B12F34000000578-734_964x620.jpg");
+      @include tinted-image-bg($std-tint, "http://i.dailymail.co.uk/i/pix/2014/01/30/article-2548954-1B12F34000000578-734_964x620.jpg");
 }
 .toppic {
   width: 16px;
@@ -62,19 +61,20 @@ $std-tint = rgba(50,100,205,0.80)
   font-size: 8px;
   margin-top:0px;
 }
-@import "body"
-.wbody {
+
+/* @import "body"*/
+.lbody {
+  @include span-columns(6);
   margin-top: 30px;
-  width: 965px;
-  height: 2000px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 500px;
+
   background-color: white;
   font-weight: 400;
   font-family:'Oswald', sans-serif;
 }
 
 .bodytop {
+  margin-top: 35px;
   margin-left: 60px;
   text-align: left;
   float: left;
@@ -82,20 +82,19 @@ $std-tint = rgba(50,100,205,0.80)
   font-family:'Oswald', sans-serif;
   color: #053350;
   font-size: 45px;
-  margin-bottom: 0.1px;
+  margin-bottom: 3px;
 }
 .dolph {
-  float: right;
+
   width: 75px;
   height: 75px;
   margin-top: 20px;
   margin-right: 230px;
   margin-bottom: 1px;
 
-
 }
 .dword {
-  float: right;
+
   margin-top: 1px;
   margin-right: 145px;
   color: grey;
@@ -132,7 +131,7 @@ h3{
   margin-left: 60px;
   width: 500px;
   height: 15px;
-  float: left;
+
   color: grey;
   font-size: 13px;
 }
@@ -143,7 +142,7 @@ h3{
 .t1 {
   margin-left: 60px;
   text-align: left;
-  float: left;
+
   width: 500px;
   font-family:'Open Sans', sans-serif;
   color: black;
@@ -152,7 +151,7 @@ h3{
 }
 
 .t2 {
-  float: right;
+
   width: 200px;
   height: 180px;
   margin-top: 20px;
@@ -167,9 +166,8 @@ h3{
   margin-left: 60px;
   width: 500px;
   height: 65px;
-  float: left;
+
   color: dodgerblue;
-  clear:right;
   font-size: 20px;
   margin-bottom: 25px;
   padding-left: 10px;
@@ -178,7 +176,7 @@ h3{
 .t4 {
   margin-left: 60px;
   text-align: left;
-  float: left;
+
   width: 500px;
   font-family:'Open Sans', sans-serif;
   color: black;
@@ -194,7 +192,7 @@ h5 {
 }
 .t5 {
   font-family:'Open Sans', sans-serif;
-  float: right;
+
   width: 240px;
   height: 150px;
   margin-top: -45px;
@@ -216,4 +214,8 @@ h5 {
 .buttons {
   width: 400px;
   height: 25px;
+}
+.rbody{
+  @include span-columns(4);
+  @include shift(2);
 }
