@@ -136,6 +136,46 @@ h2.header {
   }
 }
 
+.main_wide {
+  @include span-columns(10);
+  @include shift(1);
+
+  h1 {
+    color: $darkblue;
+    font-family: oswald;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 51px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: $royalblue;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-right: 3px;
+  }
+
+  h3 {
+    color: $lightgrey;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  p {
+    color: $darkgrey;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
 .quote {
   @include pad(10px 5px 10px 5px);
   border-left: 2px solid $lightgrey;
@@ -235,6 +275,7 @@ h2.sidebar {
 }
 
 .effect {
+  @include pad (0 0 15px 0);
   display: inline-block;
   text-align: center;
 
