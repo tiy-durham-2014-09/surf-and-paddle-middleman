@@ -2,19 +2,36 @@
 @import "neat";
 
 $footer_size: 500px;
+$large_font: 20px;
 $standard_font: 16px;
+$small_font: 12px;
 $dark_blue: #3366CC;
 $light_blue: #5c7cab;
-$light_grey: #d7dbde;
+$light_grey: #c2c8cc;
 
 .name {
   color: $light_blue;
   font-weight: bold;
 }
 
+.peripheral-text {
+  color: $light_grey;
+  font-size: $small_font;
+}
+
+@mixin shade_blue($picture_path) {
+  background: url($picture_path) no-repeat center center scroll;
+  background-color: $dark_blue;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @mixin nav_bar {
   ul {
-    float: right;
+    // float: right;
     display: inline;
     list-style-type: none;
     margin: 0;
@@ -33,7 +50,14 @@ $light_grey: #d7dbde;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
           font-family: 'Oswald', sans-serif;
-          font-size: $standard_font;
+}
+
+body {
+  font-size: $standard_font;
+
+  h1 {
+    font-size: $standard_font * 3;
+  }
 }
 
 a {
@@ -51,13 +75,7 @@ a:visited {
 
 div.header {
   @include span-columns(12);
-  background: url('/images/beach.jpg') no-repeat center center fixed;
-  background-color: $dark_blue;
-  background-blend-mode: multiply;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include shade_blue('/images/beach.jpg');
   height: $footer_size;
 
   .company-info {
@@ -78,12 +96,14 @@ div.header {
     text-align: center;
     color: white;
     padding-top: $footer_size / 7;
-    font-size: $standard_font * 3;
 
+      h1 {
+        font-size: $standard_font * 5;
+      }
       p {
         font-size: $standard_font;
         color: black;
-        margin-top: -75px;
+        margin-top: -65px;
       }
   }
 
@@ -94,53 +114,97 @@ div.outer-container {
   border: 1px solid green;
 }
 
-div.posts {
+div.middle {
   @include span-columns(10);
   @include shift(1);
   border: 1px solid red;
-}
 
-div.posts .body {
-  @include span-columns(5 of 10);
-  border: 1px solid yellow;
-}
-
-div.posts .body h1 {
-  font-size: $standard_font * 3;
-}
-
-.blog_heading p {
-  color: $light_grey;
-}
-
-div.posts h4 {
-  color: $light_blue;
-  border-left:  medium solid $light_grey;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: $standard_font * 2;
-}
-
-.body .nav_bar {
-  @include nav_bar;
-  ul {
-    float: left;
-  }
-}
-
-div.posts .sidebar {
-  @include span-columns(5 of 10);
-  border: 1px solid blue;
-
-  .profile {
-    text-align: center;
+  .posts {
+    @include span-columns(6 of 10);
     border: 1px solid yellow;
-  }
 
+    .blog_content {
+
+      .bottom_nav_bar {
+        @include nav_bar;
+        ul {
+          float: left;
+        }
+      }
+
+      h4 {
+        color: $light_blue;
+        border-left:  medium solid $light_grey;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: $standard_font * 2;
+      }
+    }
+  }
+  .sidebar {
+    @include span-columns(4 of 10);
+    border: 1px solid blue;
+
+    .profile {
+      text-align: center;
+      border: 1px solid yellow;
+
+      p {
+        font-size: $small_font;
+      }
+    }
+
+    .advertisment {
+      @include shade_blue('/images/beachkayaks.jpg');
+      height: 225px;
+    }
+
+    .ad-about {
+      float: right;
+      text-decoration: underline;
+    }
+
+    .sidebar-section {
+      h3 {
+        color: $light_blue;
+        font-size: $large_font;
+      }
+    }
+  }
 }
+
 
 div.footer {
   @include span-columns(12);
-  background-color: gray;
+  @include nav_bar;
+  border: 1px solid blue;
+
+  .popular-posts {
+    text-align: center;
+    border: 1px solid red;
+  }
+
+  .other-posts {
+     @include span-columns(12);
+
+     border: 1px solid green;
+
+    .post1 {
+      @include shade_blue('/images/vacation1.jpg');
+      width: 25%;
+    }
+    .post2 {
+      @include shade_blue('/images/vacation2.jpg');
+      width: 25%;
+    }
+    .post3 {
+      @include shade_blue('/images/vacation3.jpg');
+      width: 25%;
+    }
+    .post4 {
+      @include shade_blue('/images/vacation4.jpg');
+      width: 25%;
+    }
+  }
 }
