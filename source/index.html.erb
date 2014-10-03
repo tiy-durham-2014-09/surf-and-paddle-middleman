@@ -7,7 +7,8 @@ title: Surf & Paddle
 <html>
   <head>
     <title>Surf &amp; Paddle Co. - Blog</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= stylesheet_link_tag %>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -16,9 +17,11 @@ title: Surf & Paddle
 
   <div class="header">
       <div class="container">
-        <div class="top_left">
-          <img src="/images/WaveLogo.png"> <span class="top_left_blog">SURF &amp; PADDLE CO. BLOG</span>
-        </div>
+        <span class="top_left">
+          <img src="/images/WaveLogo.png">
+        </span>
+          <span class="top_left_blog">SURF &amp; PADDLE CO. BLOG</span>
+        </span>
         <div class="top_right">
           ABOUT &nbsp;&nbsp;&nbsp;&nbsp;SEARCH &nbsp;<i class="fa fa-search"></i>
         </div>
@@ -34,64 +37,67 @@ title: Surf & Paddle
       <div class="left_headline">
         <h1>A FANTASTIC ENGAGING HEADLINE GOES HERE</h1>
       </div>
-      <div class="byline"><img src="http://i.imgur.com/Yid95bP.png" height="30" width="30"> <font color="#256B9E">Annie Kitten</font> on Monday, June 7th 9:22pm
-      </div>
 
-      <p class="paragraph_1">
+      <table>
+      <tr>
+        <td><span class="byline"><img src="http://i.imgur.com/Yid95bP.png"></span></td>
+        <td><span class="author_left_name">Annie Kitten</span> on Monday, June 7th 9:22pm</td>
+      </tr>
+    </table>
+
+      <p class="left_paragraphs">
 Tattooed swag VHS wayfarers occupy whatever. Swag Brooklyn single-origin coffee mlkshk selfies. Gentrify Marfa Thundercats before they sold out Godard cornhole. Chambray messenger bag Schlitz, deep v Austin occupy cliche Pitchfork. Hashtag next level bespoke, cray 90's photo booth Portland beard.
       </p>
 
-      <p class="paragraph_2">
+      <p class="left_paragraphs">
 Vegan artisan wolf irony. Odd Future gentrify paleo bicycle rights Banksy. Truffaut flannel whatever, organic bitters four loko heirloom Schlitz vegan you.
       </p>
 
       <blockquote>"WHAT IS THIS I CAN'T EVEN..."</blockquote>
 
-      <p class="paragraph_3">
+      <p class="left_paragraphs">
 Fashion axe Cosby sweater pork belly, Etsy quinoa organic swag. Normcore quinoa Thundercats ethical biodiesel selfies, lomo 3 wolf moon Williamsburg cardigan plaid chillwave scenester beard. Farm-to-table scenester letterpress distillery, salvia Thundercats drinking vinegar Tumblr pork belly Bushwick before they sold out mumblecore.
       </p>
 
-      <p class="paragraph_4">
+      <p class="left_paragraphs">
 VHS. Pinterest mlkshk squid, vinyl stumptown polaroid flexitarian. Shoreditch swag blog pork belly, pug banjo fap PBR&amp;B synth mumblecore freegan cardigan mustache chia. Chillwave Cosby sweater locavore, salvia bespoke Odd Future selfies squid pour-over yr flannel ugh skateboard occupy. Readymade Portland Bushwick, tofu Marfa banh mi sustainable McSweeney's dreamcatcher sartorial Brooklyn.
       </p>
 
       <table>
         <tr>
           <td>
-      <a href="http://http://www.dogpile.com/" class="comments_button"><i class="fa fa-comment"></i>&nbsp; Read Comments</a>
-    </td>
-    <td>
-      <a href="http://http://www.winamp.com/" class="read_later_button"><i class="fa fa-cloud-upload"></i>&nbsp; Read Later</a>
-    </td>
-    <td>
-      <a href="http://archiveteam.org/index.php?title=GeoCities" class="share_button"><i class="fa fa-share-square-o"></i>&nbsp; Share This Post</a>
-    </td>
-  </tr>
-</table>
+            <a href="http://www.dogpile.com/" class="comments_button" target="_blank"><i class="fa fa-comment"></i>&nbsp; Read Comments</a>
+          </td>
+          <td>
+            <a href="http://www.winamp.com/" class="read_later_button" target="_blank"><i class="fa fa-cloud-upload"></i>&nbsp; Read Later</a>
+          </td>
+          <td>
+              <a href="http://archiveteam.org/index.php?title=GeoCities" class="share_button" target="_blank"><i class="fa fa-share-square-o"></i>&nbsp; Share This Post</a>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <div class="right">
       <div class="author_right_picture" align="center">
       </div>
-      <p class = "author_right_name">
+        <p class = "author_right_name">
       ANNIE KITTEN</p>
-      <p class="social_right">
+        <p class="social_right">
         Twitter &nbsp; Facebook &nbsp; Instagram
-    </p>
-      <!-- A few returns underneath that a picture that takes up the width of the right div. w/ a (GREY) right-aligned About this Ad underneath it -->
+        </p>
       <div class="picture_right">
       </div>
-        <div class="picture_right_link">
-        <a href="http://www.simcity.com/en_US/product/simcity2000">About this Ad</a>
+      <div class="picture_right_link">
+        <a href="http://www.simcity.com/en_US/product/simcity2000" target="_blank">About this Ad</a>
       </div>
-      <br><br>
-      <!-- A few returns underneath that (BLUE)--> <div class="sidebar_heading"><font color="#256B9E">SIDEBAR SECTION HEADING</font></div>
-      <!-- 7 small lines of grey text -->
+    <br>
+    <br>
+      <div class="sidebar_heading">SIDEBAR SECTION HEADING</div>
       <p class="right_paragraph">
 Pour-over. Wes Anderson keffiyeh ethical, street art Kickstarter four loko disrupt cray XOXO mlkshk you probably haven't heard of them. Artisan aesthetic hoodie keffiyeh pickled Marfa +1 street art Tumblr Truffaut fixie Neutra messenger bag.
       </p>
     </div>
   </div>
-
 </body>
 </html>
