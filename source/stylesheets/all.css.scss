@@ -1,0 +1,413 @@
+@import "bourbon";
+@import "neat";
+
+$std_tint: rgba(50, 100, 205, .80);
+$royalblue: #285799;
+$darkblue: #18314e;
+$lightgrey: #a1b2be;
+$darkgrey: #56626c;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: open sans;
+}
+
+.wrapper {
+  @include outer_container();
+  max-width: em(965);
+}
+
+div.header {
+    @include background-image(linear-gradient($std_tint,$std_tint),url("../images/waves.jpg"));
+    @include outer_container();
+    @include pad(7px 0 0 0);
+    height:389px;
+  }
+
+h1.header {
+    @include span-columns(12);
+    @include omega();
+    @include pad (100px 0 0 0);
+    margin: 0;
+    color: white;
+    font-size: 78px;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+    line-height: 78px;
+    text-align: center;
+    text-shadow: 2px 2px $darkblue;
+    text-transform: uppercase;
+  }
+
+h2.header {
+    @include span-columns(12);
+    @include omega();
+    color: $darkblue;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+.left_tools {
+  @include span-columns(5);
+  @include shift(1);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  text-transform: uppercase;
+  a {
+    color: $darkblue;
+    }
+  img {
+    vertical-align: middle;
+  }
+}
+
+.right_tools {
+  @include span-columns(6);
+  @include omega();
+  text-align: center;
+  position: relative; top: -2px;
+
+  ul {
+    color: $darkblue;
+    font-family: oswald;
+    font-size: 13px;
+    line-height: 15px;
+    list-style: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    }
+
+  li {
+    display: inline;
+    @include pad(0 5px 0 5px);
+    }
+
+  i {
+    transform: rotate(90deg);
+    position: relative; top: -2px;
+    }
+}
+
+.page_body {
+  @include outer_container();
+  @include pad(50px 0 0 0);
+}
+
+.main {
+  @include span-columns(6);
+  @include shift(1);
+
+  h1 {
+    color: $darkblue;
+    font-family: oswald;
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 51px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: $royalblue;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-right: 3px;
+  }
+
+  h3 {
+    color: $lightgrey;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  p {
+    color: $darkgrey;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+.quote {
+  @include pad(10px 5px 10px 5px);
+  border-left: 2px solid $lightgrey;
+  color: $royalblue;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.right_pane {
+  @include span-columns(3);
+  @include shift(1);
+  @include omega();
+  text-align: center;
+
+  h1 {
+    color: #3269b9;
+    display: block;
+    font-family: arial;
+    font-size: 11.5px;
+    font-weight: lighter;
+    line-height:12px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    color: $lightgrey;
+    font-size: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+}
+
+.avatar {
+  border-radius: 31px;
+  @include background-image(linear-gradient($std_tint,$std_tint),url("../images/dolphin.jpg"));
+  background-size: 80px 80px;
+  background-position: 30% -10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 62px;
+  height: 62px;
+}
+
+.small_avatar {
+  width: 30px;
+  height: 28px;
+  border-radius: 15px;
+  @include background-image(linear-gradient($std_tint,$std_tint),url("../images/dolphin.jpg"));
+  background-size: 45px 45px;
+  background-position: 30% -10%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+div.ad {
+  @include background-image(linear-gradient($std_tint,$std_tint),url("../images/taken2.jpg"));
+  background-size: 205px;
+  height: 150px;
+  margin-top: 15px;
+}
+
+.ad_disclaimer1 {
+  color: $lightgrey;
+  font-size: 10px;
+  text-decoration: underline;
+  text-align: right;
+}
+
+h2.sidebar {
+  color: $royalblue;
+  font-family: oswald;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sidebar_text {
+  color: $darkgrey;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.effect {
+  display: inline-block;
+  text-align: center;
+
+ .button_ico {
+    background-color: $darkgrey;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    height: 23px;
+    width: 24px;
+  }
+
+  .button {
+    background-color: $lightgrey;
+    color: white;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 5px;
+    position: relative; top: -1px;
+  }
+}
+
+.effect:hover {
+
+  .button_ico {
+    background-color: $darkblue;
+    color: white;
+  }
+
+  .button {
+    background-color: $royalblue;
+    color: white;
+  }
+}
+
+.feature_posts {
+  @include outer_container();
+  max-width: em(965);
+  position: relative;
+}
+
+div.more {
+  background-color: white;
+  color: $darkblue;
+  width: 100%;
+  text-align: center;
+  font-family: oswald;
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+
+.posts {
+  @include outer_container();
+  background-color: white;
+  height: 245px;
+}
+
+div.post_effect:hover .post {
+  color: white;
+}
+
+div.post1 {
+  @include span-columns(3);
+  @include pad(10px 10px 10px 10px);
+  @include background-image(linear-gradient($std_tint,$std_tint),url("../images/homer.gif"));
+  width: 241px;
+  height: 245px;
+}
+
+div.post_effect:hover .post1 {
+  background:
+  linear-gradient(rgba(50, 100, 205, 0.4),rgba(50, 100, 205, 0.4)),
+    url("../images/homer.gif");
+}
+
+div.post2 {
+  @include span-columns(3);
+  @include pad(10px 10px 10px 10px);
+  @include background-image(linear-gradient($std_tint,$std_tint),url("../images/stewie.gif"));
+  width: 241px;
+  height: 245px;
+}
+
+div.post_effect:hover .post2 {
+  background:
+  linear-gradient(rgba(50, 100, 205, 0.4),rgba(50, 100, 205, 0.4)),
+    url("../images/stewie.gif");
+}
+
+div.post3 {
+  @include span-columns(3);
+  @include pad(10px 10px 10px 10px);
+  @include background-image(linear-gradient($std_tint,$std_tint),url("../images/homer2.jpg"));
+  width: 241px;
+  height: 245px;
+}
+
+div.post_effect:hover .post3 {
+  background:
+  linear-gradient(rgba(50, 100, 205, 0.4),rgba(50, 100, 205, 0.4)),
+    url("../images/homer2.jpg");
+}
+
+div.post4 {
+  @include span-columns(3);
+  @include pad(10px 10px 10px 10px);
+  @include omega();
+  @include background-image(linear-gradient($std_tint,$std_tint),url("../images/hornet.png"));
+  width: 242px;
+  height: 245px;
+}
+
+div.post_effect:hover .post4 {
+  background:
+  linear-gradient(rgba(50, 100, 205, 0.4),rgba(50, 100, 205, 0.4)),
+    url("../images/hornet.png");
+}
+
+a.post {
+  font-family: oswald;
+  font-size: 22px;
+  color: $darkblue;
+  vertical-align: bottom;
+  border: 0;
+}
+
+a.post:hover {
+  color: white;
+}
+
+.footer {
+  @include outer_container;
+  @include pad (15px 0 15px 0);
+  background-color: $darkblue;
+  height: 70px;
+}
+
+.footer_logo {
+  @include span-columns(5);
+  @include shift (1);
+  font-size: 10px;
+  font-weight: 300;
+
+  img {
+    margin-left: 0;
+    width: 36px;
+    vertical-align: top;
+  }
+
+  a {
+    color: #CCCCCC;
+  }
+
+  span {
+    vertical-align: middle;
+    position: relative; top: 9px;
+  }
+
+}
+
+.footer_nav {
+  @include span-columns(5);
+  @include shift(1);
+  @include omega();
+  color: #CCCCCC;
+  font-size: 10px;
+  font-weight: 300;
+  li  {
+    display: inline-block;
+    list-style-type: none;
+  }
+}
