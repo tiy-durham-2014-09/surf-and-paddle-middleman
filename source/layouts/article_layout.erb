@@ -1,6 +1,32 @@
 <% wrap_layout :layout do %>
   <article>
-    <%= current_page.data.title %>
-    <%= yield %>
+    <div class="article_column">
+      <div class="article_title">
+        <%= current_page.data.title %>
+        </div>
+      <div class="post_info">
+        <img class="poster_pic" src="<%= data.authors[current_page.data.author][:portrait] %>">
+        <span class="author_name">
+          <%= data.authors[current_page.data.author][:name] %>
+        </span>
+        on
+        <%= current_page.data.date %>
+      </div>
+      <%= yield %>
+      <div class="post_footer">
+        <div class="post_option_icon">
+          <i class="fa fa-comment"></i>
+        </div>
+        <span class="post_option">Read Comments</span>
+        <div class="post_option_icon">
+          <i class="fa fa-cloud-upload"></i>
+        </div>
+        <span class="post_option">Read Later</span>
+        <div class="post_option_icon">
+          <i class="fa fa-share-square-o"></i>
+        </div>
+        <span class="post_option">Share This Post</span>
+      </div>
+    </div>
   </article>
 <% end %>

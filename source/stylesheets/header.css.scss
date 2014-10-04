@@ -1,8 +1,4 @@
 @import "bourbon";
-$visual_grid: true;
-$visual-grid-color: red;
-$visual-grid-index: front;
-$visual-grid-opacity: 0.1;
 @import "neat";
 @charset "utf-8";
 
@@ -20,7 +16,7 @@ footer {
 
 section {
   @include outer-container;
-  background-color: rgb(210, 210, 210);
+  // background-color: rgb(210, 210, 210);
 
 
   .blog_name {
@@ -28,7 +24,7 @@ section {
     font-family: "Open Sans";
     font-weight: 600;
     margin-top: 10px;
-    background-color: rgb(240, 240, 220);
+    // background-color: rgb(240, 240, 220);
   }
 
   .title_tools {
@@ -38,7 +34,7 @@ section {
     font-size: 19px;
     font-weight: 400;
     margin-top: 20px;
-    background-color: rgb(240, 240, 220);
+    // background-color: rgb(240, 240, 220);
   }
 
 }
