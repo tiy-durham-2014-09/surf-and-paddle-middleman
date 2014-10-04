@@ -1,4 +1,7 @@
 @charset "utf-8";
+@import "bourbon";
+@import "neat";
+@import "normalize.css";
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -151,3 +154,20 @@ body {
     width: 100%;
     color: blue;
   }*/
+
+
+
+
+/*.topbanner {
+
+  @include span-columns(12);
+  // width: 965px;
+  height: 392px;
+  background-size: 100%;
+  background:
+  linear-gradient(
+  rgba(5, 44, 73, .45),
+  rgba(5, 44, 73, .45)
+  ),
+  url("http://truescifi.files.wordpress.com/2008/12/big-wave-surfer.jpg");*/
+}
