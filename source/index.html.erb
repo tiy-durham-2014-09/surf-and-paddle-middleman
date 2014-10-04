@@ -13,11 +13,11 @@ title: Surf & Paddle
     </div>
     <div class="authors">
       <h1>Authors</h1>
-      <ol>
+      <ul>
         <% data.authors.each do |a| %>
-          <li><%= a %></li>
+          <li><%= a[0] %></li>
         <% end %>
-      </ol>
+      </ul>
     </div>
     <div class="sidebar">
       <img src="images/dolphin.png">
