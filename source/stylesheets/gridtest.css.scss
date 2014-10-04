@@ -7,14 +7,24 @@ $max-width: em(960);
 // $visual-grid: true !default;
 // $visual-grid-color: black !default;
 
+.title {
+  margin: 0 auto;
+  background-image: url("../images/hokusai.jpg");
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
 section {
     @include outer-container;
     background-color: rgb(240, 240, 220);
-
-    .title {
-      margin: 0 auto;
-      background-image: url("../images/hokusai.jpg");
-    }
 
     article {
         @include span-columns(7);
@@ -29,6 +39,7 @@ section {
         }
 
     }
+
     aside {
       @include span-columns(3);
       background-color: rgb(64, 165, 221);

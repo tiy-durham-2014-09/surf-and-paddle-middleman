@@ -11,6 +11,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+page "/articles/*", :layout => :article_layout
+
 # Per-page layout changes:
 #
 # With no layout

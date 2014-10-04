@@ -75,9 +75,7 @@
   color: #707070;
   line-height: 1.65;
   letter-spacing: -0.5px;
-$visual-grid: true !default;
-$visual-grid-color: red;
-$visual-grid-index: front;
+
   .left_column{
     float: left;
     width: 600px;
@@ -117,7 +115,7 @@ $visual-grid-index: front;
       }
     }
 
-    .quote{
+    .blockquote{
       font-size: 28px;
       color: RGB(36, 99, 157);
       border-left: 3px solid #ccc;

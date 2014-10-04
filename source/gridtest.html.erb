@@ -1,8 +1,19 @@
-
+<div>
 <section>
-  <div class="title"></div>
   <article>
-    <p>asdfasdfasdf</p>
+    <div>
+      <ul>
+        Our Authors: <% data.authors.each do |k, v| %>
+                    <li><%= v[:name] %><img src="<%= v[:portrait] %>" style="width: 300;">
+                      <!-- <ul>
+                        <%# v[:links].each do |k, v| %>
+                        <li><%#= k + ": " + v %></li>
+                        <%# end %>
+                      </ul> -->
+                    </li>
+                    <% end %>
+        </ul>
+    </div>
     <div>
       <span class="button">button</span>
       <span class="button">button</span>
@@ -11,3 +22,4 @@
   </article>
   <aside>ad</aside>
 </section>
+</div>
