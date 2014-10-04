@@ -1,6 +1,6 @@
 ---
 category: article
-title: "Translation of Sketch of The Analytical Engine Invented by Charles Babbage"
+title: "Translation of \"Sketch of The Analytical Engine Invented by Charles Babbage\""
 date: "October, 1842"
 author: lovelace
 ---
