@@ -32,6 +32,12 @@
 # Helpers
 ###
 
+helpers do
+  def pretty_date(date)
+    date.strftime('%B %d, %Y')
+  end
+end
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
