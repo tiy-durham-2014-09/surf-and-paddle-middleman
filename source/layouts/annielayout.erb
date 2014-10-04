@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <!-- Uncomment the following if you want to use normalize -->
+    <!-- <%= stylesheet_link_tag "normalize" %> -->
+
+    <%= stylesheet_link_tag "all" %>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <title></title>
+
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <div class="header">
+      <div class="topright"> <img class="toppic" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/895339/L4htgjvExw2oUzz/WaveLogo.png"/>
+         TECH &amp; PADDLE CO. BLOG
+      </div>
+      <div class="topleft"> ABOUT  SEARCH
+      </div>
+      <div> <h1 class="topmain">TECH &amp; PADDLE CO.
+      </h1>
+      <h2 class="submain" >An Ironyard Academy Project Est. Summer 2014
+      </h2>
+      </div>
+  </div>
+  <!-- Left side of body -->
+<div class="lbody">
+
+    <div class="bodytop">ANNIE KNOWS WHAT GOING ON WITH COMPUTERS
+    </div>
+        <div class="smalld">
+          <img class="smalld1" src="../images/smallannie.jpg"/>
+             <span class="bluename2">Annie Easley</span>
+             November 23, 3045
+        <div class="t1"><%= lorem.sentences 4 %>
+          <p> <%= lorem.sentences 2 %>
+          </p>
+          <div class="t3"><h4>"I DIDNT NEED NASA, NASA NEEDED ME"</h4>
+          </div>
+          <div class="t4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum id erat id elementum. Mauris ac consectetur sem. Integer ullamcorper, nunc et condimentum ultrices, neque, eu <span class="roll">finibus dolor diam at </span>nunc. Pellentesque habitant morbi tristique senectus et netus et mal esuaimentum prec turpis.
+            <p>
+            <%= lorem.sentences 5 %>
+            </p>
+          </div>
+          <div class="bot">
+        <img class="buttons" src="../images/Buttons.png"/>
+        </div>
+        </div>
+        </div>
+
+
+
+
+</div>
+<div class="rbody">
+
+  <div>
+    <img class="big_circle" src="../images/smallannie.jpg"/>
+    </div>
+    <div class="dword">
+      <p class="bluename1">Annie Easley</p>
+         <span class="sword"><a href="http://www.jsc.nasa.gov/history/oral_histories/NASA_HQ/Herstory/EasleyAJ/EasleyAJ_8-21-01.htm">Homepage</a>   <a href="https://en.wikipedia.org/wiki/Annie_Easley">Wikipedia</a></span>
+    </div>
+    <div>
+      <img class="small_pic" src="../images/annie.jpg"/>
+    </div>
+    <div class="sidebar"><h5>SIDEBAR SECTION HEADING</h5>When people have their biases and prejudices, yes, I am aware. My head is not in the sand. But my thing is, if I can't work with you, I will work around you. I was not about to be so discouraged that I'd walk away. That may be a solution for some people, but it's not mine.
+You're never too old, and if you want to, as my mother said, you can do anything you want to, but you have to work at it.
+    </div>
+</div>
+
+<div >
+  <img class="footer" src="../images/footer.png"/>
+</div>
+<%= yield %>
+
+
+  </body>
+</html>

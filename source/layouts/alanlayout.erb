@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <!-- Uncomment the following if you want to use normalize -->
+    <!-- <%= stylesheet_link_tag "normalize" %> -->
+
+    <%= stylesheet_link_tag "all" %>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <title></title>
+
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <div class="header">
+      <div class="topright"> <img class="toppic" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/895339/L4htgjvExw2oUzz/WaveLogo.png"/>
+         TECH &amp; PADDLE CO. BLOG
+      </div>
+      <div class="topleft"> ABOUT  SEARCH
+      </div>
+      <div> <h1 class="topmain">TECH &amp; PADDLE CO.
+      </h1>
+      <h2 class="submain" >An Ironyard Academy Project Est. Summer 2014
+      </h2>
+      </div>
+  </div>
+  <!-- Left side of body -->
+<div class="lbody">
+
+    <div class="bodytop">ALAN TURING MAN OF THE YEAR
+    </div>
+        <div class="smalld">
+          <img class="smalld1" src="../images/smallalan.jpg"/>
+             <span class="bluename2">Alan Turing</span>
+             November 23, 3045
+        <div class="t1"><%= lorem.sentences 4 %>
+          <p> <%= lorem.sentences 2 %>
+          </p>
+          <div class="t3"><h4>"SOMETIMES YOU GOT TO HOLD YOUR BREATH AND JUMP"</h4>
+          </div>
+          <div class="t4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum id erat id elementum. Mauris ac consectetur sem. Integer ullamcorper, nunc et condimentum ultrices, neque, eu <span class="roll">finibus dolor diam at </span>nunc. Pellentesque habitant morbi tristique senectus et netus et mal esuaimentum prec turpis.
+            <p>
+<%= lorem.sentences 5 %>
+            </p>
+          </div>
+          <div class="bot">
+        <img class="buttons" src="../images/Buttons.png"/>
+        </div>
+        </div>
+        </div>
+
+
+
+
+</div>
+<div class="rbody">
+
+  <div>
+    <img class="big_circle" src="../images/smallalan.jpg"/>
+    </div>
+    <div class="dword">
+      <p class="bluename1">Alan Turing</p>
+         <span class="sword"><a href="https://twitter.com/Alan_M_Turing">Twitter</a> <a href="https://www.facebook.com/AlanTuringCodebreaker">Facebook</a> <a href="https://en.wikipedia.org/wiki/Alan_Turing">Wikipedia</a></span>
+    </div>
+    <div>
+      <img class="small_pic" src="../images/alan.jpg"/>
+    </div>
+    <div class="sidebar"><h5>SIDEBAR SECTION HEADING</h5><%= lorem.sentences 3 %>
+    </div>
+</div>
+
+<div >
+  <img class="footer" src="../images/footer.png"/>
+</div>
+<%= yield %>
+
+
+  </body>
+</html>
