@@ -1,0 +1,65 @@
+@import "bourbon";
+$visual_grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+@import "neat";
+@charset "utf-8";
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  height: 524px;
+  margin: 0 auto;
+  // color: rgb(20, 42, 60);
+  background-image: url("../images/hokusai.jpg");
+}
+
+section {
+  @include outer-container;
+  background-color: rgb(210, 210, 210);
+
+
+  .blog_name {
+    @include span-columns(4);
+    font-family: "Open Sans";
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: rgb(240, 240, 220);
+  }
+
+  .title_tools {
+    @include span-columns(2);
+    float: right;
+    font-family: "Oswald";
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 20px;
+    background-color: rgb(240, 240, 220);
+  }
+
+}
+
+.title_text {
+  font-family: "Open Sans";
+  font-size: 110px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0;
+  text-shadow: 0 2px 5px #455555;
+  margin-top: 225px;
+  letter-spacing: -5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-align: center;
+  font-size: 15px;
+  line-height: 0;
+}
