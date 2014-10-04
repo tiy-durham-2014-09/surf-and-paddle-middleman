@@ -9,9 +9,15 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <!-- Uncomment the following if you want to use normalize -->
-    <!-- <%= stylesheet_link_tag "normalize" %> -->
+    <!-- name: data.authors.turing.name
+    Twitter: data.authors.links[0].Twitter
+    Wikipedia: data.authors.links[1].Wikipedia
+    Facebook: data.authors.links[2].Facebook -->
 
+
+    <%= stylesheet_link_tag "normalize" %>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "all" %>
   </head>
 
@@ -19,5 +25,6 @@
     <%= partial "header" %>
     <%= yield %>
     <%= partial "footer" %>
+
   </body>
 </html>

@@ -1,0 +1,46 @@
+<% wrap_layout :layout do %>
+
+<!-- create a helper out of this later -->
+
+<% name = data.authors.turing.name %>
+
+<% content_for :twitter do %>
+  <%= data.authors.turing.links[0].Twitter %>
+<% end %>
+
+<% content_for :facebook do %>
+  <%= data.authors.turing.links[0].Facebook %>
+<% end %>
+
+<% content_for :wiki do %>
+  <%= wiki = data.authors.turing.links[1].Wikipedia %>
+<% end %>
+
+
+
+<div class="middle">
+
+  <div class="posts">
+    <div class="blog_heading">
+      <h1>A FANTASTIC ENGAGING HEADLINE GOES HERE</h1>
+      <p class="peripheral-text">
+        <i class="fa fa-user"></i>
+        <span class="name"><%= name %></span> on Monday, Oct. 7th 9:22pm
+      </p>
+    </div>
+    <div class="blog_content">
+      <%= yield %>
+      <div class="bottom_nav_bar">
+        <ul>
+          <li><i class="fa fa-comment"></i>Read Comments</li>
+          <li><i class="fa fa-cloud-upload"></i>Read Later</li>
+          <li><i class="fa fa-share-square"></i>Share This Post</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <%= partial "sidebar" %>
+</div>
+
+
+<% end %>

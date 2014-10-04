@@ -47,6 +47,12 @@
 #   end
 # end
 
+helpers do
+  def author_full_name(half_name)
+    return data.authors.turing
+  end
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'

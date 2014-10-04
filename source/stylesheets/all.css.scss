@@ -5,7 +5,7 @@ $footer_size: 500px;
 $large_font: 20px;
 $standard_font: 16px;
 $small_font: 12px;
-$dark_blue: #3366CC;
+$dark_blue: #6389AE;
 $light_blue: #5c7cab;
 $light_grey: #c2c8cc;
 
@@ -17,6 +17,14 @@ $light_grey: #c2c8cc;
 .peripheral-text {
   color: $light_grey;
   font-size: $small_font;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 @mixin shade_blue($picture_path) {
@@ -109,18 +117,16 @@ div.header {
 
 }
 
-div.outer-container {
+div.middle {
   @include outer-container;
+  @include span-columns(12);
   border: 1px solid green;
+  display: inline-block;
 }
 
-div.middle {
-  @include span-columns(10);
-  @include shift(1);
-  border: 1px solid red;
-
   .posts {
-    @include span-columns(6 of 10);
+    @include shift(1);
+    @include span-columns(6);
     border: 1px solid yellow;
 
     .blog_content {
@@ -143,7 +149,7 @@ div.middle {
     }
   }
   .sidebar {
-    @include span-columns(4 of 10);
+    @include span-columns(4);
     border: 1px solid blue;
 
     .profile {
@@ -172,39 +178,104 @@ div.middle {
       }
     }
   }
-}
+
 
 
 div.footer {
   @include span-columns(12);
-  @include nav_bar;
   border: 1px solid blue;
+  height: $footer_size;
 
   .popular-posts {
     text-align: center;
     border: 1px solid red;
   }
 
-  .other-posts {
-     @include span-columns(12);
+  .post-preview {
+    @include span-columns(12);
+    @include nav_bar;
+    height: 50%;
+    border: 1px solid green;
+    position: relative;
 
-     border: 1px solid green;
+    h4 {
+        position: absolute;
+        bottom: 0;
+        font-size: $large_font;
+        text-wrap: normal;
+        padding-left: 10px;
+    }
 
     .post1 {
       @include shade_blue('/images/vacation1.jpg');
       width: 25%;
+      height: 100%;
     }
+
     .post2 {
       @include shade_blue('/images/vacation2.jpg');
       width: 25%;
+      height: 100%;
+      color: white;
     }
     .post3 {
       @include shade_blue('/images/vacation3.jpg');
       width: 25%;
+      height: 100%;
     }
     .post4 {
       @include shade_blue('/images/vacation4.jpg');
       width: 25%;
+      height: 100%;
     }
   }
+
+
+  .bottom-nav {
+    @include span-columns(12);
+    @include outer-container;
+    border: 1px solid green;
+    height: 100px;
+    background-color: #112030;
+
+    .bottom-left {
+      @include shift(1);
+      @include span-columns(5);
+      border: 1px solid red;
+      height: 100px;
+
+      .iron_yard_holder {
+        height: 100px;
+        display: inline-block;
+        @include vertical-align;
+
+        img {
+          height: 50px;
+          @include vertical-align;
+        }
+      }
+
+      .copyright {
+        margin-left: 10px;
+        height: 100px;
+        display: inline-block;
+        @include vertical-align;
+        color: white;
+      }
+    }
+  }
+
+    .bottom-right {
+      @include span-columns(5);
+      @include nav_bar;
+      border: 1px solid red;
+      height: 100%;
+      color: white;
+
+      ul {
+        @include vertical-align;
+        float: right;
+      }
+
+    }
 }
