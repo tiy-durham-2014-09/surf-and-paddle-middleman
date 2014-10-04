@@ -3,37 +3,21 @@ title: Progenitors of Programming
 ---
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-</head>
+<%= partial "/layouts/partials/head" %>
 
 <body>
-  <header>
-    <div class="top-nav-bar">
-      <div class="nav-buttons">
-        <ul>
-          <li>ABOUT</li>
-          <li>SEARCH<i class="fa fa-search"></i></li>
-        </ul>
-      </div>
-      <div class="logo-blog">
-        <ul>
-          <img src="../images/WaveLogo.png"></img>
-          <li>SURF & PADDLE CO. BLOG</li>
-        </ul>
-      </div>
-    </div>
-    <h1>progenitors of programming</h1>
-    <h2> An Iron Yard Academy Project Fall 2014</h2>
-  </header>
-
+  <%= partial "/layouts/partials/header" %>
   <div class="container">
     <section class="left">
+      <!-- <% if content_for?(:left) %>
+        <div class="article__content">
+          
+          <%= yield_content :article %>
+        </div>
+      <% end %> -->
       <h3>A FANTASTIC ENGAGING HEADLINE GOES HERE</h3>
-current_page.data.title
+      <%=current_page.data.title%>
+
       <div class="credits">
         <ul>
           <li><div class="avatar1"></div></li>
@@ -43,10 +27,10 @@ current_page.data.title
       </div>
       <div class="text">
         <article>
-          <!-- <%
-            date.pretty_date
+
+            <!-- date.pretty_date
             truncate("Once upon a time in a world far far away", :length => 8)
-            lorem.words 5 ??? -->
+            lorem.words 5 ??? --> -->
         </article>
       <!-- comment icon fa-comment-o [&#xf0e5;] -->
       <!-- cloud upload icon  fa-cloud-upload [&#xf0ee;] -->
