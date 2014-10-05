@@ -1,15 +1,15 @@
 @import "bourbon";
-$visual_grid: true !default;
-$visual-grid-index: back;
-$visual-grid-color: pink;
-// $visual-grid-index: front;
-$visual-grid-opacity: 0.2;
+// $visual_grid: true !default;
+// $visual-grid-index: back;
+// $visual-grid-color: salmon;
+// // $visual-grid-index: front;
+// $visual-grid-opacity: 0.1;
 $max-width: em(965) !default;
 @import "neat";
 @import "normalize.css";
 
 
-// Defaults and variables
+// Variables and defaults
 
 $gradient: rgba(5, 44, 73, .45);
 
@@ -22,7 +22,6 @@ body {
 
 .page-wrapper{
   @include outer-container;
-  border: 5px solid black;
 }
 
 ul {
@@ -50,8 +49,7 @@ ul {
   .top-left{
     @include span-columns(4);
     @include shift(1);
-    margin-top: 6px;
-    border: 5px solid LightSteelBlue;
+    margin-top: 8px;
     img{
       vertical-align: middle;
     }
@@ -63,7 +61,6 @@ ul {
   .top-right{
     @include span-columns(3);
     @include shift(3);
-    border: 5px solid LightSteelBlue;
   }
 
   .center-text{
@@ -73,7 +70,6 @@ ul {
     color: white;
     font-size: 67px;
     text-align: center;
-    // border: 5px solid LightSteelBlue;
   }
 
   .subtext{
@@ -81,19 +77,16 @@ ul {
     @include shift(2);
     margin-top: -50px;
     font-size: 10px;
-    color: IndianRed ;
+    color: IndianRed;
     text-align: center;
-    // border: 5px solid LightSteelBlue;
   }
 }
 
 .left {
-  border: 5px solid blue;
   @include span-columns(6.5);
   @include shift(1/2);
 
   h1{
-    border: 3px solid black;
     font-family: oswald;
     font-size: 47px
   }
@@ -134,7 +127,6 @@ ul {
 }
 
 .right{
-  border: 5px solid green;
   @include span-columns(4.5);
 
   .dolphin{
@@ -143,7 +135,6 @@ ul {
   }
 
   .blog-author{
-    border: 2px solid black;
     h5{
       text-align: center;
       margin: 0px;
@@ -161,13 +152,11 @@ ul {
   .kayak{
     @include shift(2.5);
     margin-top: 15px;
-    border: 5px solid red;
     width: 180px;
     height: 180px;
   }
 
   .side-text{
-    border: 2px solid red;
     @include shift(2);
     margin-right: 70px;
     font-size: 12px;
@@ -182,53 +171,48 @@ ul {
 }
 
 .popular{
-  border: 2px solid orange;
-  @include span-columns(12);
+  color: white;
 
   h2{
     text-align: center;
     font-family: oswald;
     font-size: 45px;
+    color: black;
+    @include span-columns(12);
   }
 
-  ul{
-    font-family: oswald;
-
     .barracuda{
-      border: 2px solid green;
       @include span-columns(3);
+      @include omega();
       background-size: cover;
       @include background-image(linear-gradient($gradient, $gradient), url("../images/barracuda.jpg"));
-      width: 250px;
+      width: 240px;
       height: 250px;
     }
+
     .turtle{
-      border: 2px solid green;
       @include span-columns(3);
+      @include omega();
       background-size: cover;
       @include background-image(linear-gradient($gradient, $gradient), url("../images/turtle.jpg"));
-      width: 250px;
+      width: 240px;
       height: 250px;
     }
+
     .piranha{
-      border: 2px solid green;
       @include span-columns(3);
+      @include omega();
       background-size: cover;
       @include background-image(linear-gradient($gradient, $gradient), url("../images/piranha.jpg"));
-      width: 250px;
+      width: 240px;
       height: 250px;
     }
 
     .whaleshark{
-      border: 2px solid green;
       @include span-columns(3);
       background-size: cover;
       @include background-image(linear-gradient($gradient, $gradient), url("../images/whaleshark.jpg"));
-      width: 250px;
+      width: 240px;
       height: 250px;
     }
-  }
-
-
-
 }
