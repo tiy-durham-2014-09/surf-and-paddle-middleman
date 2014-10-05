@@ -11,6 +11,7 @@ $max-width: 965px;
 .body {
 
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 10pt;
   color: rgb(160,179,192);
 
@@ -33,7 +34,6 @@ $max-width: 965px;
 
     a:hover{
       color: rgb(79,167,233);
-      transition-duration: .25s;
     }
 
     .header-links {
@@ -49,15 +49,13 @@ $max-width: 965px;
         .wave {
           height: 33px;
           width: 33px;
-          margin-top: 11px;
-          margin-left: 25px;
+          @include margin(11px null null 25px);
           float: left;
         }
 
         .blog {
           float: right;
-          padding-top: 17px;
-          padding-right: 27px;
+          @include padding(17px 27px null null);
           letter-spacing: -.25px;
           font-size: 9pt;
         }
@@ -109,7 +107,6 @@ $max-width: 965px;
     .post-column {
       @include span-columns(6);
       @include shift(1.5);
-      background-color: green;
 
       h2{
         font-family: 'Oswald', sans-serif;
@@ -143,17 +140,72 @@ $max-width: 965px;
         }
       }
 
-     .post{
+      .post{
         @include span-columns(12);
-        background-color: orange;
-      } 
+      }
+
+      .buttons {
+        @include span-columns(10);
+        height: 21px;
+        list-style: none;
+        display: inline-block;
+        font-size: 8pt;
+        color: white;
+
+        i {
+          font-size: 11pt;
+          float: left;
+          @include padding(null 4px null 4px);
+          margin-right: 4px;
+          background-color: RGB(85, 98, 102);
+        }
+
+        li {
+          background-color: RGB(151, 173, 180);
+          line-height: 20px;
+        }
+
+        .read-comments {
+          @include span-columns(4);
+        }
+
+        .read-later {
+          @include span-columns(3.3);
+        }
+
+        .share-post {
+          @include span-columns(4);
+        }
+
+        li:hover{
+          background-color: RGB(0, 95, 161);
+
+          i{
+            background-color: RGB(10, 42, 63);
+          }
+        }
+
+      }
+
     }
 
     .sidebar {
       @include span-columns(3);
       @include shift(.25);
       background-color: orange;
+    
+
+      h4 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 10pt;
+        color: rgb(0,95,161);
+        font-weight: 400;
+      }
+
+
     }
+
+
 
   }
 }
