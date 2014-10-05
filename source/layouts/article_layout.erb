@@ -1,6 +1,6 @@
 <% wrap_layout :layout do %>
-<article>
-  <div class="article_column">
+<section>
+  <article>
     <div class="article_title">
       <%= current_page.data.title %>
     </div>
@@ -27,26 +27,25 @@
       </div>
       <span class="post_option">Share This Post</span>
     </div>
-  </div>
-  <div class="side_column">
-    <div class="profile_frame">
-      <img class="profile_pic" src="<%= data.authors[current_page.data.author][:portrait] %>">
-      <div>
-        <%= data.authors[current_page.data.author][:name] %>
-      </div>
-      <% data.authors[current_page.data.author][:links].each do |h| %>
-        <% h.each do |k,v| %>
-          <a class="profile_site" href="<%= v %>"><%= k %></a>
+  </article>
+  <aside>
+    <div class="side_column">
+      <div class="profile_frame">
+        <img class="profile_pic" src="<%= data.authors[current_page.data.author][:portrait] %>">
+        <div>
+          <%= data.authors[current_page.data.author][:name] %>
+        </div>
+        <% data.authors[current_page.data.author][:links].each do |h| %>
+          <% h.each do |k,v| %>
+            <a class="profile_site" href="<%= v %>"><%= k %></a>
+            <% end %>
         <% end %>
-      <% end %>
+      </div>
+      <div class="tinted_ad"></div>
+      <p class="ad_info"><a class="subtle" href="http://www.ads.com">About this ad</a></p>
+      <div class="side_column_header">SIDEBAR SECTION BEHEADING</div>
+      <p>Cosmic ocean Cambrian explosion the ash of stellar alchemy and billions upon billions upon billions upon billions upon billions upon billions upon billions?</p>
     </div>
-    <br>
-    <br>
-    <div class="tinted_ad"></div>
-    <p class="ad_info"><a class="subtle" href="http://www.ads.com">About this ad</a></p>
-    <br>
-    <div class="side_column_header">SIDEBAR SECTION BEHEADING</div>
-    <p>Cosmic ocean Cambrian explosion the ash of stellar alchemy and billions upon billions upon billions upon billions upon billions upon billions upon billions?</p>
-  </div>
-</article>
+  </aside>
+</section>
 <% end %>
