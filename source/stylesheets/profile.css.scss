@@ -20,6 +20,13 @@
   margin-top: 75px;
 }
 
+.profile_pic:before {
+  background: linear-gradient(
+  rgba(25, 85, 145, 0.75),
+  rgba(25, 85, 145, 0.75)
+  );
+}
+
 .profile_site {
   text-decoration: none;
   color: rgb(170, 180, 185);

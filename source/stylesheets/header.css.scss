@@ -8,23 +8,26 @@ footer {
 }
 
 .title {
+
   height: 524px;
   margin: 0 auto;
   color: #032640;
-  background-image: url("../images/hokusai.jpg");
+  background:  linear-gradient(
+  rgba(25, 85, 145, 0.75),
+  rgba(25, 85, 145, 0.75)
+  ),
+  url("../images/hokusai.jpg");
+
 }
 
 section {
   @include outer-container;
-  // background-color: rgb(210, 210, 210);
-
 
   .blog_name {
     @include span-columns(4);
     font-family: "Open Sans";
     font-weight: 600;
     margin-top: 10px;
-    // background-color: rgb(240, 240, 220);
   }
 
   .title_tools {
@@ -34,7 +37,6 @@ section {
     font-size: 19px;
     font-weight: 400;
     margin-top: 20px;
-    // background-color: rgb(240, 240, 220);
   }
 
 }

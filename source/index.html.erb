@@ -1,25 +1,41 @@
-
 <section>
   <article>
     <!-- list each article title (which is a link to the full article page), author info line, text summary, and social buttons, ordered by date -->
-    <% sitemap.resources.each do |article| %>
-      <% if article.data[:category] == "article" %>
+    <% sitemap.resources.select do |a| %>
+      <% if a.data[:category] == "article" %>
         <div class="article_title">
-          <%= link_to article.data[:title], article.path %>
+          <%= link_to a.data[:title], a.path %>
         </div>
         <div class="post_info">
-          <img class="poster_pic" src="<%= data.authors[article.data.author][:portrait] %>">
+          <img class="poster_pic" src="<%= data.authors[a.data.author][:portrait] %>">
           <span class="author_name">
-            <%= data.authors[article.data.author][:name] %>
+            <%= data.authors[a.data.author][:name] %>
           </span>
           on
-          <%= article.data.date %>
+          <%= a.data.date %>
         </div>
         <div>
-          <%#= truncate_words(article, :length => 100) %>...
+          <%# binding.pry %>
+          <%= a %> <!-- aaargh how -->
+          <%#= truncate_words(a, :length => 100) %>...
+        </div>
+        <div class="post_footer">
+          <div class="post_option_icon">
+            <i class="fa fa-comment"></i>
+          </div>
+          <span class="post_option">Read Comments</span>
+          <div class="post_option_icon">
+            <i class="fa fa-cloud-upload"></i>
+          </div>
+          <span class="post_option">Read Later</span>
+          <div class="post_option_icon">
+            <i class="fa fa-share-square-o"></i>
+          </div>
+          <span class="post_option">Share This Post</span>
         </div>
       <% end %>
     <% end %>
+
   </article>
   <aside>
     <div class="side_column_header">SIDEBAR SECTION BEHEADING</div>
