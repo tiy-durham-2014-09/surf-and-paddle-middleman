@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import "normalize";
+@import "bourbon";
+$visual_grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+$max-width: 965px;
+@import "neat";
+
+.body {
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  color: rgb(160,179,192);
+
+  .header {
+    @include outer-container;
+    height: 390px;
+    background-image: url("http://www.picpicx.com/wp-content/uploads/2014/09/0467b2596d6b248a49cf08fe54ca100d.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.85);
+    color: rgb(0,51,82);
+
+    a {
+      text-decoration: none;
+      color: rgb(0,51,82);
+    }
+
+    a:visited {
+      color: rgb(0,51,82);
+    }
+
+    a:hover{
+      color: rgb(79,167,233);
+      transition-duration: .25s;
+    }
+
+    .header-links {
+      @include span-columns(10);
+      @include shift(1);
+      height: 30px;
+
+      .topleft {
+        @include span-columns(3.75);
+        height: 100%;
+        display: inline-block;
+
+        .wave {
+          height: 33px;
+          width: 33px;
+          margin-top: 11px;
+          margin-left: 25px;
+          float: left;
+        }
+
+        .blog {
+          float: right;
+          padding-top: 17px;
+          padding-right: 27px;
+          letter-spacing: -.25px;
+          font-size: 9pt;
+        }
+      }
+
+      ul {
+        @include span-columns(2.5);
+        @include shift(5.3); 
+        font-family: 'Oswald', sans-serif;
+        padding-left: 33px;
+        font-size: 10pt;
+        letter-spacing: .5px;
+        list-style: none;
+
+        .about-link {
+          float: left;
+        }
+
+        .search-link {
+          float: right;
+          padding-right: 11px;
+        }
+      }
+    }
+
+    .title {
+      @include span-columns(10);
+      @include shift(1);
+      line-height: 0px;
+      padding-top: 112px;
+      text-align: center;
+
+      h1 {
+        font-weight: 400;
+        font-size: 59pt;
+        letter-spacing: -3.7px;
+        color: white;
+      }
+
+      h5 {
+        font-size: 8pt;
+      }
+    }
+  }
+
+  .content {
+    @include outer-container;
+
+    .post-column {
+      @include span-columns(6);
+      @include shift(1.5);
+      background-color: green;
+
+      h2{
+        font-family: 'Oswald', sans-serif;
+        color: rgb(0,51,82);
+        font-size: 35pt;
+        letter-spacing: .5px;
+        line-height: 52px;
+        font-weight: 400;
+        margin: 47px 0 0 0;
+      }
+
+      .post-info {
+        @include span-columns(12); 
+        margin-top: 0;
+        display: inline;
+        font-size: 8pt;
+
+        .picture {
+          @include span-columns(1);
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          background-image: url("http://www.desibucket.com/db2/01/26669/26669.jpg");
+          background-size: cover;
+          box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.6);
+        }
+
+        .name-date {
+          @include span-columns(10);
+          padding-top: 6px;
+        }
+      }
+
+     .post{
+        @include span-columns(12);
+        background-color: orange;
+      } 
+    }
+
+    .sidebar {
+      @include span-columns(3);
+      @include shift(.25);
+      background-color: orange;
+    }
+
+  }
+}
