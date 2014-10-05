@@ -22,6 +22,7 @@ section{
     letter-spacing: -0.3px;
 
     .article_title {
+      text-decoration: none;
       text-transform: uppercase;
       font-family: "Oswald";
       font-size: 62px;
@@ -29,6 +30,16 @@ section{
       line-height: 1.15;
       color: #032640;
       margin-bottom: 10px;
+
+      a:link {
+        text-decoration: none;
+        color: #032640;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: #032640;
+      }
     }
 
     .post_info {
@@ -51,7 +62,7 @@ section{
       }
     }
 
-    a:link {
+    a:link  {
       text-decoration: underline;
       color: RGB(49, 106, 162);
     }

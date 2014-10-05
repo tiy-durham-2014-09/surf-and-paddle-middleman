@@ -3,9 +3,23 @@
   <article>
     <!-- list each article title (which is a link to the full article page), author info line, text summary, and social buttons, ordered by date -->
     <% sitemap.resources.each do |article| %>
-      <%= article.data[:title] %>
+      <% if article.data[:category] == "article" %>
+        <div class="article_title">
+          <%= link_to article.data[:title], article.path %>
+        </div>
+        <div class="post_info">
+          <img class="poster_pic" src="<%= data.authors[article.data.author][:portrait] %>">
+          <span class="author_name">
+            <%= data.authors[article.data.author][:name] %>
+          </span>
+          on
+          <%= article.data.date %>
+        </div>
+        <div>
+          <%#= truncate_words(article, :length => 100) %>...
+        </div>
+      <% end %>
     <% end %>
-
   </article>
   <aside>
     <div class="side_column_header">SIDEBAR SECTION BEHEADING</div>
