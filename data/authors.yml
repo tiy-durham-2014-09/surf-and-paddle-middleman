@@ -1,15 +1,23 @@
-easley:
+
+annie:
   name: Annie Easley
+  post: This will output the title, if it’s longer than 100 characters the string will be shortened to 100 characters (minus the separator’s length). The neat thing about truncate is all the separator functionality is built in – you don’t have to throw any if/else logic in to check whether it’s required or not.
   links:
-    - Wikipedia: https://en.wikipedia.org/wiki/Annie_Easley
-    - Homepage: http://www.jsc.nasa.gov/history/oral_histories/NASA_HQ/Herstory/EasleyAJ/EasleyAJ_8-21-01.htm
-turing:
+    - wikipedia: https://en.wikipedia.org/wiki/Annie_Easley
+    - homepage: http://www.jsc.nasa.gov/history/oral_histories/NASA_HQ/Herstory/EasleyAJ/EasleyAJ_8-21-01.htm
+    - picture: /../source/images/annie.jpg
+alan:
   name: Alan Turing
+  post: This will output the title, if it’s longer than 100 characters the string will be shortened to 100 characters (minus the separator’s length). The neat thing about truncate is all the separator functionality is built in – you don’t have to throw any if/else logic in to check whether it’s required or not.
   links:
-    - Twitter: https://twitter.com/Alan_M_Turing
-    - Wikipedia: https://en.wikipedia.org/wiki/Alan_Turing
-    - Facebook: https://www.facebook.com/AlanTuringCodebreaker
-lovelace:
+    - twitter: https://twitter.com/Alan_M_Turing
+    - wikipedia: https://en.wikipedia.org/wiki/Alan_Turing
+    - hacebook: https://www.facebook.com/AlanTuringCodebreaker
+    - picture: /../source/images/alan.jpg
+ada:
   name: Ada Lovelace
-    - Wikipedia: https://en.wikipedia.org/wiki/Ada_Lovelace
-    - Twitter: https://twitter.com/EnchantressAda
+  post: This will output the title, if it’s longer than 100 characters the string will be shortened to 100 characters (minus the separator’s length). The neat thing about truncate is all the separator functionality is built in – you don’t have to throw any if/else logic in to check whether it’s required or not.
+  links:
+    - wikipedia: https://en.wikipedia.org/wiki/Ada_Lovelace
+    - twitter: https://twitter.com/EnchantressAda
+    - picture: /../source/images/ada.jpg

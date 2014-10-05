@@ -1,92 +1,18 @@
 ---
-title: Surf & Paddle
+layout: "layout"
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="stylesheets/all.css">
-	<!-- <link rel="stylesheet" type="text/css" href="normalize.css>" -->
-	<title>Surf 'n paddle</title>
-</head>
 
-<body>
-	<div class="container">
-	<div class="head">
-			<div class="blog"><img src="images/wave.png"> SURF & PADDLE CO. BLOG<div class="search"> ABOUT SEARCH <img src="images/glass.png"></div>
-		</div>
-		<p class="htext">SURF & PADDLE CO.
-			<div class="iy"> An Ironyard Academy Project Est. Spring 2014 </div></p>
+<div class="all">
+	<div class="annie" ><%= link_to 'Annie\'s blog', 'annie.html' %>
+		<div class="aninfo"><%= truncate_words(data.authors.annie.post, :length => 50) %>
 		</div>
 	</div>
-	<div class="ltext">
-		<div class="headline"> A FANTASTIC ENGAGING HEADLINE GOES HERE</div>
-		<img class="mepic2" src="images/pic2.png">
-		<div class="n">Noah Holmes </div>
-		<div class="dy">on <span>Tuesday, September 30th, 2014</span></div>
-		<p>	Lorem ipsum dolor sit amet,
-			consectetur adipiscing elit.
-			Fusce luctus auctor fringilla.
-			Etiam quis cursus lectus. Nulla facilisi.
-			In pulvinar odio erat, vitae hendrerit ante condimentum vel.
-			Maecenas tincidunt mattis porttitor. Morbi mattis,
-			tellus vitae faucibus sagittis,
-			nulla ex cursus odio.
-		</p>
-		<p>	a lobortis ligula nibh non ipsum.
-			Sed mauris lacus, dictum at diam at,
-			mollis fringilla enim.
-			Proin sit amet est in tortor bibendum suscipit et ut mi.
-			Fusce ac <a class="google" href="www.google.com">commodo orci.<a>
-			</p>
-			<div class="whoa"><p> WHOA, THAT'S TUBULAR!</p> </div><p>
-				Morbi at ornare urna. Ut velit nulla,
-				fringilla sed arcu at, aliquet mattis diam.
-				Suspendisse id erat id orci convallis consectetur a id dui.
-				Nulla eleifend lectus sapien, <a href="www.google.com">non vulputate (rollover)<a> est interdum sed.
-					Proin egestas a est a lobortis.
-					Proin tincidunt sed eros a semper.
-					Curabitur suscipit at velit in dignissim.
-					Mauris commodo elit arcu, sed lacinia leo placerat et.
-					In rhoncus ac turpis at maximus.
-					Donec id hendrerit nunc, et congue lorem.
-					Nulla lacus neque, hendrerit eget lorem rhoncus,
-					aliquet hendrerit odio. Aliquam suscipit dignissim ipsum at tincidunt.</p>
-					Aliquam erat volutpat. Pellentesque tempor lorem mauris.
-					Integer id fringilla libero, ac euismod mauris.
-					Nulla eleifend lectus sapien, non vulputate est interdum sed.
-					Proin ege.	Proin ege.	Proin ege. Proin.
-				</p>
-				<div class="table"><img src="images/linknames.png">
-				</div>
-			</div>
-			<div class="rtext">
-				<div class="picinfo">
-					<div> <img class="mepic" src="images/pic2.png">
-					</div>
-					<div id="name"> NOAH HOLMES
-					</div>
-					<div id="social"> Twitter   Facebook   Instagram
-					</div>
-				</div>
-				<div>
-					<div class="image">
-					</div>
-					<a class="link" href="www.google.com"> Bail out, bro!
-					</a>
-				</div>
-				<div class="shead"> SIDEBAR SECTION HEADING
-				</div>
-				<div class="sidebar"> Vivamus aliquam eu libero in dictum.
-					Vestibulum ante ipsum primis in faucibus
-					orci luctus et ultrices posuere cubilia Curae;
-					Cras eleifend <a class="google" href="www.google.com">commodo orci.<a>
-						Aliquam non ultricies nibh.
-						Aenean et ligula ac ipsum.
-					</div>
-				</div>
-				<div><h1 class="popular"> MOST POPULAR POSTS </h1>
-			<div class="boxes"><div></div><div></div><div></div></div></div>
-			</body>
-			</html>
+	<div class="alan"><%= link_to 'Alan\'s blog', 'alan.html' %>
+		<div class="alinfo"><%= truncate_words(data.authors.alan.post, :length => 50) %>
+		</div>
+	</div>
+	<div class="ada"><%= link_to 'Ada\'s blog', 'ada.html' %>
+		<div class="adlinfo"><%= truncate_words(data.authors.ada.post, :length => 50) %>
+		</div>
+	</div>
+</div>

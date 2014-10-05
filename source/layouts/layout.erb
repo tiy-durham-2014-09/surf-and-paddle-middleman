@@ -1,21 +1,37 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <!-- Uncomment the following if you want to use normalize -->
-    <!-- <%= stylesheet_link_tag "normalize" %> -->
+  <!-- Uncomment the following if you want to use normalize -->
+  <!-- <%= stylesheet_link_tag "normalize" %> -->
 
-    <%= stylesheet_link_tag "all" %>
-  </head>
+  <%= stylesheet_link_tag "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/all.css">
+  <!-- <link rel="stylesheet" type="text/css" href="normalize.css>" -->
+</head>
 
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+<body class="<%= page_classes %>">
+  <div class="container">
+    <div class="head">
+      <div class="blog"><img src="images/wave.png"> SURF &amp; PADDLE CO. BLOG<div class="search"> ABOUT SEARCH <img src="images/glass.png"></div>
+    </div>
+    <p class="htext">SURF &amp; PADDLE CO.
+      <div class="iy"> An Ironyard Academy Project Est. Spring 2014 </div></p>
+    </div>
+  </div>
+  <!-- <div><h1 class="popular"> MOST POPULAR POSTS </h1>
+  <div class="boxes"><div></div><div></div><div></div></div></div> -->
+  </html>
+  <%= yield %>
+</body>
 </html>
