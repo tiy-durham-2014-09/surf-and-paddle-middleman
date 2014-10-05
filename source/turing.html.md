@@ -1,7 +1,7 @@
 ---
 layout: "blog_post"
 author: turing
-date: June 20, 1941
+date: December 9, 1941
 title: TURING CONCEPTUALIZES COMPUTATION!
 type: post
 ---

@@ -1,7 +1,7 @@
 ---
 layout: "blog_post"
 author: easley
-date: April 10, 1961
+date: January 23, 1961
 title: EASLEY HELPS DEVELOP CENTAUR ROCKET STAGE!
 type: post
 ---

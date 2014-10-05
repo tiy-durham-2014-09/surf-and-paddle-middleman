@@ -1,7 +1,7 @@
 ---
 layout: "blog_post"
 author: lovelace
-date: October 28, 1840
+date: April 26, 1840
 title: LOVELACE IS WORLD'S FIRST PROGRAMMER!
 type: post
 ---

@@ -3,7 +3,9 @@ title: Surf & Paddle 2
 ---
 
 <ul>
-  <% sitemap.resources.select { | a | a.data.type.present? }.each do | article | %>
+  <% posts = sitemap.resources.select { | a | a.data.type.present? } %>
+  <% sorted = posts.sort_by { |post| post.data.date} %>
+  <% sorted.each do | article | %>
     <% author = article.data.author %>
 
     <% content_for :name do %>
@@ -36,6 +38,13 @@ title: Surf & Paddle 2
           </p>
         </div>
         <%= get_content(article) %>
+        <div class="bottom_nav_bar">
+          <ul>
+            <li><i class="fa fa-comment"></i>Read Comments</li>
+            <li><i class="fa fa-cloud-upload"></i>Read Later</li>
+            <li><i class="fa fa-share-square"></i>Share This Post</li>
+          </ul>
+        </div>
       </div>
     </div>
 
