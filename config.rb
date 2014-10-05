@@ -48,8 +48,8 @@
 # end
 
 helpers do
-  def author_full_name(half_name)
-    return data.authors.turing
+  def author_full_name(author)
+    data.authors.send(author).name
   end
 end
 

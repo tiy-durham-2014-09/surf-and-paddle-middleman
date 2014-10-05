@@ -1,10 +1,8 @@
 ---
 layout: "blog_post"
 author: turing
-name: data.authors.turing.name
-Twitter: data.authors.links[0].Twitter
-Wikipedia: data.authors.links[1].Wikipedia
-Facebook: data.authors.links[2].Facebook
+date: June 20, 1941
+title: TURING CONCEPTUALIZES COMPUTATION!
 ---
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.

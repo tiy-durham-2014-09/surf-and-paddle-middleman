@@ -1,31 +1,34 @@
 <% wrap_layout :layout do %>
 
-<!-- create a helper out of this later -->
+<% author = current_page.data.author %>
 
-<% name = data.authors.turing.name %>
+<% content_for :name do %>
+  <%= data.authors.send(author).name %>
+<% end %>
 
 <% content_for :twitter do %>
-  <%= data.authors.turing.links[0].Twitter %>
+  <%= data.authors.send(author).links[2].Twitter %>
 <% end %>
 
 <% content_for :facebook do %>
-  <%= data.authors.turing.links[0].Facebook %>
+  <%= data.authors.send(author).links[3].Facebook %>
 <% end %>
 
 <% content_for :wiki do %>
-  <%= wiki = data.authors.turing.links[1].Wikipedia %>
+  <%= data.authors.send(author).links[0].Wikipedia %>
 <% end %>
 
-
+<% content_for :photo do %>
+  <%= data.authors.send(author).links[1].Photo %>
+<% end %>
 
 <div class="middle">
-
   <div class="posts">
     <div class="blog_heading">
-      <h1>A FANTASTIC ENGAGING HEADLINE GOES HERE</h1>
+      <h1><%= current_page.data.title %></h1>
       <p class="peripheral-text">
-        <i class="fa fa-user"></i>
-        <span class="name"><%= name %></span> on Monday, Oct. 7th 9:22pm
+        <img src=<%= yield_content :photo %>>
+        <span class="name"><%= yield_content :name %></span> on <%= current_page.data.date %>
       </p>
     </div>
     <div class="blog_content">
