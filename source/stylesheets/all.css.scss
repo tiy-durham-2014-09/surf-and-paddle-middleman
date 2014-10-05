@@ -2,7 +2,8 @@
 
 $visual-grid: true !default;
 $visual-grid-color: red !default;
-$visual-gride-index: back !default;
+$visual-grid-index: back !default;
+$visual-grid-opacity: 0.3;
 
 @import "bourbon";
 @import "neat";
@@ -97,21 +98,27 @@ body {
   letter-spacing: -.3px;
 }
 
+/* Below this line is the stuff I'll use Neat to create a two column layout */
+
 .wrapper {
-  width: 965px;
+  @include outer-container;
+  /*width: 965px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0;*/
 }
 
 .left {
-  width: 600px;
+  @include span-columns(8);
+  @include shift (1);
+  padding-right: 150px;
+  /*width: 600px;
   float: left;
   margin: 15px 0 50px 0;
-  padding-left: 120px;
+  padding-left: 120px;*/
 }
 
 .left_headline {
-  font-size: 23px;
+  font-size: 38px;
   font-family: 'Oswald', sans-serif;
   line-height: 50px;
   color: #112C3D;
@@ -197,42 +204,14 @@ a.share_button {
 }
 
 .right {
+  @include span-columns(4);
+  @include shift (-2);
   width: 325px;
+  padding: 50px 0 0 75px;
+  /*width: 325px;
   float: right;
   margin: 55px 0px 0px 0px;
-  padding-right: 120px;
-}
-
-.author_photo_right {
-  align: center;
-
-  }
-
-.author_right_name {
-  text-align: center;
-  color: #256B9E;
-  font-size: 12px;
-  align: center;
-}
-
-.author_right_picture {
-  align: center;
-  border-radius: 60px;
-  background:
-  linear-gradient(
-    rgba(31, 82, 127, 0.66),
-    rgba(31, 82, 127, 0.66)
-  ), url(http://rlv.zcache.com/adorable_kitten_square_flat_cards_invitation-r79ad1b7bf482433d844bf0bd53eeffe0_8dnm4_8byvr_324.jpg);
-  background-position: center;
-  height: 100px;
-  width: 100px;
-  margin: 0px 0 0 50px;
-}
-
-.social_right {
-  text-align: center;
-  color: grey;
-  font-size: 9px;
+  padding-right: 120px;*/
 }
 
 .picture_right {
@@ -246,10 +225,12 @@ a.share_button {
   background-position: center;
   height: 145px;
   max-width: 205px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .picture_right_link {
-text-align: right;
+  text-align: center;
 }
 
 .right a {
@@ -267,4 +248,64 @@ text-align: right;
 .right_paragraph {
   font-size: 13px;
   color: grey;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.most_popular {
+  font-size: 49px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 50px;
+  color: #112C3D;
+  letter-spacing: -.7px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bottom_pics {
+  height: 250px;
+  background:
+  linear-gradient(
+    rgba(31, 82, 127, 0.66),
+    rgba(31, 82, 127, 0.66)
+  ), url(http://rlv.zcache.com/adorable_kitten_square_flat_cards_invitation-r79ad1b7bf482433d844bf0bd53eeffe0_8dnm4_8byvr_324.jpg);
+  background-position: center;
+}
+.cat_1 {
+  background:
+  linear-gradient(
+    rgba(31, 82, 127, 0.66),
+    rgba(31, 82, 127, 0.66)
+  ), url(http://rlv.zcache.com/adorable_kitten_square_flat_cards_invitation-r79ad1b7bf482433d844bf0bd53eeffe0_8dnm4_8byvr_324.jpg);
+  background-position: center;}
+
+/*.cat_2 {
+  background:
+  linear-gradient(
+    rgba(31, 82, 127, 0.66),
+    rgba(31, 82, 127, 0.66)
+  ), url(http://critterbabies.com/wp-content/gallery/kittens/happy-kitten-kittens-5890512-1600-1200.jpg);
+}*/
+
+.bottom {
+  height: 75px;
+  width: 965 px;
+  background: #112C3D;
+  color: #9BAFB5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+
+.bottom_text {
+  padding: 33px 0 0 0;
+}
+
+.bottom_left {
+  @include shift (1.33);
+}
+
+.bottom_right {
+  @include shift (3.67);
 }
