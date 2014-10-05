@@ -5,7 +5,7 @@
 /* Put content here. */
 /*font-family: 'Oswald', sans-serif;      HEADER*/
 /*font-family: 'Open Sans', sans-serif;   BODY*/
- $std-tint:rgba( 50, 100, 205 ,0.80);
+ $std-tint:rgba( 50, 100, 0 ,0.80);
 @mixin tinted_image_bg($color, $image) {
   background: linear-gradient($color,$color), url($image);
    }
@@ -61,6 +61,13 @@ body {
   font-size: 8px;
   margin-top:0px;
 }
+.home:visited {
+    text-decoration: none;
+    color: white;
+  }
+.home:hover {
+    text-decoration: none;
+}
 
 /* @import "body"*/
 .lbody {
@@ -69,9 +76,6 @@ body {
   @include omega();
   margin-top: 30px;
   width: 500px;
-
-
-  background-color: white;
   font-weight: 400;
   font-family:'Oswald', sans-serif;
 }
@@ -82,14 +86,14 @@ body {
   text-align: left;
   width: 500px;
   font-family:'Oswald', sans-serif;
-  color: #053350;
+  color: limegreen;
   font-size: 45px;
   margin-bottom: 3px;
 }
 
 
 h3{
-  color: #053350;
+  color: #limegreen;
   text-align: center;
 }
 
@@ -107,7 +111,7 @@ h3{
   font-size: 13px;
 }
 .bluename2{
-  color: dodgerblue;
+  color: limegreen;
   font-size: 13px;
 }
 .t1 {
@@ -122,7 +126,7 @@ h3{
   border-left: 3px solid gray;
   width: 500px;
   height: 65px;
-  color: dodgerblue;
+  color: limegreen;
   font-size: 20px;
   margin-bottom: 25px;
   padding-left: 10px;
@@ -170,7 +174,7 @@ h3{
   color: grey;
 }
 .bluename1{
-  color: dodgerblue;
+  color: limegreen;
   text-align: center;
   padding: 1px;
   margin-right: 35px;
@@ -198,7 +202,7 @@ h3{
 h5 {
   font-family:'Open Sans', sans-serif;
   width: 300px;
-  color: dodgerblue;
+  color: limegreen;
   margin-bottom: 1px;
 
 }
@@ -211,6 +215,13 @@ h5 {
   margin-bottom: 1px;
   font-size: 13px;
 }
+}
+.home2:visited {
+    text-decoration: none;
+    color: limegreen;
+  }
+.home2:hover {
+    text-decoration: none;
 }
 a:link {
     text-decoration: none;
