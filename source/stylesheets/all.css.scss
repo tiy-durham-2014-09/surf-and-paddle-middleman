@@ -9,14 +9,7 @@ $max-width: em(965) !default;
 @import "normalize.css";
 
 
-// Defaults for <ul>'s, <li>'s, and body
-
-ul {
-  list-style: none;
-  li{
-    display: inline;
-  }
-}
+// Defaults
 
 body {
   width: 965px;
@@ -25,15 +18,25 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
-// End default definitions
-
-
 .page-wrapper{
   @include outer-container;
   border: 5px solid black;
 }
+
+ul {
+  list-style: none;
+  li{
+    display: inline;
+  }
+}
+
+.dolphin{
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+
+// End definitions
 
 .bigpic{
   height: 392px;
@@ -87,20 +90,91 @@ body {
 
 .left {
   border: 5px solid blue;
-  @include span-columns(8);
+  @include span-columns(6.5);
+  @include shift(1/2);
+
+  h1{
+    border: 3px solid black;
+  }
+
+  .author-timestamp{
+    @include shift(1);
+    // display: inline-block;
+    img{
+      vertical-align: middle;
+      width: 35px;
+      height: 35px;
+    }
+    author{
+      font-size: 15px;
+      color: blue;
+    }
+    h3{
+      font-size: 10px;
+      display: inline;
+      padding-left: 5px;
+      color: grey;
+    }
+
+
+  }
+
   li{
     margin-right: 10px;
     background: grey;
     color: white;
   }
+
+  blockquote{
+    color: rgb(170,202,226);
+    font-size: 21px;
+    letter-spacing: 1px;
+    border-left: 2px solid #d3d3d3;
+    margin-left: 0px;
+  }
 }
 
 .right{
   border: 5px solid green;
-  @include span-columns(4);
-}
+  @include span-columns(4.5);
 
-.kayak{
-  border: 5px solid red;
-  width: 100%;
+  .dolphin{
+    @include shift(4.7);
+    margin-top: 50px;
+  }
+
+  .blog-author{
+    border: 2px solid black;
+    h5{
+      text-align: center;
+      margin: 0px;
+    }
+    .socials{
+      font-size: 10px;
+      text-align: center;
+      margin: 0px;
+      margin-right: 25px;
+    }
+  }
+
+
+  .kayak{
+    @include shift(2.5);
+    margin-top: 15px;
+    border: 5px solid red;
+    width: 180px;
+    height: 180px;
+  }
+
+  .side-text{
+    border: 2px solid red;
+    @include shift(2);
+    margin-right: 70px;
+    font-size: 12px;
+
+    h4{
+      color: blue;
+      margin-bottom: -8px;
+    }
+  }
 }
