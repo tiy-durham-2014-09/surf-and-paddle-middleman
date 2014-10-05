@@ -51,6 +51,12 @@ helpers do
   def author_full_name(author)
     data.authors.send(author).name
   end
+
+  def get_content(page)
+    content = page.render({layout: false})
+    new_content = content.split("\n")
+    return new_content[0]
+  end
 end
 
 set :css_dir, 'stylesheets'
