@@ -1,67 +1,7 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<%= partial "header" %>
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-
-    <!-- Uncomment the following if you want to use normalize -->
-    <!-- <%= stylesheet_link_tag "normalize" %> -->
-
-    <%= stylesheet_link_tag "all" %>
-  </head>
-
-  <body class="<%= page_classes %>">
-
-<div class="wrapper">
-
-  <div class="header">
-    <div class="toolbar">
-      <div class="left_tools">
-          <img src="../images/wave_ico.jpg"></img>
-          <a>Surf & Paddle Co. Blog</a>
-      </div>
-      <div class="right_tools">
-          <ul>
-            <li><a>About</a></li>
-            <li><a>Search <i class="fa fa-search"></i></a></li>
-          </ul>
-      </div>
-    </div>
-    <h1 class="header">Surf &amp; Paddle Co.</h1>
-    <h2 class="header">An Ironyard Academy Project Est. Summer 2014</h2>
-  </div>
-  <div class="page_body">
-
-    <%= yield %>
-
-<div class="feature_posts">
-  <div class="more"><p>MOST POPULAR POSTS</p></div>
-
-  <div class="posts">
-      <div class="post_effect"><a class="post" href="http://www.google.com"><div class="post1">ANOTHER COOL POST</div></a></div><div class="post_effect"><a class="post"><div class="post2">POST TITLE</div></a></div><div class="post_effect"><a class="post"><div class="post3">HERE'S ANOTHER TITLE</div></a></div><div class="post_effect"><a class="post"><div class="post4">OH COOL A POST!</div></a></div>
-  </div>
-</div>
-<div class="footer">
-
-  <div class="footer_logo">
-        <img src="../images/footer-logo.png" class="footer_logo"></img><span><a>The Ironyard Copyright 2014, All Rights Reserved</a></span>
-  </div>
-
-  <div class="footer_nav">
-        <ul>
-          <li><a>Nav Item 1</a></li> |
-          <li><a>Nav Item 2</a></li> |
-          <li><a>Nav Item 3</a></li> |
-          <li><a>Nav Item 5</a></li>
-        </ul>
-  </div>
-</div>
+<div class="main_wide">
+  <%= yield %>
 </div>
 
-  </body>
-</html>
+<%= partial "footer" %>

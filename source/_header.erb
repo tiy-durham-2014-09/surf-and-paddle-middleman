@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <!-- Uncomment the following if you want to use normalize -->
+    <!-- <%= stylesheet_link_tag "normalize" %> -->
+
+    <%= stylesheet_link_tag "all" %>
+
+    <meta charset="UTF-8">
+    <link href='../stylesheets/all.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="<%= page_classes %>">
+
+<div class="wrapper">
+
+  <div class="header">
+    <div class="toolbar">
+      <div class="left_tools">
+          <img src="../images/wave_ico.jpg"></img>
+          <a>Surf & Paddle Co. Blog</a>
+      </div>
+      <div class="right_tools">
+          <ul>
+            <li><a>About</a></li>
+            <li><a>Search <i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+    </div>
+    <h1 class="header">Surf &amp; Paddle Co.</h1>
+    <h2 class="header">An Ironyard Academy Project Est. Summer 2014</h2>
+  </div>
+
+<div class="page_body">
