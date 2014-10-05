@@ -1,11 +1,15 @@
 <div class="right_pane">
   <%= tag :img, :src => current_page.data.avatar, :class => "avatar" %>
-  <h1><%= current_page.data.author %></h1>
+  <h1><%= current_page.data.author_fname + " " + current_page.data.author_lname %></h1>
+
+    <% links = (data.authors[current_page.data.author_lname.downcase].links).reduce Hash.new, :merge %>
 
     <ul>
-        <li>Twitter</li>
-        <li>Facebook</li>
-        <li>Instagram</li>
+        <% links.each do |key, value| %>
+          <li>
+            <%= link_to key, value %>
+          </li>
+        <% end %>
     </ul>
       <div class="ad"></div>
       <div class="ad_disclaimer1">About this Ad</div>

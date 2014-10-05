@@ -1,14 +1,13 @@
 ---
 layout: articles
-title: Annie's Post
-author_fname: Annie
-author_lname: Easley
-date: June 7, 2014
-avatar: images/annie_easley.png
-id: easley
+title: Ada's Post
+author_fname: Ada
+author_lname: Lovelace
+date: July 15, 2014
+avatar: images/ada_lovelace.png
 ---
 
-Annie tobacco baldwin lofts sculpture history hub southpoint, centerfest the buehler.Eno north east the buehler basketball urban ministries listserv wool e bull bragtown bull, blue devils house-made train maker full frame hipster book exchange, dpac trinity park hope valley dance triangle localista bouncing bulldogs durham mag. West village the connecter.
+Ada Tobacco baldwin lofts sculpture history hub southpoint, centerfest the buehler.Eno north east the buehler basketball urban ministries listserv wool e bull bragtown bull, blue devils house-made train maker full frame hipster book exchange, dpac trinity park hope valley dance triangle localista bouncing bulldogs durham mag. West village the connecter.
 
 blackwell downtown history hub start-up world beer festival the state of things cupcakes, lady arm wrestlers towerview.
 
