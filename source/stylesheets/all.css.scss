@@ -9,7 +9,9 @@ $max-width: em(965) !default;
 @import "normalize.css";
 
 
-// Defaults
+// Defaults and variables
+
+$gradient: rgba(5, 44, 73, .45);
 
 body {
   width: 965px;
@@ -42,10 +44,7 @@ ul {
   height: 392px;
   background-size: 100%;
   background:
-  linear-gradient(
-  rgba(5, 44, 73, .45),
-  rgba(5, 44, 73, .45)
-  ),
+  linear-gradient($gradient, $gradient),
   url("http://truescifi.files.wordpress.com/2008/12/big-wave-surfer.jpg");
 
   .top-left{
@@ -95,11 +94,11 @@ ul {
 
   h1{
     border: 3px solid black;
+    font-family: oswald;
+    font-size: 47px
   }
 
   .author-timestamp{
-    @include shift(1);
-    // display: inline-block;
     img{
       vertical-align: middle;
       width: 35px;
@@ -115,8 +114,6 @@ ul {
       padding-left: 5px;
       color: grey;
     }
-
-
   }
 
   li{
@@ -127,6 +124,8 @@ ul {
 
   blockquote{
     color: rgb(170,202,226);
+    font-family: oswald;
+    text-transform: uppercase;
     font-size: 21px;
     letter-spacing: 1px;
     border-left: 2px solid #d3d3d3;
@@ -148,6 +147,7 @@ ul {
     h5{
       text-align: center;
       margin: 0px;
+      color: blue;
     }
     .socials{
       font-size: 10px;
@@ -175,6 +175,60 @@ ul {
     h4{
       color: blue;
       margin-bottom: -8px;
+      font-family: oswald;
+
     }
   }
+}
+
+.popular{
+  border: 2px solid orange;
+  @include span-columns(12);
+
+  h2{
+    text-align: center;
+    font-family: oswald;
+    font-size: 45px;
+  }
+
+  ul{
+    font-family: oswald;
+
+    .barracuda{
+      border: 2px solid green;
+      @include span-columns(3);
+      background-size: cover;
+      @include background-image(linear-gradient($gradient, $gradient), url("../images/barracuda.jpg"));
+      width: 250px;
+      height: 250px;
+    }
+    .turtle{
+      border: 2px solid green;
+      @include span-columns(3);
+      background-size: cover;
+      @include background-image(linear-gradient($gradient, $gradient), url("../images/turtle.jpg"));
+      width: 250px;
+      height: 250px;
+    }
+    .piranha{
+      border: 2px solid green;
+      @include span-columns(3);
+      background-size: cover;
+      @include background-image(linear-gradient($gradient, $gradient), url("../images/piranha.jpg"));
+      width: 250px;
+      height: 250px;
+    }
+
+    .whaleshark{
+      border: 2px solid green;
+      @include span-columns(3);
+      background-size: cover;
+      @include background-image(linear-gradient($gradient, $gradient), url("../images/whaleshark.jpg"));
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+
+
 }
