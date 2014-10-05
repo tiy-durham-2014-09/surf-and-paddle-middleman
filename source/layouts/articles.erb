@@ -3,7 +3,7 @@
 <div class="main">
 
   <h1><%= current_page.data.title %></h1>
-  <%= tag :img, :src => current_page.data.avatar, :class => "small_avatar" %>
+  <%= tag :img, :src => data.authors[current_page.data.author_lname.downcase].image, :class => "small_avatar" %>
   <h2><%= current_page.data.author_fname + " " + current_page.data.author_lname %></h2>
   <h3>on <%= current_page.data.date %></h3>
 

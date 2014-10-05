@@ -1,10 +1,9 @@
 ---
 layout: articles
 title: Alan's Post
-author_fname: Alan 
+author_fname: Alan
 author_lname: Turing
 date: June 8, 2014
-avatar: images/alan_turing.png
 ---
 
 Alan tobacco baldwin lofts sculpture history hub southpoint, centerfest the buehler.Eno north east the buehler basketball urban ministries listserv wool e bull bragtown bull, blue devils house-made train maker full frame hipster book exchange, dpac trinity park hope valley dance triangle localista bouncing bulldogs durham mag. West village the connecter.

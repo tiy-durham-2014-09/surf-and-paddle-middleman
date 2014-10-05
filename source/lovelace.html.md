@@ -4,7 +4,6 @@ title: Ada's Post
 author_fname: Ada
 author_lname: Lovelace
 date: July 15, 2014
-avatar: images/ada_lovelace.png
 ---
 
 Ada Tobacco baldwin lofts sculpture history hub southpoint, centerfest the buehler.Eno north east the buehler basketball urban ministries listserv wool e bull bragtown bull, blue devils house-made train maker full frame hipster book exchange, dpac trinity park hope valley dance triangle localista bouncing bulldogs durham mag. West village the connecter.
