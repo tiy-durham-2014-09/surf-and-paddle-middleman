@@ -1,5 +1,5 @@
 ---
-title: Surf & Paddle 2
+title: Surf & Paddle!
 ---
 
 <ul>
@@ -8,42 +8,24 @@ title: Surf & Paddle 2
   <% sorted.each do | article | %>
     <% author = article.data.author %>
 
-    <% content_for :name do %>
-      <%= data.authors.send(author).name %>
-    <% end %>
-
-    <% content_for :twitter do %>
-      <%= data.authors.send(author).links[2].Twitter %>
-    <% end %>
-
-    <% content_for :facebook do %>
-      <%= data.authors.send(author).links[3].Facebook %>
-    <% end %>
-
-    <% content_for :wiki do %>
-      <%= data.authors.send(author).links[0].Wikipedia %>
-    <% end %>
-
-    <% content_for :photo do %>
-      <%= data.authors.send(author).links[1].Photo %>
-    <% end %>
-
     <div class="middle">
       <div class="posts">
         <div class="blog_heading">
           <a href="<%= article.url %>"><h1><%= article.data.title %></h1></a>
           <p class="peripheral-text">
-            <img src=<%= yield_content :photo, flush: true %>>
-            <span class="name"><%= yield_content :name, flush: true %></span> on <%= article.data.date %>
+            <img src=<%= data.authors.send(author).links[1].Photo %>>
+            <span class="name"><%= data.authors.send(author).name %></span> on <%= article.data.date %>
           </p>
         </div>
         <%= get_content(article) %>
-        <div class="bottom_nav_bar">
-          <ul>
-            <li><i class="fa fa-comment"></i>Read Comments</li>
-            <li><i class="fa fa-cloud-upload"></i>Read Later</li>
-            <li><i class="fa fa-share-square"></i>Share This Post</li>
-          </ul>
+        <div class="blog_content">
+          <div class="bottom_nav_bar">
+            <ul>
+              <li><i class="fa fa-comment"></i>Read Comments</li>
+              <li><i class="fa fa-cloud-upload"></i>Read Later</li>
+              <li><i class="fa fa-share-square"></i>Share This Post</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
