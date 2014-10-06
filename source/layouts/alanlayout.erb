@@ -1,0 +1,109 @@
+---
+title: Surf & Paddle Co.
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <header>
+    <span class=logo><i class="fa fa-tint"></i> SURF & PADDLE CO. BLOG
+      <span class=about><a href="https://www.yahoo.com/">About</a></span>
+      <span class=search><a href="https://www.google.com">Search</a> <i class="fa fa-search"></i></span>
+    </span>
+    <div class=top>SURF & PADDLE CO.</div>
+    <div class=subtitle>An Ironyard Academy Project Est. Spring 2014</div>
+  </header>
+
+
+
+  <body class="<%= page_classes %>">
+    <div class=header2>I ALSO MIGHT BE SUPERMAN...<div> OR BATMAN</div></div>
+    <div class=author>
+      <img src="http://upload.wikimedia.org/wikipedia/en/c/c8/Alan_Turing_photo.jpg">
+      <a href =https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=alan%20turing>
+        Alan Turing</a> <time>on March 15, 1938</time></div>
+
+        <div class=side1>
+          <img src="http://upload.wikimedia.org/wikipedia/en/c/c8/Alan_Turing_photo.jpg"></div>
+
+          <div class=link><a href =https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=alan%20turing>
+            Alan Turing</a>
+          </div>
+
+          <div class=authlinks>
+            <li>
+              <a href =https://en.wikipedia.org/wiki/Alan_Turing>Wikipedia</a>
+              <a href =https://twitter.com/Alan_M_Turing>Twitter</a>
+              <a href =https://www.facebook.com/AlanTuringCodebreaker>Facebook</a>
+            </li>
+          </div>
+
+
+          <div class=main>
+            Alan Turing was born on 23 June, 1912, in London. His father was in
+            the Indian Civil Service and Turing's parents lived in India until
+            his father's retirement in 1926. Turing and his brother stayed with
+            friends and relatives in England. Turing studied mathematics at
+            Cambridge University, and subsequently taught there.
+          </div>
+
+
+          <div class=side2>
+            <img src="http://i2.cdnds.net/13/31/618x464/movies-superman-batman.jpg">
+          </div>
+
+          <div class=s2link><a href =https://www.google.com/search?q=batman+superman&espv=2&biw=1360&bih=673&source=lnms&sa=X&ei=pokwVJ6hDIaxyASI7oDgDA&ved=0CAUQ_AUoAA&dpr=1>About This Ad</a>
+          </div>
+
+
+          <div class=main2>It was at Cambridge that he developed the proof which states that automatic computation cannot solve all mathematical problems.
+          </div>
+
+          <div class=rad> MY APARTMENT SMELLS OF RICH MAHOGANY AND I HAVE MANY LEATHER
+            BOUND BOOKS
+          </div>
+
+
+          <div class=main3>  In 1936, Turing went to Princeton University in America, returning to England in 1938. He began to work secretly part-time for the British cryptanalytic department, the Government Code and Cypher School. On the outbreak of war he took up full-time work at its headquarters, Bletchley Park.
+            <p>Here he played a vital role in deciphering the messages encrypted by the German Enigma machine, which provided vital intelligence for the Allies. He took the lead in a team that designed a machine known as a bombe that successfully decoded German messages. He became a well-known and rather eccentric figure at Bletchley.</p></div>
+
+
+            <div class=side3>
+              <p class=s3head> Sidebar Section Heading </p>
+              <span class=s3text>This paragraph here explains what is going on under this picture.  This paragraph here explains what is going on under this picture.  This paragraph here explains what is going on under this picture.</span>
+            </div>
+
+            <div class=boxlinks>
+              <span class=com><i class="fa fa-comment"></i><a href=https://github.com>Read Comments</a></span>
+              <span class=star><i class="fa fa-star"></i><a href=https://www.youtube.com>Read Later</a></span>
+              <span class=square><i class="fa fa-share-square"></i><a href=https://www.netflix.com>Share This Post</a></span>
+            </div>
+
+
+            <footer>
+              <div class=moreposts>MOST POPULAR POSTS</div>
+              <li>
+                <div class=left1><a href="http://0.0.0.0:4567/alan.html">Cool Post</a></div>
+                <div class=left2><a href="http://0.0.0.0:4567/ada.html">Another Cool Post</a></div>
+                <div class=right2><a href="http://0.0.0.0:4567/annie.html">These Posts Never End</a></div>
+                <div class=right1><a href="http://0.0.0.0:4567/">Seriously, Another One?</a></div>
+              </li>
+            </footer>
+    <%= yield %>
+  </body>
+</html>

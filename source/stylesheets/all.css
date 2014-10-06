@@ -1,3 +1,211 @@
 @charset "utf-8";
 
-/* Put content here. */
+body {
+  max-width: 965px;
+  height: 965px;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 15%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    height: 400px;
+    width: 965px;
+    background:
+    linear-gradient(
+      rgba(31, 82, 127, 0.66),
+      rgba(31, 82, 127, 0.66)
+      ),
+      url(http://i62.tinypic.com/x44zlw.png)
+}
+
+.header p {
+  position: absolute;
+  color: black;
+  margin-left: 35%;
+  margin-top: 19%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.author {
+  margin-left: 3%;
+  font-size: 75%;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -2%;
+}
+
+.author a {
+  text-decoration: none;
+}
+
+.author img {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.authlinks {
+  float: right;
+  list-style: none;
+  margin-top: -4%;
+  margin-right: 5%;
+  font-size: 70%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.authlinks a {
+  text-decoration: none;
+}
+
+.header img {
+  height: 400px;
+  width: 965px;
+  opacity: 0.6;
+  color: blue;
+}
+
+.h2 {
+  position: relative;
+  margin-bottom: -80%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.side1 img {
+  float: right;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+.side1link {
+  float: right;
+  margin-top: 6%;
+  margin-right: -7%;
+  font-size: 80%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.side1link a {
+  text-decoration: none;
+}
+
+.side2 img {
+  height: 250px;
+  width: 175px;
+  float: right;
+  margin-right: 20%;
+}
+
+.side2 {
+  float:right;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.s2link {
+  float:right;
+  margin-right: -14.5%;
+  margin-top: 26%;
+  font-size: 70%;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+}
+
+
+.radical {
+  color: royalblue;
+  padding-left: 1%;
+  margin-top: 9%;
+  margin-left: 5%;
+  border-left: ridge;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  margin-left: 3%;
+  margin-right: 30%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+}
+
+.main2 {
+  margin-left: 3%;
+  margin-right: 30%;
+  margin-bottom: -5.7%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+}
+
+.side3 h5 {
+  color: blue;
+  margin-bottom: 2%;
+  margin-left: 79%;
+  font-size: 110%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.side3 {
+  float: right;
+  margin-right: 1%;
+  font-size: 70%;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+}
+
+.side3 p {
+  margin-right: 2%;
+  margin-top: -1%;
+  margin-left: 79%;
+}
+
+.para3 {
+  margin-left: 3%;
+  float: left;
+  margin-right: 30%;
+  margin-top: -22%;
+  margin-bottom: -90%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+}
+
+
+.para4 {
+  float: left;
+  margin-left: 3%;
+  margin-top: -7%;
+  margin-right: 30%;
+  margin-bottom: 2%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+}
+
+.boxlinks {
+  margin-left: 10%;
+  margin-top: 20%;
+  list-style: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.boxlinks i {
+  max-width: 200px;
+  background-color: navy;
+  color: white;
+}
+
+.boxlinks a {
+  text-decoration: none;
+  background-color: blue;
+  font-size: 80%;
+  color: white;
+}

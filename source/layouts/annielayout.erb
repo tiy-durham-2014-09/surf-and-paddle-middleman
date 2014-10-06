@@ -1,0 +1,116 @@
+---
+title: Surf & Paddle Co.
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <header>
+    <span class=logo><i class="fa fa-tint"></i> SURF & PADDLE CO. BLOG
+      <span class=about><a href="https://www.yahoo.com/">About</a></span>
+      <span class=search><a href="https://www.google.com">Search</a> <i class="fa fa-search"></i></span>
+    </span>
+    <div class=top>SURF & PADDLE CO.</div>
+    <div class=subtitle>An Ironyard Academy Project Est. Spring 2014</div>
+  </header>
+
+
+
+  <body class="<%= page_classes %>">
+    <div class=header2>I Worked For Nasa, I Am<div>Kind Of A Big Deal</div></div>
+    <div class=author>
+      <img src="http://38.media.tumblr.com/tumblr_mdkb7vJPvA1rpkenpo1_500.jpg">
+      <a href =https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=annie%20easley>
+        Annie Easley</a> <time>on December 12, 1843 </time></div>
+
+        <div class=side1>
+          <img src="http://38.media.tumblr.com/tumblr_mdkb7vJPvA1rpkenpo1_500.jpg"></div>
+
+          <div class=link><a href =https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=annie%20easley>
+            Annie Easley</a>
+          </div>
+
+          <div class=authlinks>
+            <li>
+              <a href =https://en.wikipedia.org/wiki/Annie_Easley>Wiki</a>
+              <a href =http://www.jsc.nasa.gov/history/oral_histories/NASA_HQ/Herstory/EasleyAJ/EasleyAJ_8-21-01.html>Homepage</a>
+              <a href =https://www.encyclopedia.com/doc/1G2-2694600022.html>Biography</a>
+            </li>
+          </div>
+
+
+          <div class=main>
+            Annie J. Easley spent her 34-year career working for the National
+            Aeronautics and Space Administration (NASA). She started there as a
+            "human computer." Later she became one of the first black computer
+            programmers, working on alternative-energy technologies,
+            energy-conservation systems, and the Centaur launch system.
+          </div>
+
+
+          <div class=side2>
+            <img src="http://thegrapevineiub.files.wordpress.com/2012/11/annieengineeringnewsletter.jpg?w=1038&h=576&crop=1">
+          </div>
+
+          <div class=s2link><a href =https://www.google.com/search?q=annie+easley&espv=2&biw=1360&bih=673&source=lnms&tbm=isch&sa=X&ei=TpUwVMTwCcedygTN3YD4BA&ved=0CAYQ_AUoAQ&dpr=1#imgdii=_>About This Ad</a>
+          </div>
+
+
+          <div class=main2>During her career Easley was transferred laterally three times, but did not receive any significant promotions.
+          </div>
+
+          <div class=rad>Why Don't You Try Being a Human Computer
+          </div>
+
+
+          <div class=main3>Easley studied pharmacy for two years at Xavier
+            University, a black Catholic school in New Orleans, Louisiana. In
+            1954 she married and briefly returned to Birmingham. She worked as
+            a substitute teacher in Jefferson County, Alabama, and helped blacks
+             prepare for the literacy tests that they were required to pass
+             in order to register to vote.
+            <p>After Easley's husband was discharged from the military, the
+              couple moved to Cleveland, Ohio, to be near his family. Easley
+              hoped to continue her education. However the only pharmacy
+              program in the region had recently closed.</p></div>
+
+
+            <div class=side3>
+              <p class=s3head> Sidebar Section Heading </p>
+              <span class=s3text>This paragraph here explains what is going on under this picture.  This paragraph here explains what is going on under this picture.  This paragraph here explains what is going on under this picture.</span>
+            </div>
+
+            <div class=boxlinks>
+              <span class=com><i class="fa fa-comment"></i><a href=https://github.com>Read Comments</a></span>
+              <span class=star><i class="fa fa-star"></i><a href=https://www.youtube.com>Read Later</a></span>
+              <span class=square><i class="fa fa-share-square"></i><a href=https://www.netflix.com>Share This Post</a></span>
+            </div>
+
+
+            <footer>
+              <div class=moreposts>MOST POPULAR POSTS</div>
+              <li>
+                <div class=left1><a href="http://0.0.0.0:4567/alan.html">Cool Post</a></div>
+                <div class=left2><a href="http://0.0.0.0:4567/ada.html">Another Cool Post</a></div>
+                <div class=right2><a href="http://0.0.0.0:4567/annie.html">These Posts Never End</a></div>
+                <div class=right1><a href="http://0.0.0.0:4567/">Seriously, Another One?</a></div>
+              </li>
+            </footer>
+    <%= yield %>
+  </body>
+</html>

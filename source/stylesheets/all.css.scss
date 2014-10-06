@@ -1,0 +1,504 @@
+@charset "utf-8";
+$visual-grid: true !default;
+$visual-grid-color: gray !default;
+@import "bourbon";
+@import "neat";
+
+body {
+  max-width: 965px;
+  height: 1500px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  @include outer-container;
+  header { @include span-columns(10); }
+  header { @include shift(1); }
+  height: 400px;
+  width: 965px;
+  font-family: 'Open Sans', sans-serif;
+  background:
+  linear-gradient(
+  rgba(31, 82, 127, 0.76),
+  rgba(31, 82, 127, 0.76)
+  ),
+  url(http://i62.tinypic.com/x44zlw.png);
+  .logo {
+    float: left;
+    padding-left: 140px;
+    padding-top: 10px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .fa {
+      font-size: 150%;
+    }
+
+    .about {
+      padding-left: 400px;
+      margin-top: -30px;
+      font-color: black;
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .search {
+      float: right;
+      padding-top: 3px;
+      padding-left: 20px;
+
+      .fa {
+        font-size: 90%;
+      }
+      .a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .subtitle {
+    padding-left: 350px;
+    padding-top: -20px;
+    font-size: 80%;
+  }
+  .top {
+    font-size: 450%;
+    padding-left: 150px;
+    padding-top: 130px;
+    margin-bottom: -15px;
+    color: white;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  @include outer-container;
+
+  .header2 {
+    @include span-columns(6.5); @include shift(1.5);
+    font-size: 250%;
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .author {
+    @include span-columns(6.5); @include shift(1.5);
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+
+    a:visited {
+      color: blue;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      border-radius: 30px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .side1 {
+      @include span-columns(4);
+    }
+  }
+
+  .side1 {
+    padding-top: 50px;
+
+    img {
+      margin-left: 75px;
+      border-radius: 30px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .link {
+    padding-left: 780px;
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .authlinks {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: gray;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+  .main {
+    @include span-columns(6); @include shift(1.5);
+    padding-top: 30px;
+
+    .side2 {
+      @include span-columns(4);
+    }
+  }
+
+  .side2 {
+    padding-top: 40px;
+
+    img {
+      float:right;
+      margin-right: 135px;
+      height: 200px;
+      width: 225px;
+    }
+  }
+
+  .s2link {
+    position: relative;
+    padding-left: 850px;
+
+    a:visited {
+      color: gray;
+    }
+  }
+
+  .main2 {
+    @include span-columns(6); @include shift(1.5);
+    margin-top: -90px;
+  }
+
+  .rad {
+    @include span-columns(6); @include shift(1.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 130%;
+    border-left: ridge;
+    color: royalblue;
+    font-weight: bold;
+  }
+
+  .main3 {
+    @include span-columns(6); @include shift(1.5);
+    margin-right: 60px;
+  }
+
+  .side3 {
+    margin-left: 50px;
+    padding-left: 520px;
+    padding-right: 100px;
+
+    .s3head {
+      font-size: 120%;
+      color: royalblue;
+      padding-left: 100px;
+      margin-left: 60px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .s3text {
+      padding-right: -150px;
+      color: gray;
+    }
+  }
+
+
+  .boxlinks {
+    float: left;
+    margin-left: 150px;
+
+    i {
+      background: #494949;
+      color: white;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      background: silver;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    a:visited {
+      color: white;
+    }
+
+    .com {
+      margin-right: 10px;
+
+      i {
+        padding-top: 4px;
+        padding-bottom: 2px;
+        padding-right: 4px;
+        padding-left: 3px;
+      }
+    }
+
+    .star {
+      margin-right: 10px;
+
+      i {
+        padding-top: 4px;
+        padding-bottom: 2px;
+        padding-right: 4px;
+        padding-left: 3px;
+      }
+    }
+
+    .square {
+
+      a {
+        background: royalblue;
+      }
+      i {
+        background: navy;
+        padding-top: 4px;
+        padding-bottom: 2px;
+        padding-right: 4px;
+        padding-left: 3px;
+      }
+    }
+  }
+
+  .morelinks {
+    @include span-columns(6); @include shift(1.5);
+    margin-top: 20px;
+    font-size: 300%;
+  }
+
+  .annie {
+    @include span-columns(6); @include shift(1.5);
+    float: left;
+    padding-bottom: 30px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    .annieauthor {
+      margin-bottom: 10px;
+    }
+  }
+
+  .alan {
+    @include span-columns(6); @include shift(1.5);
+    float: left;
+    padding-bottom: 30px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    .alanauthor {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ada {
+    @include span-columns(6); @include shift(1.5);
+    float: left;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    .adaauthor {
+      margin-bottom: 10px;
+    }
+  }
+
+  footer {
+    height: 200px;
+    padding-top: 100px;
+    @include span-columns(11); @include shift(0.75);
+
+    .moreposts {
+      font-size: 350%;
+      padding-left: 180px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .left1 {
+      height: 200px;
+      width: 235px;
+      background:
+      linear-gradient(
+      rgba(31, 82, 127, 0.76),
+      rgba(31, 82, 127, 0.76)
+      ),
+      url(http://indervilla.com/home/Finding-Nemo-Shark-HD-1024x576.jpg);
+      :hover {
+        background:
+        linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+        ),
+        url(http://indervilla.com/home/Finding-Nemo-Shark-HD-1024x576.jpg)
+      }
+
+      a {
+        font-size: 200%;
+        padding-top: 150px;
+        padding-right: 95px;
+        float: left;
+        margin-right: -50px;
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .left2 {
+      margin-left: 240px;
+      margin-top: -200px;
+      height: 200px;
+      width: 235px;
+      background:
+      linear-gradient(
+      rgba(31, 82, 127, 0.76),
+      rgba(31, 82, 127, 0.76)
+      ),
+      url(https://pbs.twimg.com/profile_images/2546538556/lion.jpg);
+
+      :hover {
+        background:
+        linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+        ),
+        url(https://pbs.twimg.com/profile_images/2546538556/lion.jpg)
+      }
+
+
+      a {
+        margin-top: 0px;
+        font-size: 200%;
+        color: white;
+        text-decoration: none;
+        float: left;
+        padding-bottom: 11px;
+        padding-top: 101px;
+
+      }
+    }
+
+    .right2 {
+      margin-left: 480px;
+      margin-top: -200px;
+      height: 200px;
+      width: 235px;
+      background:
+      linear-gradient(
+      rgba(31, 82, 127, 0.76),
+      rgba(31, 82, 127, 0.76)
+      ),
+      url(http://www.phootoscelebrities.com/wp-content/uploads/2014/07/arnold-schwarzenegger-pics.jpg);
+
+      :hover {
+        background:
+        linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+        ),
+        url(http://www.phootoscelebrities.com/wp-content/uploads/2014/07/arnold-schwarzenegger-pics.jpg)
+      }
+
+
+      a {
+        margin-top: 0px;
+        font-size: 200%;
+        color: white;
+        text-decoration: none;
+        float: left;
+        padding-bottom: 0px;
+        padding-top: 112px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .right1 {
+      margin-left: 720px;
+      margin-top: -200px;
+      height: 200px;
+      width: 235px;
+      background:
+      linear-gradient(
+      rgba(31, 82, 127, 0.76),
+      rgba(31, 82, 127, 0.76)
+      ),
+      url(http://www.destinationaware.com/wp-content/uploads/2014/06/Matrix.jpg);
+
+      :hover {
+        background:
+        linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+        ),
+        url(http://www.destinationaware.com/wp-content/uploads/2014/06/Matrix.jpg)
+      }
+
+
+      a {
+        margin-top: 65px;
+        font-size: 200%;
+        color: white;
+        text-decoration: none;
+        float: right;
+        margin-top: 0px;
+        padding-top: 115px;
+      }
+    }
+  }
+}
