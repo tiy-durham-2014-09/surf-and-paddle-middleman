@@ -1,7 +1,7 @@
 <section>
   <article>
     <!-- list each article title (which is a link to the full article page), author info line, text summary, and social buttons, ordered by date -->
-    <% sitemap.resources.select do |a| %>
+    <% sitemap.resources.each do |a| %>
       <% if a.data[:category] == "article" %>
         <div class="article_title">
           <%= link_to a.data[:title], a.path %>
@@ -16,13 +16,12 @@
         </div>
         <div>
           <%# binding.pry %>
-          <%= a %> <!-- aaargh, how? -->
+          <%= a %> <!-- aaaargh, how? -->
           <%#= truncate_words(a, :length => 100) %>...
         </div>
         <%= partial "social-buttons" %>
       <% end %>
     <% end %>
-
   </article>
   <aside>
     <div class="side_column_header">SIDEBAR SECTION BEHEADING</div>

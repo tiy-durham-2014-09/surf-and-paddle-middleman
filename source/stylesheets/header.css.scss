@@ -23,11 +23,19 @@ footer {
 section {
   @include outer-container;
 
+
   .blog_name {
     @include span-columns(4);
     font-family: "Open Sans";
     font-weight: 600;
-    margin-top: 10px;
+
+    .blog_icon {
+      float: left;
+    }
+
+    .blog_name_text {
+      padding-top: 20px;
+    }
   }
 
   .title_tools {
