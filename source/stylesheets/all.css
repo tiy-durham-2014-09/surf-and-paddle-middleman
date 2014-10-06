@@ -1,3 +1,38 @@
 @charset "utf-8";
 
 /* Put content here. */
+.header {
+  background-color: blue;
+  height: 200px;
+}
+.header h1{
+  color:white;
+  font-size: 72px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+.article {
+  float: left;
+  width: 67%;
+  height: auto;
+}
+.sidebar {
+  float: left;
+  width: 33%;
+  height: auto;
+}
+.column2 img {
+  width: 25%;
+  height: 25%;
+}
+.social{
+  color:gray;
+}
+.footer {
+  background-color: darkblue;
+  height: 200px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+ }
