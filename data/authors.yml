@@ -1,19 +1,19 @@
 easley:
   name: Annie Easley
+  photo: http://i.imgur.com/bVCxxkJ.jpg
   links:
     - Wikipedia: https://en.wikipedia.org/wiki/Annie_Easley
     - Homepage: http://www.jsc.nasa.gov/history/oral_histories/NASA_HQ/Herstory/EasleyAJ/EasleyAJ_8-21-01.htm
-    - Photo: /images/easley.jpg
 turing:
   name: Alan Turing
+  photo: /images/turing.jpg
   links:
     - Twitter: https://twitter.com/Alan_M_Turing
     - Wikipedia: https://en.wikipedia.org/wiki/Alan_Turing
     - Facebook: https://www.facebook.com/AlanTuringCodebreaker
-    - Photo: /images/turing.jpg
 lovelace:
   name: Ada Lovelace
+  photo: /images/lovelace.jpg
   links:
     - Wikipedia: https://en.wikipedia.org/wiki/Ada_Lovelace
     - Twitter: https://twitter.com/EnchantressAda
-    - Photo: /images/lovelace.jpg

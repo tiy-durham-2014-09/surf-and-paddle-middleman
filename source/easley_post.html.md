@@ -1,7 +1,7 @@
 ---
 title: Annie Easley's Blog Post
 date: 10/3/2014
-author: data.authors.easley.name
+author: Annie Easley
 layout: custom
 ---
 Tattooed swag VHS wayfarers occupy whatever. Swag Brooklyn single-origin coffee mlkshk selfies. Gentrify Marfa Thundercats before they sold out Godard cornhole. Chambray messenger bag Schlitz, deep v Austin occupy cliche Pitchfork. Hashtag next level bespoke, cray 90's photo booth Portland beard.

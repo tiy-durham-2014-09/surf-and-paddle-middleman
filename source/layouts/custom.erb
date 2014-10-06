@@ -9,25 +9,21 @@ Change your index.html.erb page to show all three of your other posts in descend
 - Either the first paragraph of the text or a truncated number of words
 - The buttons at the bottom of each post
 
-On your new index.html.erb, the sidebar author information should not show up, as you should have three different authors with posts on the page.
-
 Remember to use helpers to make your life easier and your templates nicer!
 -->
-
-<!--MOVE AUTHOR INFO (picture, social links) TO SIDEBAR-->
 
 <!DOCTYPE html>
 
 <html>
   <head>
     <title><%= current_page.data.title %></title>
-    <%= stylesheet_link_tag %>
+    <%= stylesheet_link_tag "all" %>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
 
-<body class="<%= page_classes %>">
+<body>
   <div class="header">
       <div class="container">
         <span class="top_left">
@@ -49,59 +45,39 @@ Remember to use helpers to make your life easier and your templates nicer!
 
     <!--THIS IS WHERE THE POSTS GO-->
     <article class="left">
-       <%= current_page.data.author %>
-       <%= current_page.data.date %>
-       <%= current_page.data.text %>
-       <!--<%= yield %#>-->
-
       <div class="left_headline">
-
-
-
-        <!--need to figure out syntax (create a variable?) so that I can pull the proper data for a given author from the authors yaml file...for SOCIAL LINKS and for AUTHOR PHOTO-->
-
-
-
-        <h1><!--title (pulled from front-matter)-->
-          <% current_page.data.title do |f| %>
-          <%= f %>
+        <h1><!--title (pulled from md front-matter)-->
+          <% current_page.data.title do |a| %>
+          <%= a %>
           <% end %>
         </h1>
       </div>
 
       <table>
         <tr>
-          <td><span class="byline">
-          <!--Image of author (pulled from yaml)-->
-          <% data.authors.easley/turing/lovelace.photo do |f| %>
-         <%= f %>
-         <% end %>
+          <!--<td><span class="byline">-->
+          <!--Image of author (pulled from authors yaml)
           </span>
-          </td>
-
+        </td>-->
           <td><span class="author_left_name">
-          <!--Author Name (pulled from front-matter; this info in front-matter is in turn being pulled from yaml)-->
-          <% current_page.data.author do |f| %>
-         <%= f %>
-         <% end %>
+            <!--Author Name (pulled from md front-matter; this info in front-matter is in turn being pulled from yaml)-->
+            <% current_page.data.author do |b| %>
+            <%= b %>
+            <% end %>
           </span>
 
-          <!--date of post (pulled from front-matter)-->
-           on <% current_page.data.date do |f| %>
-          <%= f %>
-          <% end %>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-          <!--social links (pulled from yaml)-->
-          <% data.authors.easley/turing/lovelace.links.each do |f| %>
-          <%= f %>
-          <% end %>
+          <!--date of post (pulled from md front-matter)-->
+           on <% current_page.data.date do |c| %>
+           <%= c %>
+           <% end %>
           </td>
         </tr>
       </table>
+
+      <!--the text of the post-->
+      <% current_page.data do |d| %>
+      <%= d %>
+      <% end %>
 
 
       <!--comments, read later, and share this post buttons-->
@@ -120,7 +96,36 @@ Remember to use helpers to make your life easier and your templates nicer!
       </table>
     </article>
 
+
+<!--attempt to create a variable so that I can pull the proper data for a given author from the authors yaml file...for SOCIAL LINKS and for AUTHOR PHOTO-->
+      <%= currentauthor = current_page.data.author %>
+      <!--when I tried to plug in the currentauthor variable, neither thing worked-->
+
+
     <aside class="right">
+      <span class="author_picture_right">
+        <!--Image of author (pulled from authors yaml)-->
+        <% data.authors.easley.photo do |e| %> <!--error: undefined method 'photo'-->
+        <%= e %>
+        <% end %>
+      </span>
+      <br>
+
+      <span class="author_right_name">
+        <!--Author Name (pulled from md front-matter; this info in front-matter is in turn being pulled from authors yaml)-->
+        <% current_page.data.author do |b| %>
+        <%= b %>
+        <% end %>
+      </span>
+
+      <div class="social_right">
+        <!--social links (pulled from authors yaml)-->
+        <!--need to find a way to pull the info out of the arrays into links-->
+        <% data.authors.easley.links.each do |f| %>
+        <%= f %>
+        <% end %>
+      </div>
+
       <div class="picture_right">
       </div>
       <div class="picture_right_link">

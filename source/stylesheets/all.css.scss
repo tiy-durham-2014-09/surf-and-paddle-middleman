@@ -214,6 +214,14 @@ a.share_button {
   padding-right: 120px;*/
 }
 
+.author_right_name {
+  text-align: center;
+}
+
+.social_right {
+  text-align: center;
+}
+
 .picture_right {
   background:
     linear-gradient(
@@ -225,6 +233,12 @@ a.share_button {
   background-position: center;
   height: 145px;
   max-width: 205px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*should account for variablity in picture size or make all pictures the same size*/
+.author_picture_right {
   margin-left: auto;
   margin-right: auto;
 }
