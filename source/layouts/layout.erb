@@ -16,22 +16,49 @@
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/all.css">
   <!-- <link rel="stylesheet" type="text/css" href="normalize.css>" -->
 </head>
 
 <body class="<%= page_classes %>">
   <div class="container">
     <div class="head">
-      <div class="blog"><img src="images/wave.png"> SURF &amp; PADDLE CO. BLOG<div class="search"> ABOUT SEARCH <img src="images/glass.png"></div>
+      <div class="blog"> <img src="images/wave.png"> SURF &amp; PADDLE CO. BLOG<div class="search"> ABOUT SEARCH <img src="images/glass.png"></div>
     </div>
     <p class="htext">SURF &amp; PADDLE CO.
       <div class="iy"> An Ironyard Academy Project Est. Spring 2014 </div></p>
     </div>
   </div>
+  <div class="rtext">
+    <div class="picinfo">
+      <div class="mepic"> <%= data.authors.picture %>
+      </div>
+      <div id="name"> <%= current_page.data.author %>
+      </div>
+      <!-- <div id="social"> <%= link_to 'Twitter', current_page.data.twitter %>
+        <%= link_to 'Facebook', current_page.data.facebook %>
+        <%= link_to 'Instagram', current_page.data.instagram %>
+      </div> -->
+    </div>
+    <div>
+      <div class="image">
+      </div>
+      <a class="link" href="www.google.com"> THIS GUY
+      </a>
+    </div>
+    <div class="shead"> COOL STORY HERE
+    </div>
+    <div class="sidebar"> Vivamus aliquam eu libero in dictum.
+      Vestibulum ante ipsum primis in faucibus
+      orci luctus et ultrices posuere cubilia Curae;
+      Cras eleifend <a class="google" href="www.google.com">commodo orci.<a>
+        Aliquam non ultricies nibh.
+        Aenean et ligula ac ipsum.
+      </div>
+    </div>
+  </div>
   <!-- <div><h1 class="popular"> MOST POPULAR POSTS </h1>
   <div class="boxes"><div></div><div></div><div></div></div></div> -->
-  </html>
+
   <%= yield %>
 </body>
 </html>

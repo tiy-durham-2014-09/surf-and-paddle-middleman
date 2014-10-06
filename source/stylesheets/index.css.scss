@@ -1,11 +1,26 @@
+@import "bourbon";
+@import "neat";
+
+body {
+	margin: 0 auto;
+	@include outer-container;
+}
+
+.all {
+	@include span-columns(7);
+	float:left;
+	// background-color:grey;
+}
+
 .annie {
 	font-size:30px;
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom:50px;
+	margin-top:75px;
 	// border:1px solid black;
 }
 
 .aninfo {
+	margin-top:5px;
 	font-size:15px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -14,22 +29,96 @@
 	font-size:30px;
 	font-family: 'Open Sans', sans-serif;
 	// border:1px solid black;
-	margin-bottom:50px;
+	margin-top:75px;
 }
 
 .alinfo {
+	margin-top:5px;
 	font-size:15px;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .ada {
+
 	font-size:30px;
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom:50px;
+	margin-top:75px;
+	margin-bottom:30px;
 	// border:1px solid black;
 }
 
 .adlinfo {
+	margin-top:5px;
 	font-size:15px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.social:visited {
+	text-decoration:none;
+}
+
+.social {
+	margin-top:10px;
+}
+
+.rtext {
+	@include span-columns(4);
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing:-.4px;
+	float:right;
+	// width:300px;
+	// margin-right:150px;
+	color:#5e686f;
+
+	.mepic {
+		width:50%;
+	}
+
+	.name {
+		color:#106db3;
+	}
+
+	.picinfo {
+		margin-left:115px;
+		padding-top:90px;
+	}
+
+	.social {
+		font-size:12px;
+		word-spacing:2px;
+	}
+
+
+	.image {
+		margin-left:50px;
+		// padding-left:90px;
+		margin-top:35px;
+		padding-top:10px;
+		height:280px;
+		width:310px;
+		background-image:
+		url("../images/oldcomp.jpg");
+	}
+
+	.shead {
+		padding-top:40px;
+		font-size:17px;
+		font-family: 'Oswald', sans-serif;
+		color:#106db3;
+		margin-left:50px;
+	}
+
+	.link {
+		margin-left:110px;
+		font-size:12px;
+		padding-left:160px;
+		color:#a3b3bf;
+	}
+
+	.sidebar {
+		font-size:15px;
+		color:#a3b3bf;
+		margin-left:50px;
+		font-spacing:-.5px;
+	}
 }

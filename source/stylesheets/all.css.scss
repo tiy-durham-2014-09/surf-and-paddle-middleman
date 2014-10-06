@@ -71,10 +71,7 @@ body {
 .ltext {
 	@include span-columns(7);
 	font-family: 'Open Sans', sans-serif;
-	/*letter-spacing:0px;*/
 	float:left;
-	// width:650px;
-	// margin-left:165px;
 	color:#5e686f;
 	font-size:17px;
 
@@ -93,7 +90,7 @@ body {
 	}
 
 	.n {
-		font-size:10px;
+		font-size:20px;
 		/*padding-top:10px;*/
 		color:#106db3;
 		font-family: 'Oswald', sans-serif;
@@ -102,6 +99,7 @@ body {
 	}
 
 	.dy {
+		padding-top:9px;
 		color:#a3b3bf;
 		font-size:12px;
 		font-family: 'Open Sans', sans-serif;
@@ -143,6 +141,7 @@ body {
 
 	.name {
 		color:#106db3;
+		font-size:50px;
 	}
 
 	.picinfo {
@@ -163,12 +162,6 @@ body {
 		padding-top:10px;
 		height:280px;
 		width:310px;
-		background-image:
-		linear-gradient(
-		rgba(5, 44, 73, .60),
-		rgba(5, 44, 73, .60)
-		),
-		url("../images/math.jpg");
 	}
 
 	.shead {
@@ -179,11 +172,17 @@ body {
 		margin-left:50px;
 	}
 
-	.link {
-		margin-left:110px;
+	.pic {
+		margin-left:20px;
 		font-size:12px;
 		padding-left:160px;
 		color:#a3b3bf;
+	}
+
+	.link {
+	font-size:12px;
+	padding-left:160px;
+	color:#a3b3bf;
 	}
 
 	.sidebar {

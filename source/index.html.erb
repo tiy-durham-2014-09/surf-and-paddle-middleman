@@ -4,15 +4,26 @@ layout: "layout"
 
 <div class="all">
 	<div class="annie" ><%= link_to 'Annie\'s blog', 'annie.html' %>
-		<div class="aninfo"><%= truncate_words(data.authors.annie.post, :length => 50) %>
+		<div class="aninfo"><%= truncate_words(data.authors.annie.post, :length => 70) %>
+		<div class="social"> <%= link_to 'Twitter', current_page.data.twitter %>
+			<%= link_to 'Wikipedia', current_page.data.wikipedia %>
+			<%= link_to 'Facebook', current_page.data.facebook %>
 		</div>
 	</div>
+</div>
 	<div class="alan"><%= link_to 'Alan\'s blog', 'alan.html' %>
-		<div class="alinfo"><%= truncate_words(data.authors.alan.post, :length => 50) %>
+		<div class="alinfo"><%= truncate_words(data.authors.alan.post, :length => 70) %>
+		<div class="social"> <%= link_to 'Twitter', current_page.data.twitter %>
+			<%= link_to 'Wikipedia', current_page.data.wikipedia %>
+			<%= link_to 'Facebook', current_page.data.facebook %>
 		</div>
 	</div>
+</div>
 	<div class="ada"><%= link_to 'Ada\'s blog', 'ada.html' %>
-		<div class="adlinfo"><%= truncate_words(data.authors.ada.post, :length => 50) %>
+		<div class="adlinfo"><%= truncate_words(data.authors.ada.post, :length => 70) %>
+		<div class="social"> <%= link_to 'Twitter', current_page.data.twitter %>
+			<%= link_to 'Wikipedia', current_page.data.wikipedia %>
+			<%= link_to 'Facebook', current_page.data.facebook %>
 		</div>
 	</div>
 </div>
