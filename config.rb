@@ -38,6 +38,7 @@ helpers do
   end
 end
 
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -45,13 +46,6 @@ end
 configure :development do
   activate :livereload
 end
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 set :css_dir, 'stylesheets'
 

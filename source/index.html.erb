@@ -9,45 +9,47 @@ title: Progenitors of Programming
   <%= partial "/layouts/partials/header" %>
   <div class="container">
     <section class="left">
-      <!-- <% if content_for?(:left) %>
-        <div class="article__content">
-          
-          <%= yield_content :article %>
-        </div>
-      <% end %> -->
-      <h3>A FANTASTIC ENGAGING HEADLINE GOES HERE</h3>
-      <%=current_page.data.title%>
-
-      <div class="credits">
+      <div class="article-each">
+        <h3><%= link_to 'who was charles babagge?', '../articles/lovelace.html'%></h3>
         <ul>
-          <li><div class="avatar1"></div></li>
-          <li>Anne Marie</li>
-          <li>on <span>Monday Oct. 7th 9:22pm</span></li>
+          <li><div class="ada"></div></li>
+          <li>Ada Lovelace</li>
+          <li>10-01-1939</li>
         </ul>
-      </div>
-      <div class="text">
-        <article>
-
-            <!-- date.pretty_date
-            truncate("Once upon a time in a world far far away", :length => 8)
-            lorem.words 5 ??? --> -->
+        <article>"Charles Babbage was born in London on December 26, 1791, the son of Benjamin Babbage, a London banker. As a youth Babbage was his own instructor in algebra, of which he was passionately fond, and was well read in the continental mathematics of his day. Upon entering Trinity College, Cambridge, in 1811, he found himself far in advance of his tutors in mathematics. Babbage co-founded the Analytical Society for promoting continental mathematics and reforming the mathematics of Newton then taught at the university."
+          <%= link_to 'Read More', '../articles/lovelace.html' %>
         </article>
-      <!-- comment icon fa-comment-o [&#xf0e5;] -->
-      <!-- cloud upload icon  fa-cloud-upload [&#xf0ee;] -->
-      <!-- search icon  fa-search [&#xf002;] -->
-    </section>
-    <section class="right">
-      <div class="avatar2"></div>
-      <div class="name">Annie Dolphin</div>
-      <div class="social-links">
-        <ul>
-          <li>Twitter</li>
-          <li>Facebook</li>
-          <li>Instagram</li>
-        </ul>
       </div>
-      <div class="ad-image1"></div>
-      <h4>SIDEBAR SECTION HEADING</h4>
+      <div class="article-each">
+        <h3><%= link_to 'ultra marathon training', '../articles/turing.html'%></h3>
+        <ul>
+          <li><div class="alan"></div></li>
+          <li>Alan Turing</li>
+          <li>10-01-1949</li>
+        </ul>
+        <article> "‘You must be mad’; this is quite a common reaction to runners who are contemplating taking on an ultra marathon race, but speak to anybody who has run ultra marathons and you will find a perfectly normal, albeit highly motivated, person who just loves a tough, personal challenge."
+          <%= link_to 'Read More', '../articles/turing.html' %>
+        </article>
+      </div>
+      <div class="article-each">
+        <h3><%= link_to 'taming liquid hydrogen', '../articles/easley.html'%></h3>
+        <ul>
+          <li><div class="annie"></div></li>
+          <li>Annie Easley</li>
+          <li>10-01-1989</li>
+        </ul>
+        <article> "After Centaur's aborted first flight, President John F. Kennedy demanded to know what NASA hoped to achieve with Centaur. Administrator James Webb's response was unequivocal. With the Apollo program already committed to using liquid hydrogen in the upper stages of the giant Saturn vehicle, Centaur would prove the fiael's feasibility.' The Agency was also counting on Atlas-Centaur to launch Surveyor, a robotic spacecraft with a mission to determine whether the Moon's surface was hard enough to land future spacecraft with human beings aboard."
+          <%= link_to 'Read More', '../articles/easley.html' %>
+        </article>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="sidebar">
+        <div class="ad-image1"></div>
+        <h4>contributions</h4>
+        <p>If you would like to make suggestions about authors and/or articles worthy of inclusion, please forward them.  We are always on the lookout for great contributions to our repository.</p>
+      </div>
     </section>
   </div>
   <footer>

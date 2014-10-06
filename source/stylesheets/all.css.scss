@@ -1,7 +1,7 @@
-$visual_grid: true;
-$visual-grid-color: red;
+/*$visual_grid: true;
+$visual-grid-color: green;
 $visual-grid-opacity: 0.2;
-$visual-grid-index: back;
+$visual-grid-index: back;*/
 
 @import "bourbon";
 @import "neat";
@@ -14,14 +14,13 @@ $visual-grid-index: back;
 
 body {
   width: 965px;
-  border: 5px dotted black;
   @include outer-container;
 
   header {
     width: 965px;
     height: 389px;
     @include span-columns(12);
-    color: gray;
+    @include omega();
     background:
       linear-gradient(
         rgba(56, 115, 192, .9),
@@ -30,7 +29,8 @@ body {
       url("../images/010101.jpg");
     .top-nav-bar {
       @include span-columns(12);
-      padding: 0;
+      margin: 0;
+      padding-top: 5px;
       height: 2em;
 
       .logo-blog {
@@ -68,6 +68,7 @@ body {
         font-size: 14px;
         margin-right: 120px;
         margin-top: 5px;
+
         ul{
           margin: 0;
 
@@ -90,40 +91,198 @@ body {
       }
     }
     h1 {
-      // line-height: 100%;
+      line-height: 115%;
       font-family: 'Open Sans', sans-serif;
       color: white;
-      font-size: 50px;
+      font-size: 55px;
       margin: 0;
       text-transform: uppercase;
       text-align: center;
       letter-spacing: -1.5;
-      padding-top: 155px
+      padding-top: 165px
     }
     h2 {
       font-family: 'Open Sans', sans-serif;
       color: black;
-      font-size: 11px;
+      font-size: 12px;
+      font-weight: bold;
       margin: 0;
       text-align: center;
     }
   }
 
   .container {
-    margin-left: 100px;
-    @include span-columns(10 of 12);
-    border: 5px dashed black;
+    @include span-columns(12);
+    @include omega();
 
     .left {
-      float: left;
-      @include span-columns(7);
-      border: 5px dotted black;
-    }
+      @include span-columns(6);
+      @include shift (1);
+        .article-each {
+          padding-top: 20px;
+        }
+        h3 {
+          font-family: 'Oswald', sans-serif;
+          font-size: 30px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: black;
+          line-height: 1.1;
+          letter-spacing: -1.7;
+          margin: 0;
+        }
+        .credits {
+          list-style-type: none;
+          display: inline-block;
+          vertical-align: middle;
+
+          li {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+          }
+        }
+        h5 {
+          font-family: 'Oswald', sans-serif;
+          font-size: 48px;
+          line-height: 1.1;
+          letter-spacing: -1.7;
+        }
+        ul{
+          margin: 0;
+        }
+        li{
+          list-style-type: none;
+          display: inline-block;
+          vertical-align: middle;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 12px;
+        }
+        .ada {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          background:
+            linear-gradient(
+              rgba(56, 115, 192, .7),
+              rgba(56, 115, 192, .7)
+            ),
+            url("../images/ada.png");
+          background-position: 30% -10%;
+        }
+        .alan {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          background:
+            linear-gradient(
+              rgba(56, 115, 192, .7),
+              rgba(56, 115, 192, .7)
+            ),
+            url("../images/alan.jpeg");
+          background-position: 30% -10%;
+        }
+        .annie {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          background:
+            linear-gradient(
+              rgba(56, 115, 192, .7),
+              rgba(56, 115, 192, .7)
+            ),
+            url("../images/annie.jpeg");
+          background-position: 30% -10%;
+        }
+        p {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 12px;
+          text-align: right;
+        }
+        .avatar-ada {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          vertical-align: middle;
+          background:
+            linear-gradient(
+              rgba(56, 115, 192, .7),
+              rgba(56, 115, 192, .7)
+            ),
+            url("../images/smallada.png");
+          background-position: 30% -10%;
+        }
+        article {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          -webkit-line-clamp: 3;
+        }
+      }
     .right {
-      float: right;
-      margin-left: 60px;
       @include span-columns(3);
-      border: 5px dotted black;
+      @include shift(1);
+      @include omega();
+
+      .sidebar {
+        border: 1px solid black;
+        padding-top: 20px;
+
+        .avatar2 {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          background:
+            linear-gradient(
+              rgba(56, 115, 192, .7),
+              rgba(56, 115, 192, .7)
+            ),
+            url("../images/kayaker.jpg");
+          background-position: 30% -10%;
+        }
+        .name {
+          font-family: san serif;
+          text-align: center;
+        }
+        .social-links ul {
+          list-style-type: none;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 12px;
+          text-align: center;
+        }
+        .social-links li {
+          list-style-type: none;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 12px;
+          display: inline-block;
+          text-align: center;
+        }
+
+        .ad-image1 {
+          margin-top: 10px;
+          width: 207px;
+          height: 167px;
+          background:
+            linear-gradient(
+              rgba(56, 115, 192, .3),
+              rgba(56, 115, 192, .7)
+            ),
+            url("../images/sidebar.jpg");
+        }
+
+        h4 {
+          font-family: 'Oswald', sans-serif;
+          line-height: 70px;
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
     }
   }
 }

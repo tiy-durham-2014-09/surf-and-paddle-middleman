@@ -1,0 +1,8 @@
+<ul>
+  <% data.authors.each do |author| %>
+  <li><%= author[1]['name']%>
+  <%= link_to author[1]['name'], "../articles/#{author[0]}.html" %>
+  <p><%#= author %></p>
+  </li>
+  <% end %>
+</ul>

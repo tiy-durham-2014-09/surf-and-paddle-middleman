@@ -1,48 +1,53 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
 <%= partial "/layouts/partials/head" %>
-<%= partial "/layouts/partials/header" %>
+<%= stylesheet_link_tag "normalize" %>
+<%= stylesheet_link_tag "all" %>
 
-<div class="container">
-  <section class="left">
-    <h3><%= authors.yaml.name %></h3>
+  <body class="page_classes">
+    <%= partial "/layouts/partials/header" %>
+  <div class="<%= page_classes %>">
+    <%= current_page.data.title %>
+    <%= current_page.data.author %>
 
-    <div class="credits">
-      <ul>
-        <li><div class="avatar1"></div></li>
-        <li>Anne Marie</li>
-        <li>on <span>Monday Oct. 7th 9:22pm</span></li>
-      </ul>
+    <%= current_page.data.text %>
+  </div>
+    <div class="container">
+      <div class="left">
+        <h5><%= data.authors.name %></h5>
+        <div class="credits">
+          <ul>
+            <li><div class="avatar1"></div></li>
+            <li><%=current_page.data.name%></li>
+            <li>on <span><%= current_page.data.date%></span></li>
+          </ul>
+        </div>
+        <div class="text">
+          <p> <%=yield%> </p>
+        </div>
+      </div>
     </div>
-    <div class="text">
-      <p><%=yield%>
-      </p>
-    <!-- comment icon fa-comment-o [&#xf0e5;] -->
-    <!-- cloud upload icon  fa-cloud-upload [&#xf0ee;] -->
-    <!-- search icon  fa-search [&#xf002;] -->
-  <!-- </section>
-  <section class="right">
-    <div class="avatar2"></div>
-    <div class="name">Annie Dolphin</div>
-    <div class="social-links">
-      <ul>
-        <li>Twitter</li>
-        <li>Facebook</li>
-        <li>Instagram</li>
-      </ul>
+
+
+    <div class="right">
+      <div class="sidebar">
+        <div class="avatar2"></div>
+        <div class="name"><%=current_page.data.name%></div>
+        <div class="social-links">
+          <ul>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+        <div class="ad-image1"></div>
+        <h4>contributions</h4>
+        <p>If you would like to make suggestions about authors and/or articles worthy of inclusion, please forward them.  We are always on the lookout for great contributions to our repository.</p>
+      </div>
     </div>
-    <div class="ad-image1"></div>
-    <h4>SIDEBAR SECTION HEADING</h4>
-  </section>
-</div> -->
 
-<!-- <h1>List</h1>
-<ol>
-  <% current_page.data.my_list.each do |f| %>
-  <li><%= f %></li>
-  <% end %>
-</ol> -->
 
-<!-- <%= partial "/layouts/partials/footer" %>
-</html> --> -->
+
+
+  </body>
+</html>
