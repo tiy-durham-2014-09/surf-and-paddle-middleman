@@ -1,0 +1,266 @@
+/* line 2, /Users/MikeyGuru/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Put content here. */
+/*font-family: 'Oswald', sans-serif;      HEADER*/
+/*font-family: 'Open Sans', sans-serif;   BODY*/
+/*@include tinted-image-bg(rgba(50,100,205,0.80), "images/....jpg");*/
+/* line 13, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+body {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, /Users/MikeyGuru/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  body:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 16, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.header {
+  width: 965px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: 100%;
+  background: linear-gradient(rgba(50, 100, 0, 0.8), rgba(50, 100, 0, 0.8)), url("http://i.dailymail.co.uk/i/pix/2014/01/30/article-2548954-1B12F34000000578-734_964x620.jpg"); }
+
+/* line 24, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.toppic {
+  width: 16px;
+  height: 16px; }
+
+/* line 28, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.topright {
+  font-family: 'Oswald', sans-serif;
+  color: #053350;
+  margin-left: 60px;
+  margin-top: 5px;
+  font-size: 14px; }
+
+/* line 36, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.topleft {
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  color: #053350;
+  margin-right: 90px;
+  margin-top: -20px;
+  font-size: 14px; }
+
+/* line 45, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.topmain {
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 65px;
+  margin-bottom: 0px; }
+
+/* line 55, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.submain {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  margin-top: 0px; }
+
+/* line 64, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.home:visited {
+  text-decoration: none;
+  color: white; }
+
+/* line 68, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.home:hover {
+  text-decoration: none; }
+
+/* @import "body"*/
+/* line 73, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.lbody {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 8.5298%;
+  margin-right: 0;
+  margin-top: 30px;
+  width: 500px;
+  background-color: white;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif; }
+  /* line 38, /Users/MikeyGuru/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .lbody:last-child {
+    margin-right: 0; }
+
+/* line 86, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.bodytop {
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: left;
+  width: 500px;
+  font-family: 'Oswald', sans-serif;
+  color: #053350;
+  font-size: 45px;
+  margin-bottom: 3px; }
+
+/* line 98, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+h3 {
+  color: #053350;
+  text-align: center; }
+
+/* line 103, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.smalld1 {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px; }
+
+/* line 108, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.smalld {
+  margin-top: 0px;
+  width: 500px;
+  height: 15px;
+  color: grey;
+  font-size: 13px; }
+
+/* line 116, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.bluename2 {
+  color: dodgerblue;
+  font-size: 13px; }
+
+/* line 120, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.t1 {
+  text-align: left;
+  width: 500px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px; }
+
+/* line 127, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.t3 {
+  font-family: 'Open Sans', sans-serif;
+  border-left: 3px solid gray;
+  width: 500px;
+  height: 65px;
+  color: dodgerblue;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-left: 10px; }
+
+/* line 138, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.t4 {
+  text-align: left;
+  width: 500px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px; }
+
+/* line 146, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.roll:hover {
+  text-decoration: underline; }
+
+/* line 149, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.roll {
+  color: dodgerblue; }
+
+/* line 152, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.bot {
+  width: 500px; }
+
+/* line 155, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.buttons {
+  width: 400px;
+  height: 25px; }
+
+/* line 159, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.rbody {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%;
+  height: 900px; }
+  /* line 38, /Users/MikeyGuru/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .rbody:last-child {
+    margin-right: 0; }
+  /* line 164, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+  .rbody .big_circle {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-top: 20px;
+    margin-right: 1px;
+    margin-left: 60px; }
+  /* line 173, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+  .rbody .dword {
+    margin-top: 1px;
+    margin-right: 145px;
+    color: grey; }
+  /* line 179, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+  .rbody .bluename1 {
+    color: dodgerblue;
+    text-align: center;
+    padding: 1px;
+    margin-right: 35px;
+    margin-bottom: 1px;
+    width: 200px; }
+  /* line 187, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+  .rbody .sword {
+    margin-top: 1px;
+    padding: 1px;
+    margin-left: 17px;
+    word-spacing: 6px;
+    font-size: 13px;
+    width: 200px;
+    text-align: right; }
+  /* line 196, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+  .rbody .small_pic {
+    width: 200px;
+    height: 180px;
+    margin-top: 20px;
+    margin-right: 160px;
+    margin-bottom: 1px; }
+  /* line 205, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+  .rbody h5 {
+    font-family: 'Open Sans', sans-serif;
+    width: 300px;
+    color: dodgerblue;
+    margin-bottom: 1px; }
+  /* line 212, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+  .rbody .sidebar {
+    font-family: 'Open Sans', sans-serif;
+    width: 200px;
+    height: 150px;
+    margin-right: 120px;
+    margin-bottom: 1px;
+    font-size: 13px; }
+
+/* line 222, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.home2:visited {
+  text-decoration: none;
+  color: limegreen; }
+
+/* line 226, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+.home2:hover {
+  text-decoration: none; }
+
+/* line 229, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+a:link {
+  text-decoration: none; }
+
+/* line 233, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+a:visited {
+  text-decoration: none; }
+
+/* line 237, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 241, /Users/MikeyGuru/TIY/surfboard/surf-and-paddle-middleman/source/stylesheets/all.css.scss */
+a:active {
+  text-decoration: underline; }

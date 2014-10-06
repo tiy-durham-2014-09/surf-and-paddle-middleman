@@ -1,0 +1,240 @@
+@charset "utf-8";
+@import "bourbon";
+@import "neat";
+
+/* Put content here. */
+/*font-family: 'Oswald', sans-serif;      HEADER*/
+/*font-family: 'Open Sans', sans-serif;   BODY*/
+ $std-tint:rgba( 50, 100, 0 ,0.80);
+@mixin tinted_image_bg($color, $image) {
+  background: linear-gradient($color,$color), url($image);
+   }
+/*@include tinted-image-bg(rgba(50,100,205,0.80), "images/....jpg");*/
+body {
+  @include outer-container;
+}
+.header {
+      width: 965px;
+      height: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      background-size: 100%;
+      @include tinted-image-bg($std-tint, "http://i.dailymail.co.uk/i/pix/2014/01/30/article-2548954-1B12F34000000578-734_964x620.jpg");
+}
+.toppic {
+  width: 16px;
+  height: 16px;
+}
+.topright{
+  font-family: 'Oswald', sans-serif;
+  color: #053350;
+  margin-left: 60px;
+  margin-top: 5px;
+  font-size: 14px
+
+}
+.topleft {
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  color: #053350;
+  margin-right: 90px;
+  margin-top: -20px;
+  font-size: 14px;
+}
+
+.topmain {
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Open Sans', sans-serif;
+  font-size: 65px;
+  margin-bottom:0px
+}
+.submain {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Open Sans', sans-serif;
+  font-size: 8px;
+  margin-top:0px;
+}
+.home:visited {
+    text-decoration: none;
+    color: white;
+  }
+.home:hover {
+    text-decoration: none;
+}
+
+/* @import "body"*/
+.lbody {
+  @include span-columns(6);
+  @include shift(1);
+  @include omega();
+  margin-top: 30px;
+  width: 500px;
+  font-weight: 400;
+  font-family:'Oswald', sans-serif;
+}
+
+.bodytop {
+  margin-top: 10px;
+ text-decoration: none;
+  text-align: left;
+  width: 500px;
+  font-family:'Oswald', sans-serif;
+  color: limegreen;
+  font-size: 45px;
+  margin-bottom: 3px;
+}
+
+
+h3{
+  color: #limegreen;
+  text-align: center;
+}
+
+.smalld1 {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+.smalld {
+  margin-top: 0px;
+  width: 500px;
+  height: 15px;
+
+  color: grey;
+  font-size: 13px;
+}
+.bluename2{
+  color: limegreen;
+  font-size: 13px;
+}
+.t1 {
+  text-align: left;
+  width: 500px;
+  font-family:'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+.t3 {
+  font-family:'Open Sans', sans-serif;
+  border-left: 3px solid gray;
+  width: 500px;
+  height: 65px;
+  color: limegreen;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.t4 {
+  text-align: left;
+  width: 500px;
+  font-family:'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+.roll:hover {
+  text-decoration: underline;
+}
+.roll {
+  color: dodgerblue;
+}
+.bot{
+  width: 500px;
+}
+.buttons {
+  width: 400px;
+  height: 25px;
+}
+.rbody{
+  @include span-columns(4);
+  @include shift(1);
+  height: 900px;
+
+.big_circle {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin-top: 20px;
+  margin-right: 1px;
+  margin-left: 60px;
+
+}
+.dword {
+
+  margin-top: 1px;
+  margin-right: 145px;
+  color: grey;
+}
+.bluename1{
+  color: limegreen;
+  text-align: center;
+  padding: 1px;
+  margin-right: 35px;
+  margin-bottom: 1px;
+  width: 200px;
+}
+.sword {
+  margin-top: 1px;
+  padding: 1px;
+  margin-left: 17px;
+  word-spacing: 6px;
+  font-size: 13px;
+  width: 200px;
+  text-align: right;
+}
+.small_pic {
+
+  width: 200px;
+  height: 180px;
+  margin-top: 20px;
+  margin-right: 160px;
+  margin-bottom: 1px;
+}
+
+h5 {
+  font-family:'Open Sans', sans-serif;
+  width: 300px;
+  color: limegreen;
+  margin-bottom: 1px;
+
+}
+.sidebar {
+  font-family:'Open Sans', sans-serif;
+
+  width: 200px;
+  height: 150px;
+  margin-right: 120px;
+  margin-bottom: 1px;
+  font-size: 13px;
+}
+}
+.home2:visited {
+    text-decoration: none;
+    color: limegreen;
+  }
+.home2:hover {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
