@@ -13,20 +13,7 @@
       <%= current_page.data.date %>
     </div>
     <%= yield %>
-    <div class="post_footer">
-      <div class="post_option_icon">
-        <i class="fa fa-comment"></i>
-      </div>
-      <span class="post_option">Read Comments</span>
-      <div class="post_option_icon">
-        <i class="fa fa-cloud-upload"></i>
-      </div>
-      <span class="post_option">Read Later</span>
-      <div class="post_option_icon">
-        <i class="fa fa-share-square-o"></i>
-      </div>
-      <span class="post_option">Share This Post</span>
-    </div>
+    <%= partial "social-buttons" %>
   </article>
   <aside>
     <div class="side_column">
@@ -49,3 +36,4 @@
   </aside>
 </section>
 <% end %>
+<%= partial "footer" %>
