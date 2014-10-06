@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Surf & Paddle</title>
+  <title>Surf &amp; Paddle</title>
   <link href="stylesheet.css" type="test/css" rel="stylesheet" />
 </head>
 
@@ -11,34 +11,47 @@
   <!-- Begin Top bar -->
   <div class="header">
     <div class="backgroundheader">
-      <p>SURF &amp; PADDLE CO. BLOG</p>
+      <div class="button_header_left">
+      <a href="#">SURF &amp; PADDLE CO. BLOG</a></div>
       <div class="buttons_header">
-        <ul>
-          <li>About</li>
-          </li>Search</li>
-        </ul>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Search</a>
+
+        </nav>
       </div>
       <!-- End Top Bar -->
       <!-- Begin Title -->
       <div class="titleheader">
         <h1>SURF &amp; PADDLE CO.</h1>
-        <h2 style="color:black; font-size: 10pt">An Ironyard Academy Project Est. Summer 2014</h2>
+        <h2 style="color:grey; font-size: 10pt">An Ironyard Academy Project Est. Summer 2014</h2>
       </div>
     </div>
   </div>
   <!-- End Title -->
   <!-- Begin Left Footer -->
-  <div class="leftfooter">
-    <h1>A FANTASTIC ENGANGING HEADLINE GOES HERE</h1>
-    <h6>Annie Dolphin on monday, June 30th 9:22pm</h6>
-    <p>Farmer full frame durty major diamondview southpoint oprah building city of medicine, duke chapel bay 7 renovation parrish street west village alt-country durty, scooter durham freeway french press fifteen five oh one mount moriah angier drive. Nc
+  <div class="fontfooter">
+    <div class="leftfooter">
+      <h1>A FANTASTIC ENGANGING HEADLINE GOES HERE</h1>
+      <h6>Groot on Monday, June 30th 9:22pm</h6>
+      <p>Farmer full frame durty major diamondview southpoint oprah building city of medicine, duke chapel bay 7 renovation parrish street west village alt-country durty, scooter durham freeway french press fifteen five oh one mount moriah angier drive. Nc
       central the west end mountain goats chicken bone park skate park blue devils luewwd d-town, bicycle lakewood wunc seventy duke chapel saint joseph's basketball, tiny farm lettuce city of medicine coworking old west bimbe bicycle. Partner bouncing
       bulldogs startup stampede durham divas blues festival the kress, baldwin lofts nevermore baldwin lofts we want oprah sustain-a-bull, the double nickel dur'm eagles north durham. Bowtie black wall street the boulevard the state of things dapper scrap
       exchange music on the lawn, american tobacco underground school of the arts bulltown strutters lady arm wrestlers, southpoint startup stampede beaver queen scrap exchange hayti.</p>
     <!-- MID webpage -->
-    <h3>"THIS IS A PULL QUOTE FROM THE ARTICLE."</h3>
+    <div class="mid_title">
+      <h3>"THIS IS A PULL QUOTE FROM THE ARTICLE."</h3>
+    </div>
     <!-- MID WEBPAGE -->
-    <p>The double nickel full frame alt-country old five points baseball eno, seed funding the buehler incubator liberty doughman, medicine hipster marry durham bowtie. Chapel drive basketball food truck rodeo historic preservation alt-country durham bowtie,
+      <div class="authors">
+        <h1>Authors</h1>
+        <ul>
+          <% data.authors.each do |author| %>
+            <li><a href="<%= author[0] %>.html"><%= author[0] %></a></li>
+          <% end %>
+        </ul>
+      </div>
+      <p>The double nickel full frame alt-country old five points baseball eno, seed funding the buehler incubator liberty doughman, medicine hipster marry durham bowtie. Chapel drive basketball food truck rodeo historic preservation alt-country durham bowtie,
       old west fayetville street west village renovation coffee wunc baldwin lofts, farmer's market renaissance beer big green wall coworking. Historic preservation world beer festival major the bull southsquare hub tobacco the state of things trinity
       park, adf people's pharmacy dance microbrew farmer 55, 15-501 renaissance durham rescue mission rigsbee food truck rodeo old west. Bull durham brightleaf festival for the eno driver street the boulevard renovation local brewery, food truck vest
       durham bulls big green wall marry durham partner. Carpe durham american tobacco railroad startup stampede north east erwin terrace scooter fayetville street, 15-501 third fridays saint joseph's nevermore ballpark. Carpe durham beard hope valley
@@ -47,28 +60,39 @@
       the state of things, juneteenth coffee acc the west end history hub microbrew oprah building, beard seventy carolina theatre morehead hills corcoran community. History hub ninth street cleveland holloway baseball 147 corcoran smoffice blues, fixie
       black wall street triangle localista hope valley brewery durham, butterfly house seeds hipster maker baldwin lofts hipster.</p>
     <!-- Share buttons -->
-    <p>Read Comments</p>
-    <p>Read Later</p>
-    <p>Share This Post</p>
-  </div>
-  <div class="rightfooter">
-    <!-- RIGHT FOOTER -->
-    <div class="profile_picture">
+      <p>Read Comments</p>
+      <p>Read Later</p>
+      <p>Share This Post</p>
     </div>
-    <p>Annie Dolphin</p>
+    <div class="rightfooter">
+    <!-- RIGHT FOOTER -->
+      <div class="profile_picture">
+      </div>
+      <div class="user_name">
+        <p>Baby Groot</p>
+      </div>
     <!-- Social Networks -->
-    <p>Twitter</p>
-    <p>Facebook</p>
-    <p>Instagram</p>
-    <!-- STARTING ADD -->
-    random photo here
-    <!-- END ADD -->
-    <!-- SIDEBAR SECTION HEADING -->
-    <p>Gritty northgate park chapel hill street doughman amshack scrap exchange mountain goats scooter, southsquare food truck gritty sodu baldwin lofts basketball bouncing bulldogs, chicken bone park skate park major the bull blackwell the bulls listserv.
+      <div class="socialnetworks">
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+      <!-- STARTING ADD -->
+      <div class="add_photo">
+      </div>
+      <!-- END ADD -->
+      <!-- SIDEBAR SECTION HEADING -->
+      <div class="description">
+        <div class="About_user">
+          <h3>About 'Baby Groot'</h3>
+        </div>
+        <p>Gritty northgate park chapel hill street doughman amshack scrap exchange mountain goats scooter, southsquare food truck gritty sodu baldwin lofts basketball bouncing bulldogs, chicken bone park skate park major the bull blackwell the bulls listserv.
       Bragtown blues festival triangle localista durham rescue mission fayetville street listserv, the state of things world beer festival innovation juneteenth.</p>
-  </div>
+      </div>
+    </div>
   <!-- MOST POPULAR POST -->
   <!-- BOTTOM BAR -->
+  </div>
 </body>
 
 </html>
