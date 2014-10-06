@@ -1,0 +1,192 @@
+@charset "utf-8";
+@import "bourbon";
+$visual_grid: true;
+$visual-grid-color: red;
+$visual-grid-index: back;
+$visual-grid-opacity: 0.2;
+$max-width: (965px) !default;
+@import "neat";
+@import "normalize.css";
+$fg-column: 60px;             // Column Width
+$fg-gutter: 25px;             // Gutter Width
+$fg-max-columns: 12;          // Total Columns For Main Container
+// @mixin photo-grade ($opacity){
+//     -webkit-photo-grade: $opacity;
+//      -moz-photo-grade: $opacity;
+//       -ms-photo-grade: $opacity;
+//           photo-grade: $opacity;
+// }
+
+$photo-color: #15679B;
+$opacity: 15%;
+
+* {
+  margin: 0px;
+}
+
+html{
+  max-width: 965px;
+}
+header {
+  background: linear-gradient(rgba(36, 105, 159, 0.6), rgba(36, 105, 159, 0.6)),url("http://placepuppy.it/965/400");
+  font-family:'Oswald', sans-serif;
+  display: block;
+  height: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 60pt;
+  font-weight: 300;
+  padding: 15% 8% 0% 8%;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 10pt;
+  font-weight: 400;
+  margin-top: -10;
+}
+
+body {
+font-family:'Open Sans', sans-serif;
+font-size: 12pt;
+color: #596265;
+font-weight: 300;
+
+}
+
+section{
+  @include outer-container;
+}
+
+.post {
+  // float: left; width: 51%;
+  margin: 50px;
+  float: left;
+  @include span-columns(6);
+  // margin: 8%;
+  // // width: flex-grid(6);
+  // // margin: flex-gutter(1);
+}
+span {
+  font-size: 12pt;
+  color: #849BA4;
+}
+
+// img {
+//   -webkit-filter: opacity(15%);
+//   -webkit-filter: opacity(15%);
+// }
+
+.roundpuppy {
+    // background: #15679B;
+    /*position: relative;*/
+    // background: linear-gradient(rgba(36, 105, 159, 0.6), rgba(36, 105, 159, 0.6)),url("http://placepuppy.it/100/100");
+    // @include photo-grade(15%);
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: $photo-color;
+}
+
+#name {
+  text-align: center;
+  position: relative;
+}
+#social {
+  text-align: center;
+  position: relative;
+  margin: 10px;
+}
+
+#squarepuppy {
+  background: #15679B;
+  display: block;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+#about{
+  font-size: 8pt;
+  color: #849BA4;
+  text-align: right;
+  /*border-bottom: solid black;*/
+  margin: 0px 20px 10px 0px;
+  text-decoration: underline;
+}
+
+.sidebarhead {
+font-size: medium;
+color: #13649A;
+margin-bottom: 10px;
+}
+
+// .section.roundpuppy {
+//   padding: 10%;
+//   margin-left: 0;
+//   text-align: middle;
+//   border: solid;
+// }
+
+#headline {
+  color: #122B3D;
+  font-size: 28pt;
+  letter-spacing: -3px;
+  font-family: 'Open Sans', sans-serif;
+  font-syle: bold;
+}
+
+#quote {
+  font-size: 16pt;
+  color: #13649A;
+  text-align: center;
+  border-left: solid gray;
+  margin: 8px 5px 8px 10px;
+}
+
+.squarepuppy{
+  // @include photo-grade(15%);
+  background-color: $photo-color;
+  }
+
+img{
+  opacity: 15%;
+}
+aside {
+  // float: left; width: 25%;
+  // margin: 50px 50px 50px 50px;
+  float: left;
+  @include span-columns(3);
+  margin: 8% 5% 5% 5%;
+
+  // width: flex-grid(2);
+  // margin: flex-gutter(1);
+}
+
+// footer{
+//   @include span-columns (12);
+//   float: left;
+//   margin: 0;
+//   background-image: "free-white-puppy-dog.jpg";
+// }
+
+#name {
+  color: #1A689C;
+  font-size: 12pt;
+}
+
+#social {
+  color: #9BACB2;
+  font-size: 8pt;
+}
