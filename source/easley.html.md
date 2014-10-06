@@ -1,10 +1,11 @@
 ---
-title: I am Smarter
+title: ANNIE'S FIRST BLOG
 date: 10/3/1972
-author: data.authors.easley.name
+author: Annie Easley
 layout: blog
+avatar: images/easley.jpg
+
 ---
-#I am Smarter
 After graduating from high school, Ms. Annie J. Easley began her career in 1955 as a “human computer” for NASA’s predecessor, the National Advisory Committee for Aeronautics (NACA). At a time when machine calculation was limited to key-punched cards manually fed into enormous machines capable only of multiplication, addition, subtraction, and division, Ms. Easley was part of a team responsible for calculating (by hand, mind you) the complex mathematical functions needed by scientists (like logarithms, exponentials, and square roots).
 
 While still employed by the NACA, Ms. Easley earned a Bachelor of Science in Mathematics from Cleveland State University in 1977. She also participated in continuing education and specialization programs specifically sponsored by the National Atmospheric and Space Administration (NASA).

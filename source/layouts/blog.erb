@@ -15,20 +15,27 @@
   <!-- Use title if it's in the page YAML frontmatter -->
   <title><%= current_page.data.title || "Yeah Computers" %></title>
 
-  <%= stylesheet_link_tag "normalize", "all" %>
+  <%= stylesheet_link_tag "all" %>
 </head>
 <body class="<%= page_classes %>">
   <header>
     <div class = "headerstuff">
-      <h1>WE'RE ALL MAD HERE</h1>
-      <h3>ABOUT</h3>
-      <h4> SEARCH</h4>
-      <h5>SURF & PADDLE CO. BLOG</h5>
+      <h1><a href="index.html">WE'RE ALL MAD HERE</a></h1>
+      <h3><a href="http://en.wikipedia.org/wiki/Computer_programming">ABOUT</a></h3>
+      <h4><a href="https://www.google.com/?gws_rd=ssl">SEARCH</a></h4>
+      <!-- <h5>SURF & PADDLE CO. BLOG</h5> -->
       <!-- <h6> An Ironyard Academy Project Est. Summer 2014</h6> -->
-      <div class = "overlay">
-        <img src = "http://i.imgur.com/WMisRt2.jpg"></div></div>
-        <div class = "surf">
+      <!-- <div class = "overlay">
+        <img src = "http://i.imgur.com/WMisRt2.jpg"></div> -->
+</div>
+        <!-- <div class = "surf"></div> -->
         </header>
-        <%= yield %>
+        <div class="intro">
+          <h1><%= current_page.data.title %></h1>
+            <%= tag :img, :src => current_page.data.avatar, :class => "authorimg" %>
 
+          <!-- <div class = "authorimg"><img src="http://img1.wikia.nocookie.net/__cb20120828214045/disney/images/6/6d/Alice_in_wonderland_1951.jpg"></div> -->
+          <div class="imgtxt"><p><%=current_page.data.author %><span class="date">&nbsp on Monday, November 7th</p></div>
+        <%= yield %>
+</body>
         </html>

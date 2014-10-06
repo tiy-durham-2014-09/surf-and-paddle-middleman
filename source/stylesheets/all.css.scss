@@ -1,47 +1,22 @@
 @charset "utf-8";
-$visual-grid: true !default;
-$visual-grid-index: back !default;
-$visual-grid-color: #000 !default;
-$visual-grid-opacity: 0.1 !default;
 @import "bourbon";
 @import "neat";
 
-
+$std_tint: rgba(50, 100, 205, .80);
 $darkblue: #04283e;
 $lightblue: #005eac;
 
 
+.headerstuff {
+@include background-image(linear-gradient($std_tint,$lightblue),url("http://i.imgur.com/0wKA7Q6.png"));
+width: 100%;
+height: 450px;
+margin-top: -10px;
+}
 
-.surf img{
-  z-index: 10;
-  margin: 0 auto;
-}
-.headerstuff h3 {
-  text-align: right;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: $darkblue;
-  margin-bottom: 0px;
-  letter-spacing: 1px;
-  margin-top: 0px;
-  margin-right: 120px;
-}
-.headerstuff img {
-  position: relative;
-  padding-top: 0px;
-  box-sizing: border-box;
-  width: 100%;
-  opacity: 0.1;
-
-}
-.overlay {
-  background-color: #0a528f;
-  margin-top: -50px;
-}
 .headerstuff h1 {
   font-family:'Oswald', sans-serif;
-  color: white;
+  color: #fff;
   margin: 0 auto;
   font-size: 80px;
   position: absolute;
@@ -51,8 +26,62 @@ $lightblue: #005eac;
   left: 50%;
   transform: translateX(-50%) translateY(-18%);
   z-index:100;
-  text-shadow: 1px 1px 1px #000,
-  1px 1px 1px #004682;
+  text-shadow: 1px 2px 2px $darkblue,
+   2px 2px 2px #000;
+}
+.headerstuff h1 a {
+text-decoration: none;
+}
+
+.headerstuff h1 a:visited {
+text-decoration: none;
+color: #fff;
+text-shadow: 1px 2px 2px $darkblue,
+ 2px 2px 2px #000;
+}
+.headerstuff h3 {
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  padding-top: 10px;
+  margin-right: 120px;
+  text-decoration: none;
+color: #fff;
+}
+.headerstuff h3 a {
+text-decoration: none;
+color: #fff;
+}
+.headerstuff h4 {
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  margin-top: -24px;
+  margin-right: 50px;
+  padding-right: 0px;
+}
+.headerstuff h4 a {
+text-decoration: none;
+color: #fff;
+}
+.headerstuff h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  color: $darkblue;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 90px;
+  z-index:100;
 }
 .headerstuff h6 {
   font-family: 'Open Sans', sans-serif;
@@ -66,42 +95,31 @@ $lightblue: #005eac;
   transform: translateX(-50%) translateY(-29%);
   z-index:100;
 }
-.headerstuff h4 {
-  text-align: right;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: $darkblue;
-  margin-bottom: 0px;
-  letter-spacing: 1px;
-  margin-top: -24px;
-  margin-right: 40px;
-  padding-right: 0px;
-}
-.headerstuff h5 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-  color: $darkblue;
-  margin: 0 auto;
-  text-align: left;
-  margin-left: 90px;
-  z-index:100;
-}
 body {
   text-align: center;
   @include outer-container;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: black;
+letter-spacing: 1px;
+font-weight: 300;
 
 }
 .intro {
 width: 580px;
 text-align: left;
-@include span-columns(8);
+@include span-columns(12);
 text-decoration: none;
 
 }
-.intro .authorimg img {
+.authorimg img {
+border-radius: 50%;
+width: 60px;
+height: 60px;
+margin-bottom: 10px;
+margin-top: 0px;
+}
+.authorimg  {
 border-radius: 50%;
 width: 60px;
 height: 60px;
@@ -116,10 +134,11 @@ font-family: 'Open Sans', sans-serif;
 font-size: 16px;
 color: $lightblue;
 }
+
 .imgtxt .date {
   color: #828d95;
 }
-.intro .title a{
+.intro .title a {
 font-family: 'Oswald', sans-serif;
 font-size: 50px;
 color: #063452;
@@ -127,6 +146,16 @@ text-align: left;
 margin-top: 0px;
 margin-bottom: 5px;
 text-decoration: none;
+}
+  .intro h1 {
+font-family: 'Oswald', sans-serif;
+font-size: 50px;
+font-weight: 300;
+color: #063452;
+text-align: left;
+margin-top: 10px;
+margin-bottom: 5px;
+// text-decoration: none;
 
 }
 .intro article {
@@ -140,6 +169,7 @@ text-decoration: none;
   letter-spacing: 1px;
   font-weight: 300;
 }
+
 .pquote {
   font-family: 'Oswald', sans-serif;
   color: $lightblue;
