@@ -127,32 +127,33 @@ $sans: 'Open Sans', sans-serif;
         display: inline;
         font-size: 8pt;
 
-        .picture {
+        img {
           @include span-columns(1);
           height: 30px;
           width: 30px;
           border-radius: 50%;
-          background-image: url("http://www.desibucket.com/db2/01/26669/26669.jpg");
-          background-size: cover;
-          box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.6);
         }
 
-        .name-date {
-          @include span-columns(10);
-          padding-top: 6px;
+        .poster {
+          @include span-columns(3);
+          @include padding(7px 2px null 10px);
+          margin-right: 1px;
+          font-size: 1.25em;
+          font-weight: bold;
+          color: $dark-blue;
         }
+
+        .date {
+          @include span-columns(7);
+          @include padding(10px null null 0);
+        }
+
+        
       }
 
-      .post{
+     .post {
         @include span-columns(12);
 
-        a {
-          color: rgb(85,98,102);
-        }
-
-        a:visited {
-          color: rgb(85,98,102);
-        }
       }
 
       .buttons {
@@ -202,6 +203,53 @@ $sans: 'Open Sans', sans-serif;
       @include span-columns(3);
       @include shift(.25);
 
+      .contact {
+        @include outer-container;
+        @include padding(15px null 0 15px);
+        text-align: center;
+
+        .profile-pic {
+          @include span-columns(6);
+          margin-top: 10px;
+          height: 75px;
+          width: 75px;
+          border-radius: 50%;
+        }
+
+        h4 {
+          font-size: 11pt;
+          @include span-columns(6);
+          @include margin(15px null 0 null);
+        }
+
+        ul {
+          @include span-columns(6);
+          padding-left: 0;
+          list-style: none;
+          text-decoration: none;
+          display: block;
+          font-size: 8pt;
+          float: left;
+          
+          a {
+            text-decoration: none;
+            color: rgb(85,98,102);
+          }
+
+          a:visited {
+            color: rgb(85,98,102);
+          }
+
+          a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+          }
+
+
+        }
+
+      }
+
       .ad-box {
         width: 208px;
         height: 195px;
@@ -211,11 +259,7 @@ $sans: 'Open Sans', sans-serif;
         .ad {
           width: 208px;
           height: 168px;
-          margin: auto;
-          margin-top: 30px;
-          /*background-image: url("http://cityyearnh.files.wordpress.com/2011/02/boat.jpg");
-          background-size: cover;
-          box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.35);*/
+          @include margin(30px null null 0);
         }
 
         a {

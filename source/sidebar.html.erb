@@ -1,4 +1,16 @@
-
+<div class="sidebar">
+  <div class="contact">
+    <div class="picture"><img src="../images/<%= current_page.data.id + ".jpg" %>" class="profile-pic"></div>
+      <h4><%= current_page.data.author.upcase %></h4>
+      <ul class="social-media">
+        <% id = current_page.data.id %>
+        <% links = data.authors[id].links %>
+        <% links = links.reduce Hash.new, :merge %>
+        <% links.each do |key, value| %>
+          <li><a href="<%= value %>"><%= key %></a></li>
+        <% end %>
+      </ul>
+    </div>
     <div class="ad-box">
       <div class="ad"><img src="http://www.lorempixel.com/208/168/city"></div>
       <a href="">About This Ad</a>
