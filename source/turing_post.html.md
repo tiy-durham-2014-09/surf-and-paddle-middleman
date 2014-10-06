@@ -1,7 +1,7 @@
 ---
 title: Alan Turing's Blog Post
 date: 10/4/2014
-author: data.authors.turing.name
+author: Alan Turing
 layout: custom
 ---
 Their first album was better. Vinyl stumptown polaroid flexitarian. Shoreditch swag blog pork belly, pug banjo fap PBR synth mumblecore freegan cardigan mustache chia. Chillwave Cosby sweater locavore, salvia bespoke Odd Future selfies squid pour-over yr flannel ugh skateboard occupy. Readymade Portland Bushwick, tofu Marfa banh mi sustainable McSweeney's dreamcatcher sartorial Brooklyn. VHS; Pinterest mlkshk squid.

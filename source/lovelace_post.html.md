@@ -1,7 +1,7 @@
 ---
 title: Ada Lovelace's Blog Post
 date: 10/5/2014
-author: data.authors.lovelace.name
+author: Ada Lovelace
 layout: custom
 ---
 Mumblecore could you repeat that? Fashion axe Cosby sweater pork belly, Etsy quinoa organic swag. Normcore quinoa Thundercats ethical biodiesel selfies, lomo 3 wolf moon Williamsburg cardigan plaid chillwave scenester beard. Farm-to-table scenester letterpress distillery, salvia Thundercats drinking vinegar Tumblr pork belly Bushwick before they sold out.
