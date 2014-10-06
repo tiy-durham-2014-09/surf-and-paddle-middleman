@@ -120,14 +120,12 @@ div.header {
 div.middle {
   @include outer-container;
   @include span-columns(12);
-  border: 1px solid green;
   display: inline-block;
 }
 
   .posts {
     @include shift(1);
     @include span-columns(6);
-    border: 1px solid yellow;
 
     img {
       border: 2px;
@@ -158,12 +156,10 @@ div.middle {
   }
   .sidebar {
     @include span-columns(4);
-    border: 1px solid blue;
     padding-top: 20 px;
 
     .profile {
       text-align: center;
-      border: 1px solid yellow;
       margin-top: 20px;
 
       img {
@@ -201,19 +197,16 @@ div.middle {
 
 div.footer {
   @include span-columns(12);
-  border: 1px solid blue;
   height: $footer_size;
 
   .popular-posts {
     text-align: center;
-    border: 1px solid red;
   }
 
   .post-preview {
     @include span-columns(12);
     @include nav_bar;
     height: 50%;
-    border: 1px solid green;
     position: relative;
 
     h4 {
@@ -252,14 +245,12 @@ div.footer {
   .bottom-nav {
     @include span-columns(12);
     @include outer-container;
-    border: 1px solid green;
     height: 100px;
     background-color: #112030;
 
     .bottom-left {
       @include shift(1);
       @include span-columns(5);
-      border: 1px solid red;
       height: 100px;
 
       .iron_yard_holder {
@@ -286,7 +277,6 @@ div.footer {
     .bottom-right {
       @include span-columns(5);
       @include nav_bar;
-      border: 1px solid red;
       height: 100%;
       color: white;
 
