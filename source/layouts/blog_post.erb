@@ -1,0 +1,49 @@
+<% wrap_layout :layout do %>
+
+<% author = current_page.data.author %>
+
+<% content_for :name do %>
+  <%= data.authors.send(author).name %>
+<% end %>
+
+<% content_for :twitter do %>
+  <%= data.authors.send(author).links[2].Twitter %>
+<% end %>
+
+<% content_for :facebook do %>
+  <%= data.authors.send(author).links[3].Facebook %>
+<% end %>
+
+<% content_for :wiki do %>
+  <%= data.authors.send(author).links[0].Wikipedia %>
+<% end %>
+
+<% content_for :photo do %>
+  <%= data.authors.send(author).links[1].Photo %>
+<% end %>
+
+<div class="middle">
+  <div class="posts">
+    <div class="blog_heading">
+      <h1><%= current_page.data.title %></h1>
+      <p class="peripheral-text">
+        <img src=<%= yield_content :photo %>>
+        <span class="name"><%= yield_content :name %></span> on <%= current_page.data.date %>
+      </p>
+    </div>
+    <div class="blog_content">
+      <%= yield %>
+      <div class="bottom_nav_bar">
+        <ul>
+          <li><i class="fa fa-comment"></i>Read Comments</li>
+          <li><i class="fa fa-cloud-upload"></i>Read Later</li>
+          <li><i class="fa fa-share-square"></i>Share This Post</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <%= partial "sidebar" %>
+</div>
+
+
+<% end %>

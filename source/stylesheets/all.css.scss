@@ -1,0 +1,289 @@
+@import "bourbon";
+@import "neat";
+
+$footer_size: 500px;
+$large_font: 20px;
+$standard_font: 16px;
+$small_font: 12px;
+$dark_blue: #6389AE;
+$light_blue: #5c7cab;
+$light_grey: #c2c8cc;
+
+.name {
+  color: $light_blue;
+  font-weight: bold;
+}
+
+.peripheral-text {
+  color: $light_grey;
+  font-size: $small_font;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin shade_blue($picture_path) {
+  background: url($picture_path) no-repeat center center scroll;
+  background-color: $dark_blue;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin nav_bar {
+  ul {
+    // float: right;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      padding-right: 10px;
+    }
+  }
+
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'Oswald', sans-serif;
+}
+
+body {
+  font-size: $standard_font;
+
+  h1 {
+    font-size: $standard_font * 3;
+  }
+}
+
+a {
+    text-decoration: none;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+div.header {
+  @include span-columns(12);
+  @include shade_blue('/images/beach.jpg');
+  height: $footer_size;
+
+  .company-info {
+  @include shift(1);
+  @include span-columns(3);
+  padding: 0px;
+  }
+
+  .top-navbar {
+    @include nav_bar;
+    @include shift(5);
+    @include span-columns(2);
+
+  }
+
+  .hero {
+    @include span-columns(12);
+    text-align: center;
+    color: white;
+    padding-top: $footer_size / 7;
+
+      h1 {
+        font-size: $standard_font * 5;
+      }
+      p {
+        font-size: $standard_font;
+        color: black;
+        margin-top: -65px;
+      }
+  }
+
+}
+
+div.middle {
+  @include outer-container;
+  @include span-columns(12);
+  display: inline-block;
+}
+
+  .posts {
+    @include shift(1);
+    @include span-columns(6);
+
+    img {
+      border: 2px;
+      width: 50px;
+    	height: 50px;
+    	-webkit-border-radius: 30px;
+    	border-radius: 30px;
+     }
+
+    .blog_content {
+
+      .bottom_nav_bar {
+        @include nav_bar;
+        ul {
+          float: left;
+        }
+      }
+
+      h4 {
+        color: $light_blue;
+        border-left:  medium solid $light_grey;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: $standard_font * 2;
+      }
+    }
+  }
+  .sidebar {
+    @include span-columns(4);
+    padding-top: 20 px;
+
+    .profile {
+      text-align: center;
+      margin-top: 20px;
+
+      img {
+        border: 2px;
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+       }
+
+      p {
+        font-size: $small_font;
+      }
+    }
+
+    .advertisment {
+      @include shade_blue('/images/beachkayaks.jpg');
+      height: 225px;
+    }
+
+    .ad-about {
+      float: right;
+      text-decoration: underline;
+    }
+
+    .sidebar-section {
+      h3 {
+        color: $light_blue;
+        font-size: $large_font;
+      }
+    }
+  }
+
+
+
+div.footer {
+  @include span-columns(12);
+  height: $footer_size;
+
+  .popular-posts {
+    text-align: center;
+  }
+
+  .post-preview {
+    @include span-columns(12);
+    @include nav_bar;
+    height: 50%;
+    position: relative;
+
+    h4 {
+        position: absolute;
+        bottom: 0;
+        font-size: $large_font;
+        text-wrap: normal;
+        padding-left: 10px;
+    }
+
+    .post1 {
+      @include shade_blue('/images/vacation1.jpg');
+      width: 25%;
+      height: 100%;
+    }
+
+    .post2 {
+      @include shade_blue('/images/vacation2.jpg');
+      width: 25%;
+      height: 100%;
+      color: white;
+    }
+    .post3 {
+      @include shade_blue('/images/vacation3.jpg');
+      width: 25%;
+      height: 100%;
+    }
+    .post4 {
+      @include shade_blue('/images/vacation4.jpg');
+      width: 25%;
+      height: 100%;
+    }
+  }
+
+
+  .bottom-nav {
+    @include span-columns(12);
+    @include outer-container;
+    height: 100px;
+    background-color: #112030;
+
+    .bottom-left {
+      @include shift(1);
+      @include span-columns(5);
+      height: 100px;
+
+      .iron_yard_holder {
+        height: 100px;
+        display: inline-block;
+        @include vertical-align;
+
+        img {
+          height: 50px;
+          @include vertical-align;
+        }
+      }
+
+      .copyright {
+        margin-left: 10px;
+        height: 100px;
+        display: inline-block;
+        @include vertical-align;
+        color: white;
+      }
+    }
+  }
+
+    .bottom-right {
+      @include span-columns(5);
+      @include nav_bar;
+      height: 100%;
+      color: white;
+
+      ul {
+        @include vertical-align;
+        float: right;
+      }
+
+    }
+}

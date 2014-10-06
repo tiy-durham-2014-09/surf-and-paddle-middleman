@@ -1,5 +1,34 @@
 ---
-title: Surf & Paddle
+title: Surf & Paddle!
 ---
 
-<!-- insert content here -->
+<ul>
+  <% posts = sitemap.resources.select { | a | a.data.type.present? } %>
+  <% sorted = posts.sort_by { |post| post.data.date} %>
+  <% sorted.each do | article | %>
+    <% author = article.data.author %>
+
+    <div class="middle">
+      <div class="posts">
+        <div class="blog_heading">
+          <a href="<%= article.url %>"><h1><%= article.data.title %></h1></a>
+          <p class="peripheral-text">
+            <img src=<%= data.authors.send(author).links[1].Photo %>>
+            <span class="name"><%= data.authors.send(author).name %></span> on <%= article.data.date %>
+          </p>
+        </div>
+        <%= get_content(article) %>
+        <div class="blog_content">
+          <div class="bottom_nav_bar">
+            <ul>
+              <li><i class="fa fa-comment"></i>Read Comments</li>
+              <li><i class="fa fa-cloud-upload"></i>Read Later</li>
+              <li><i class="fa fa-share-square"></i>Share This Post</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+</ul>
