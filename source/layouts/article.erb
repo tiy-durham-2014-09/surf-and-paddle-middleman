@@ -32,6 +32,7 @@
 	<!-- <img class="mepic2" src="images/pic2.png"> -->
 	<div class="n"><%= current_page.data.author %>. </div>
 	<div class="dy">on <%= current_page.data.date %></span></div>
+	<%= current_page.data.post %>
 	<p>	Lorem ipsum dolor sit amet,
 		consectetur adipiscing elit.
 		Fusce luctus auctor fringilla.
@@ -74,10 +75,6 @@
 				</div>
 				<div class="name"> <%= current_page.data.author.upcase %>
 				</div>
-				<!-- <div id="social"> <%= link_to 'Twitter', current_page.data.twitter %>
-					<%= link_to 'Facebook', current_page.data.facebook %>
-					<%= link_to 'Instagram', current_page.data.instagram %>
-				</div> -->
 			</div>
 			<div>
 				<div>
@@ -86,14 +83,9 @@
 				<a class="link"> ANOTHER PICTURE!
 				</a>
 			</div>
-			<div class="shead"> SIDEBAR SECTION HEADING
+			<div class="shead"> A NICE QUOTE
 			</div>
-			<div class="sidebar"> Vivamus aliquam eu libero in dictum.
-				Vestibulum ante ipsum primis in faucibus
-				orci luctus et ultrices posuere cubilia Curae;
-				Cras eleifend <a class="google" href="www.google.com">commodo orci.<a>
-					Aliquam non ultricies nibh.
-					Aenean et ligula ac ipsum.
+			<div class="sidebar"> "<%= current_page.data.quote %>"
 				</div>
 			</div>
 		</div>
