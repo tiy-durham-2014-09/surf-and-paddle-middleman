@@ -14,8 +14,8 @@ title: Surf & Paddle
     <div class="authors">
       <h1>Authors</h1>
       <ul>
-        <% data.authors.each do |a| %>
-          <li><%= a[0] %></li>
+        <% data.authors.each do |author| %>
+          <li><a href="<%= author[0] %>.html"><%= author[0] %></a></li>
         <% end %>
       </ul>
     </div>
