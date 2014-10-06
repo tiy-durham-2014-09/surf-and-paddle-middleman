@@ -1,6 +1,6 @@
 <div class="right_pane">
   <% lname = current_page.data.author_lname.downcase %>
-  <%= tag :img, :src => data.authors[lname].image, :class => "avatar" %>
+  <%= tag :img, :src => "../" + data.authors[lname].image, :class => "avatar" %>
   <h1><%= current_page.data.author_fname + " " + current_page.data.author_lname %></h1>
 
     <% links = (data.authors[lname].links).reduce Hash.new, :merge %>

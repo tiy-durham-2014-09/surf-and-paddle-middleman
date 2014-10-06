@@ -1,49 +1,15 @@
 ---
 title: Surf & Paddle
-author: Annie Dolphin
 ---
 
-<div class="main_wide">
-  <h1>A Fantastic Engaging Headline Goes Here</h1>
-  <span>
-    <div class="small_avatar"></div><h2>Annie Dolphin </h2><h3> on Monday, June 7th 9:22 pm</h3>
-  </span>
-  <div class="text">
-    <p>Tobacco baldwin lofts sculpture history hub southpoint, centerfest the buehler.
-    Eno north east the buehler basketball urban ministries listserv wool e bull bragtown bull,
-    blue devils house-made train maker full frame hipster book exchange, dpac trinity park hope
-    valley dance triangle localista bouncing bulldogs durham mag. West village the connecter</p>
+<% posts_sorted = data.posts.sort_by { |author, info| info[:date] } %>
+<% posts_sorted.each do |key, value| %>
 
-    <div class="effect"><div class="button_ico"><i class="fa fa-comment"></i></div><div class="button">Read Comments</div></div>
-    <div class="effect"><div class="button_ico"><i class="fa fa-cloud-download"></i></div><div class="button">Read Later</div></div>
-    <div class="effect"><div class="button_ico"><i class="fa fa-share-square-o"></i></div><div class="button">Share This Post</div></div>
+  <h1><%= link_to value.title, "articles/" + key + ".html", :class => "title_link" %></h1>
+  <%= tag :img, :src => data.authors[key][:image], :class => "small_avatar" %>
+  <h2><%= data.authors[key][:name] %></h2>
+  <h3>on <%= value.date %></h3>
+  <p><%= value.blurb %></p>
+  <%= partial "buttons" %>
 
-    <h1>A Fantastic Engaging Headline Goes Here</h1>
-    <span>
-      <div class="small_avatar"></div><h2>Annie Dolphin </h2><h3> on Monday, June 7th 9:22 pm</h3>
-    </span>
-
-    <p>Tobacco baldwin lofts sculpture history hub southpoint, centerfest the buehler.
-    Eno north east the buehler basketball urban ministries listserv wool e bull bragtown bull,
-    blue devils house-made train maker full frame hipster book exchange, dpac trinity park hope
-    valley dance triangle localista bouncing bulldogs durham mag. West village the connecter</p>
-
-    <div class="effect"><div class="button_ico"><i class="fa fa-comment"></i></div><div class="button">Read Comments</div></div>
-    <div class="effect"><div class="button_ico"><i class="fa fa-cloud-download"></i></div><div class="button">Read Later</div></div>
-    <div class="effect"><div class="button_ico"><i class="fa fa-share-square-o"></i></div><div class="button">Share This Post</div></div>
-
-    <h1>A Fantastic Engaging Headline Goes Here</h1>
-    <span>
-      <div class="small_avatar"></div><h2>Annie Dolphin </h2><h3> on Monday, June 7th 9:22 pm</h3>
-    </span>
-
-    <p>Tobacco baldwin lofts sculpture history hub southpoint, centerfest the buehler.
-    Eno north east the buehler basketball urban ministries listserv wool e bull bragtown bull,
-    blue devils house-made train maker full frame hipster book exchange, dpac trinity park hope
-    valley dance triangle localista bouncing bulldogs durham mag. West village the connecter</p>
-
-    <div class="effect"><div class="button_ico"><i class="fa fa-comment"></i></div><div class="button">Read Comments</div></div>
-    <div class="effect"><div class="button_ico"><i class="fa fa-cloud-download"></i></div><div class="button">Read Later</div></div>
-    <div class="effect"><div class="button_ico"><i class="fa fa-share-square-o"></i></div><div class="button">Share This Post</div></div>
-  </div>
-</div>
+<% end %>

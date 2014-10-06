@@ -49,6 +49,11 @@ h2.header {
     text-align: center;
   }
 
+a.title_link {
+  color: $darkblue;
+  text-decoration: none
+}
+
 .left_tools {
   @include span-columns(5);
   @include shift(1);
