@@ -1,16 +1,29 @@
 @charset "utf-8";
 @import "normalize";
 @import "bourbon";
-$visual_grid: true;
+/*$visual_grid: true;
 $visual-grid-color: red;
 $visual-grid-index: front;
-$visual-grid-opacity: 0.1;
+$visual-grid-opacity: 0.1;*/
 $max-width: 965px;
 @import "neat";
+$dark-blue: rgb(0,51,82);
+$oswald: 'Oswald', sans-serif;
+$sans: 'Open Sans', sans-serif;
 
 .body {
 
-  font-family: 'Open Sans', sans-serif;
+  h2{
+    font-family: $oswald;
+    color: $dark-blue;
+    font-size: 35pt;
+    letter-spacing: .5px;
+    line-height: 52px;
+    font-weight: 400;
+    margin: 47px 0 0 0;
+  }
+
+  font-family: $sans;
   font-weight: 300;
   font-size: 10pt;
   color: rgb(160,179,192);
@@ -21,15 +34,15 @@ $max-width: 965px;
     background-image: url("http://www.picpicx.com/wp-content/uploads/2014/09/0467b2596d6b248a49cf08fe54ca100d.jpg");
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.85);
-    color: rgb(0,51,82);
+    color: $dark-blue;
 
     a {
       text-decoration: none;
-      color: rgb(0,51,82);
+      color: $dark-blue;
     }
 
     a:visited {
-      color: rgb(0,51,82);
+      color: $dark-blue;
     }
 
     a:hover{
@@ -64,7 +77,7 @@ $max-width: 965px;
       ul {
         @include span-columns(2.5);
         @include shift(5.3); 
-        font-family: 'Oswald', sans-serif;
+        font-family: $oswald;
         padding-left: 33px;
         font-size: 10pt;
         letter-spacing: .5px;
@@ -85,7 +98,7 @@ $max-width: 965px;
       @include span-columns(10);
       @include shift(1);
       line-height: 0px;
-      padding-top: 112px;
+      @include padding(112px null null null);
       text-align: center;
 
       h1 {
@@ -107,16 +120,6 @@ $max-width: 965px;
     .post-column {
       @include span-columns(6);
       @include shift(1.5);
-
-      h2{
-        font-family: 'Oswald', sans-serif;
-        color: rgb(0,51,82);
-        font-size: 35pt;
-        letter-spacing: .5px;
-        line-height: 52px;
-        font-weight: 400;
-        margin: 47px 0 0 0;
-      }
 
       .post-info {
         @include span-columns(12); 
@@ -142,6 +145,14 @@ $max-width: 965px;
 
       .post{
         @include span-columns(12);
+
+        a {
+          color: rgb(85,98,102);
+        }
+
+        a:visited {
+          color: rgb(85,98,102);
+        }
       }
 
       .buttons {
@@ -184,28 +195,115 @@ $max-width: 965px;
             background-color: RGB(10, 42, 63);
           }
         }
-
       }
-
     }
 
     .sidebar {
       @include span-columns(3);
       @include shift(.25);
-      background-color: orange;
-    
 
-      h4 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 10pt;
-        color: rgb(0,95,161);
-        font-weight: 400;
+      .ad-box {
+        width: 208px;
+        height: 195px;
+        margin: auto;
+        margin-top: 30px;
+
+        .ad {
+          width: 208px;
+          height: 168px;
+          margin: auto;
+          margin-top: 30px;
+          background-image: url("http://cityyearnh.files.wordpress.com/2011/02/boat.jpg");
+          background-size: cover;
+          box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.35);
+        }
+
+        a {
+          font-size: 7pt;
+          color: rgb(160,179,192);
+          float: right;
+          padding-top: 5px;
+        }
       }
 
+      h4 {
+        color: $dark-blue;
 
+      }
+    }
+  }
+
+  .footer {
+
+    @include outer-container;
+
+    h2 {
+      @include span-columns(12);
+      text-align: center;
+      padding-bottom: 30px;
     }
 
+    .image-links {
+      @include span-columns(12);
+      list-style: none;
+      padding: 0;
+      margin: auto;
+      color: $dark-blue;
+      font-family: $oswald;
+      font-weight: 500;
+      font-size: 16pt;
 
+      a {
+        text-decoration: none;
+      }
 
+      .link-text {
+        @include padding(210px null 10px 10px);
+      }
+      
+      li {
+        @include span-columns(3 of 12, block-collapse);
+        height: 245px;
+        display: inline-block;
+        box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.75);
+        background-size: cover;
+      }
+    
+      .oar {
+        background-image: url("http://1.bp.blogspot.com/-IqY-GliCgto/TVitKGPW15I/AAAAAAAAXGE/uMWsTf8i0SI/art-oars.jpg");
+      }
+
+      .dolphin {
+        background-image: url("http://ladaray.files.wordpress.com/2014/01/bottlenose-dolphins.jpg");
+      }
+
+      .kayak {
+        background-image: url("http://bestfishingkayakfocus.com/wp-content/uploads/2013/12/ocea-kayak-summer-colors-wallpapers-1024x768.jpg");
+      }
+
+       .dog {
+        background-image: url("http://25.media.tumblr.com/tumblr_m7h237XBRM1r5czhfo1_500.jpg");
+      }
+
+      li:hover {
+        box-shadow: inset 0 0 0 1000px rgba(0,106,183,0.0);
+      }
+
+      .link-text:hover {
+       color: white;
+      }
+
+      a:visited {
+        color: $dark-blue;
+      }
+    }
+    
+    .bottom-nav {
+      @include span-columns(12);
+      background-color: $dark-blue;
+      height: 75px;
+    } 
+  
   }
+
 }
