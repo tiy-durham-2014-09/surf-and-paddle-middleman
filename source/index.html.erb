@@ -15,9 +15,7 @@
           <%= a.data.date %>
         </div>
         <div>
-          <%# binding.pry %>
-          <%= a %> <!-- aaaargh, how? -->
-          <%#= truncate_words(a, :length => 100) %>...
+          <%= truncate_words((a.render layout: false), :length => 70) %>
         </div>
         <%= partial "social-buttons" %>
       <% end %>
