@@ -1,5 +1,31 @@
----
-title: Surf & Paddle
----
-
-<!-- insert content here -->
+<section>
+  <article>
+    <!-- list each article title (which is a link to the full article page), author info line, text summary, and social buttons, ordered by date -->
+    <% sitemap.resources.each do |a| %>
+      <% if a.data[:category] == "article" %>
+        <div class="article_title">
+          <%= link_to a.data[:title], a.path %>
+        </div>
+        <div class="post_info">
+          <img class="poster_pic" src="<%= data.authors[a.data.author][:portrait] %>">
+          <span class="author_name">
+            <%= data.authors[a.data.author][:name] %>
+          </span>
+          on
+          <%= a.data.date %>
+        </div>
+        <div>
+          <%= truncate_words((a.render layout: false), :length => 70) %>
+        </div>
+        <%= partial "social-buttons" %>
+      <% end %>
+    <% end %>
+  </article>
+  <aside>
+    <div class="side_column_header">SIDEBAR SECTION BEHEADING</div>
+    <p>Cosmic ocean Cambrian explosion the ash of stellar alchemy and billions upon billions upon billions upon billions upon billions upon billions upon billions?</p>
+    <div class="tinted_ad"></div>
+    <p class="ad_info"><a class="subtle" href="http://www.ads.com">About this ad</a></p>
+  </aside>
+</section>
+<div class="popular">MOAR POPULAR POSTS</div>

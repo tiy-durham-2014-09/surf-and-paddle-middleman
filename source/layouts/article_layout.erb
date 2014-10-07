@@ -1,0 +1,38 @@
+<% wrap_layout :layout do %>
+<section>
+  <article>
+    <div class="article_title">
+      <%= current_page.data.title %>
+    </div>
+    <div class="post_info">
+      <img class="poster_pic" src="<%= data.authors[current_page.data.author][:portrait] %>">
+      <span class="author_name">
+        <%= data.authors[current_page.data.author][:name] %>
+      </span>
+      on
+      <%= current_page.data.date %>
+    </div>
+    <%= yield %>
+    <%= partial "social-buttons" %>
+  </article>
+  <aside>
+    <div class="side_column">
+      <div class="profile_frame">
+        <img class="profile_pic" src="<%= data.authors[current_page.data.author][:portrait] %>">
+        <div>
+          <%= data.authors[current_page.data.author][:name] %>
+        </div>
+        <% data.authors[current_page.data.author][:links].each do |h| %>
+          <% h.each do |k,v| %>
+            <a class="profile_site" href="<%= v %>"><%= k %></a>
+            <% end %>
+        <% end %>
+      </div>
+      <div class="tinted_ad"></div>
+      <p class="ad_info"><a class="subtle" href="http://www.ads.com">About this ad</a></p>
+      <div class="side_column_header">SIDEBAR SECTION BEHEADING</div>
+      <p>Cosmic ocean Cambrian explosion the ash of stellar alchemy and billions upon billions upon billions upon billions upon billions upon billions upon billions?</p>
+    </div>
+  </aside>
+</section>
+<% end %>

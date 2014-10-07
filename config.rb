@@ -1,3 +1,4 @@
+
 ###
 # Compass
 ###
@@ -10,6 +11,8 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
+
+page "/articles/*", :layout => :article_layout
 
 # Per-page layout changes:
 #
@@ -36,9 +39,9 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -52,6 +55,8 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+set :articles_dir, 'articles'
 
 # Build-specific configuration
 configure :build do
