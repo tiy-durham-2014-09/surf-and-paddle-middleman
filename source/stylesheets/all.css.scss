@@ -8,10 +8,10 @@ $lightblue: #005eac;
 
 
 .headerstuff {
-@include background-image(linear-gradient($std_tint,$lightblue),url("http://i.imgur.com/0wKA7Q6.png"));
-width: 100%;
-height: 450px;
-margin-top: -10px;
+  @include background-image(linear-gradient($std_tint,$lightblue),url("http://i.imgur.com/0wKA7Q6.png"));
+  width: 100%;
+  height: 450px;
+  margin-top: -10px;
 }
 
 .headerstuff h1 {
@@ -30,14 +30,14 @@ margin-top: -10px;
    2px 2px 2px #000;
 }
 .headerstuff h1 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .headerstuff h1 a:visited {
-text-decoration: none;
-color: #fff;
-text-shadow: 1px 2px 2px $darkblue,
- 2px 2px 2px #000;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 2px 2px $darkblue,
+  2px 2px 2px #000;
 }
 .headerstuff h3 {
   text-align: right;
@@ -50,11 +50,11 @@ text-shadow: 1px 2px 2px $darkblue,
   padding-top: 10px;
   margin-right: 120px;
   text-decoration: none;
-color: #fff;
+  color: #fff;
 }
 .headerstuff h3 a {
-text-decoration: none;
-color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .headerstuff h4 {
   text-align: right;
@@ -69,8 +69,8 @@ color: #fff;
   padding-right: 0px;
 }
 .headerstuff h4 a {
-text-decoration: none;
-color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .headerstuff h5 {
   font-family: 'Open Sans', sans-serif;
@@ -101,75 +101,72 @@ body {
   font-family: 'Open Sans';
   font-size: 14px;
   color: black;
-letter-spacing: 1px;
-font-weight: 300;
+  letter-spacing: 1px;
+  font-weight: 300;
 
 }
 .intro {
-width: 580px;
-text-align: left;
-@include span-columns(12);
-text-decoration: none;
+  width: 580px;
+  text-align: left;
+  @include span-columns(12);
+  text-decoration: none;
 
 }
 .authorimg img {
-border-radius: 50%;
-width: 60px;
-height: 60px;
-margin-bottom: 10px;
-margin-top: 0px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 .authorimg  {
-border-radius: 50%;
-width: 60px;
-height: 60px;
-margin-bottom: 10px;
-margin-top: 0px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 .imgtxt p {
-margin-left: 70px;
-margin-bottom:10px;
-margin-top: -50px;
-font-family: 'Open Sans', sans-serif;
-font-size: 16px;
-color: $lightblue;
+  margin-left: 70px;
+  margin-bottom:10px;
+  margin-top: -50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: $lightblue;
 }
 
 .imgtxt .date {
   color: #828d95;
 }
 .intro .title a {
-font-family: 'Oswald', sans-serif;
-font-size: 50px;
-color: #063452;
-text-align: left;
-margin-top: 0px;
-margin-bottom: 5px;
-text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  color: #063452;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-decoration: none;
 }
-  .intro h1 {
-font-family: 'Oswald', sans-serif;
-font-size: 50px;
-font-weight: 300;
-color: #063452;
-text-align: left;
-margin-top: 10px;
-margin-bottom: 5px;
-// text-decoration: none;
-
+.intro h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #063452;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .intro article {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: black;
-  float:left;
+  float: left;
   box-sizing: border-box;
   display: inline;
   overflow: hidden;
   letter-spacing: 1px;
   font-weight: 300;
 }
-
 .pquote {
   font-family: 'Oswald', sans-serif;
   color: $lightblue;
@@ -190,11 +187,8 @@ blockquote  {
   margin-bottom: 0px;
 }
 .sidebar {
-//   margin-top: 10px;
-// width: 250px;
-@include span-columns(4);
-@include omega;
-
+  @include span-columns(4);
+  @include omega;
 }
 .sidebar h1{
   font-family: 'Oswald', sans-serif;
@@ -211,7 +205,7 @@ blockquote  {
   width: 250px;
   margin-top: 40px;
   &:before {
-    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
 }
 }
 .sidebar article {
@@ -237,14 +231,14 @@ blockquote  {
   margin: 0 auto;
   text-align: center;
   letter-spacing: -1px;
-  width:250px;
+  width: 250px;
 }
-.links a{
-text-decoration: none;
-word-spacing: 10px;
-font-family: 'Open Sans', sans-serif;
-font-size: 14px;
-color: #828d95;
+.links a {
+  text-decoration: none;
+  word-spacing: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #828d95;
 }
 .twitter a {
   font-family: 'Open Sans', sans-serif;
@@ -261,7 +255,7 @@ color: #828d95;
   text-decoration: none;
 }
 .instagram a {
-  font-family: 'Open Sans', sans-serif;
+  font-family:'Open Sans', sans-serif;
   font-size: 14px;
   color: #828d95;
   text-align: center;
