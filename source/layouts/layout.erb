@@ -1,21 +1,50 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css'>
+  <link href="all.css.scss" rel="stylesheet" type="text/css">
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <title>Surf and Paddle Co.</title>
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= current_page.data.title || "Yeah Computers" %></title>
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+  <%= stylesheet_link_tag "all" %>
 
-    <!-- Uncomment the following if you want to use normalize -->
-    <!-- <%= stylesheet_link_tag "normalize" %> -->
+</head>
+<body class="<%= page_classes %>">
+  <header>
+    <div class="headerstuff">
+      <h1><a href="index.html">WE'RE ALL MAD HERE</a></h1>
+      <h3><a href="http://en.wikipedia.org/wiki/Computer_programming">ABOUT</a></h3>
+      <h4><a href="https://www.google.com/?gws_rd=ssl">SEARCH</a></h4>
+      <!-- <h5>SURF & PADDLE CO. BLOG</h5> -->
+      <!-- <h6> An Ironyard Academy Project Est. Summer 2014</h6> -->
+      <!-- <div class = "overlay">
+        <img src = "http://i.imgur.com/WMisRt2.jpg"></div></div>
+        <div class = "surf"> -->
+  </header>
+        <%= yield %>
+        <!-- <div class="sidebar">
+          <section>
+            <!-- <div class="circleimg"><img src="http://img1.wikia.nocookie.net/__cb20120828214045/disney/images/6/6d/Alice_in_wonderland_1951.jpg"></div>
+            <div class="imgtxt"><h1>BUSTER BLUTH</h1></div> -->
+            <!-- <div class="links">
+            <a href="https://twitter.com/danielleheckman">Twitter </a><a href="https://www.facebook.com/daniheckman">Facebook  </a><a href="http://instagram.com/daniheckman">Instagram</a></div> -->
+            <!-- <div class="bgimg"></div>
+            <img src="http://www.highdefdiscnews.com/screenshots/alice_in_wonderland_1951_7.png">
+            <h1>SIDEBAR SECTION HEADING</h1></section>
+            <article>'Give your evidence,' the King repeated angrily, 'or I'll have you executed, whether
+              you're nervous or not.' 'I'm a poor man, your Majesty,' the Hatter began, in a trembling voice,
+              '—and I hadn't begun my tea—not above a week or so—and what with the bread-and-butter getting so
+              thin—and the twinkling of the tea—' 'The twinkling of the what?' said the King.</article> -->
+            <!-- </div> -->
 
-    <%= stylesheet_link_tag "all" %>
-  </head>
-
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
-</html>
+          </body>
+          </html>
