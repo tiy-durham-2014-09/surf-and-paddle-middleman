@@ -46,6 +46,7 @@ end
 #     "Helping"
 #   end
 # end
+activate :directory_indexes
 
 set :css_dir, 'stylesheets'
 
